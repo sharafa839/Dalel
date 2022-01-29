@@ -7,15 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54844C3FD69E01E615CFF16B /* Pods_Dalel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A0A0FEC18C33B733889F49 /* Pods_Dalel.framework */; };
 		FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4227A579ED0099F90F /* AppDelegate.swift */; };
 		FF78AA4527A579ED0099F90F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4427A579ED0099F90F /* SceneDelegate.swift */; };
 		FF78AA4727A579ED0099F90F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4627A579ED0099F90F /* ViewController.swift */; };
 		FF78AA4A27A579ED0099F90F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4827A579ED0099F90F /* Main.storyboard */; };
 		FF78AA4C27A579EF0099F90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4B27A579EF0099F90F /* Assets.xcassets */; };
 		FF78AA4F27A579EF0099F90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4D27A579EF0099F90F /* LaunchScreen.storyboard */; };
+		FFBFC36527A57FD00088C717 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36327A57FD00088C717 /* LoginViewController.swift */; };
+		FFBFC36627A57FD00088C717 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC36427A57FD00088C717 /* LoginViewController.xib */; };
+		FFBFC36B27A580020088C717 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36927A580020088C717 /* RegisterViewController.swift */; };
+		FFBFC36C27A580020088C717 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC36A27A580020088C717 /* RegisterViewController.xib */; };
+		FFBFC36F27A580360088C717 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36D27A580360088C717 /* LanguageViewController.swift */; };
+		FFBFC37027A580360088C717 /* LanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC36E27A580360088C717 /* LanguageViewController.xib */; };
+		FFBFC37327A5804A0088C717 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC37127A5804A0088C717 /* OnBoardingViewController.swift */; };
+		FFBFC37427A5804A0088C717 /* OnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC37227A5804A0088C717 /* OnBoardingViewController.xib */; };
+		FFBFC37727A5808F0088C717 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC37527A5808F0088C717 /* ResetPasswordViewController.swift */; };
+		FFBFC37827A5808F0088C717 /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC37627A5808F0088C717 /* ResetPasswordViewController.xib */; };
+		FFBFC37B27A580B00088C717 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC37927A580B00088C717 /* VerificationViewController.swift */; };
+		FFBFC37C27A580B00088C717 /* VerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC37A27A580B00088C717 /* VerificationViewController.xib */; };
+		FFBFC38527A582050088C717 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC38327A582050088C717 /* HomeTableViewController.swift */; };
+		FFBFC38A27A5844B0088C717 /* SchoolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC38827A5844B0088C717 /* SchoolsViewController.swift */; };
+		FFBFC38B27A5844B0088C717 /* SchoolsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC38927A5844B0088C717 /* SchoolsViewController.xib */; };
+		FFBFC38F27A584A00088C717 /* SchoolDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC38D27A584A00088C717 /* SchoolDetailsViewController.swift */; };
+		FFBFC39027A584A00088C717 /* SchoolDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC38E27A584A00088C717 /* SchoolDetailsViewController.xib */; };
+		FFBFC39427A584DD0088C717 /* AddCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC39227A584DD0088C717 /* AddCommentViewController.swift */; };
+		FFBFC39527A584DD0088C717 /* AddCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC39327A584DD0088C717 /* AddCommentViewController.xib */; };
+		FFBFC39927A585280088C717 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC39727A585280088C717 /* SearchViewController.swift */; };
+		FFBFC39A27A585280088C717 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC39827A585280088C717 /* SearchViewController.xib */; };
+		FFBFC39E27A585490088C717 /* SpecificSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC39C27A585490088C717 /* SpecificSearchViewController.swift */; };
+		FFBFC39F27A585490088C717 /* SpecificSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC39D27A585490088C717 /* SpecificSearchViewController.xib */; };
+		FFBFC3A227A585AF0088C717 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC3A127A585AF0088C717 /* FavoriteViewController.swift */; };
+		FFBFC3A427A585E30088C717 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC3A327A585E30088C717 /* NotificationViewController.swift */; };
+		FFBFC3A627A586290088C717 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC3A527A586290088C717 /* ProfileViewController.swift */; };
+		FFBFC3A927A586480088C717 /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC3A727A586480088C717 /* AddPlaceViewController.swift */; };
+		FFBFC3AA27A586480088C717 /* AddPlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC3A827A586480088C717 /* AddPlaceViewController.xib */; };
+		FFBFC3B327A586A50088C717 /* OurVisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC3B127A586A50088C717 /* OurVisionViewController.swift */; };
+		FFBFC3B427A586A50088C717 /* OurVisionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC3B227A586A50088C717 /* OurVisionViewController.xib */; };
+		FFBFC3B727A586BC0088C717 /* OurGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC3B527A586BC0088C717 /* OurGoalViewController.swift */; };
+		FFBFC3B827A586BC0088C717 /* OurGoalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC3B627A586BC0088C717 /* OurGoalViewController.xib */; };
+		FFBFC3BD27A5870E0088C717 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC3BB27A5870E0088C717 /* ContactUsViewController.swift */; };
+		FFBFC3BE27A5870E0088C717 /* ContactUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC3BC27A5870E0088C717 /* ContactUsViewController.xib */; };
+		FFBFC3C227A587320088C717 /* TermsAndConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC3C027A587320088C717 /* TermsAndConditionViewController.swift */; };
+		FFBFC3C327A587320088C717 /* TermsAndConditionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC3C127A587320088C717 /* TermsAndConditionViewController.xib */; };
+		FFBFC3D427A5AFBA0088C717 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC3D227A5AFBA0088C717 /* PlacesTableViewController.swift */; };
+		FFBFC3D527A5AFBA0088C717 /* PlacesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC3D327A5AFBA0088C717 /* PlacesTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D39720B9AF372EB3449E031F /* Pods-Dalel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dalel.release.xcconfig"; path = "Target Support Files/Pods-Dalel/Pods-Dalel.release.xcconfig"; sourceTree = "<group>"; };
+		D6A0A0FEC18C33B733889F49 /* Pods_Dalel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dalel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDAE285294AE5A146EF7BAFC /* Pods-Dalel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dalel.debug.xcconfig"; path = "Target Support Files/Pods-Dalel/Pods-Dalel.debug.xcconfig"; sourceTree = "<group>"; };
 		FF78AA3F27A579ED0099F90F /* Dalel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dalel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF78AA4227A579ED0099F90F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF78AA4427A579ED0099F90F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +66,56 @@
 		FF78AA4B27A579EF0099F90F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF78AA4E27A579EF0099F90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF78AA5027A579EF0099F90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBFC36327A57FD00088C717 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FFBFC36427A57FD00088C717 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		FFBFC36927A580020088C717 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FFBFC36A27A580020088C717 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		FFBFC36D27A580360088C717 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		FFBFC36E27A580360088C717 /* LanguageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageViewController.xib; sourceTree = "<group>"; };
+		FFBFC37127A5804A0088C717 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		FFBFC37227A5804A0088C717 /* OnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewController.xib; sourceTree = "<group>"; };
+		FFBFC37527A5808F0088C717 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		FFBFC37627A5808F0088C717 /* ResetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordViewController.xib; sourceTree = "<group>"; };
+		FFBFC37927A580B00088C717 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		FFBFC37A27A580B00088C717 /* VerificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationViewController.xib; sourceTree = "<group>"; };
+		FFBFC38327A582050088C717 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		FFBFC38827A5844B0088C717 /* SchoolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsViewController.swift; sourceTree = "<group>"; };
+		FFBFC38927A5844B0088C717 /* SchoolsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchoolsViewController.xib; sourceTree = "<group>"; };
+		FFBFC38D27A584A00088C717 /* SchoolDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewController.swift; sourceTree = "<group>"; };
+		FFBFC38E27A584A00088C717 /* SchoolDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchoolDetailsViewController.xib; sourceTree = "<group>"; };
+		FFBFC39227A584DD0088C717 /* AddCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentViewController.swift; sourceTree = "<group>"; };
+		FFBFC39327A584DD0088C717 /* AddCommentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCommentViewController.xib; sourceTree = "<group>"; };
+		FFBFC39727A585280088C717 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FFBFC39827A585280088C717 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		FFBFC39C27A585490088C717 /* SpecificSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificSearchViewController.swift; sourceTree = "<group>"; };
+		FFBFC39D27A585490088C717 /* SpecificSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecificSearchViewController.xib; sourceTree = "<group>"; };
+		FFBFC3A127A585AF0088C717 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		FFBFC3A327A585E30088C717 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		FFBFC3A527A586290088C717 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FFBFC3A727A586480088C717 /* AddPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewController.swift; sourceTree = "<group>"; };
+		FFBFC3A827A586480088C717 /* AddPlaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPlaceViewController.xib; sourceTree = "<group>"; };
+		FFBFC3B127A586A50088C717 /* OurVisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurVisionViewController.swift; sourceTree = "<group>"; };
+		FFBFC3B227A586A50088C717 /* OurVisionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OurVisionViewController.xib; sourceTree = "<group>"; };
+		FFBFC3B527A586BC0088C717 /* OurGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurGoalViewController.swift; sourceTree = "<group>"; };
+		FFBFC3B627A586BC0088C717 /* OurGoalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OurGoalViewController.xib; sourceTree = "<group>"; };
+		FFBFC3BB27A5870E0088C717 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		FFBFC3BC27A5870E0088C717 /* ContactUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsViewController.xib; sourceTree = "<group>"; };
+		FFBFC3C027A587320088C717 /* TermsAndConditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionViewController.swift; sourceTree = "<group>"; };
+		FFBFC3C127A587320088C717 /* TermsAndConditionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionViewController.xib; sourceTree = "<group>"; };
+		FFBFC3C527A5879B0088C717 /* AmazonEmber_Th.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonEmber_Th.ttf; sourceTree = "<group>"; };
+		FFBFC3C627A5879C0088C717 /* AmazonEmber_ThIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonEmber_ThIt.ttf; sourceTree = "<group>"; };
+		FFBFC3C727A5879C0088C717 /* AmazonEmber_Lt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonEmber_Lt.ttf; sourceTree = "<group>"; };
+		FFBFC3C827A5879D0088C717 /* AmazonEmber_He.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonEmber_He.ttf; sourceTree = "<group>"; };
+		FFBFC3C927A5879E0088C717 /* AmazonEmber_Rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonEmber_Rg.ttf; sourceTree = "<group>"; };
+		FFBFC3CA27A5879F0088C717 /* AmazonEmber_RgIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonEmber_RgIt.ttf; sourceTree = "<group>"; };
+		FFBFC3CB27A587A00088C717 /* AmazonEmber_BdIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonEmber_BdIt.ttf; sourceTree = "<group>"; };
+		FFBFC3CC27A587A10088C717 /* AmazonEmber_Bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonEmber_Bd.ttf; sourceTree = "<group>"; };
+		FFBFC3CD27A587A20088C717 /* AmazonEmber_HeIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonEmber_HeIt.ttf; sourceTree = "<group>"; };
+		FFBFC3CE27A587A30088C717 /* Amazon-Ember-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amazon-Ember-Medium.ttf"; sourceTree = "<group>"; };
+		FFBFC3CF27A587A40088C717 /* AmazonEmber_LtIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonEmber_LtIt.ttf; sourceTree = "<group>"; };
+		FFBFC3D027A587A50088C717 /* Amazon-Ember-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amazon-Ember-MediumItalic.ttf"; sourceTree = "<group>"; };
+		FFBFC3D227A5AFBA0088C717 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
+		FFBFC3D327A5AFBA0088C717 /* PlacesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +123,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54844C3FD69E01E615CFF16B /* Pods_Dalel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52DBDF8C59EB2AD6A88C3CDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDAE285294AE5A146EF7BAFC /* Pods-Dalel.debug.xcconfig */,
+				D39720B9AF372EB3449E031F /* Pods-Dalel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AECFC88EB188C34B1F4E99D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6A0A0FEC18C33B733889F49 /* Pods_Dalel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF78AA3627A579ED0099F90F = {
 			isa = PBXGroup;
 			children = (
 				FF78AA4127A579ED0099F90F /* Dalel */,
 				FF78AA4027A579ED0099F90F /* Products */,
+				52DBDF8C59EB2AD6A88C3CDD /* Pods */,
+				AECFC88EB188C34B1F4E99D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +168,249 @@
 		FF78AA4127A579ED0099F90F /* Dalel */ = {
 			isa = PBXGroup;
 			children = (
+				FFBFC36227A57FBA0088C717 /* Modules */,
+				FFBFC36127A57FAE0088C717 /* Network Layer */,
+				FFBFC35E27A57EAC0088C717 /* Core */,
+				FFBFC36027A57F5A0088C717 /* Configuration */,
+			);
+			path = Dalel;
+			sourceTree = "<group>";
+		};
+		FFBFC35E27A57EAC0088C717 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FF78AA4B27A579EF0099F90F /* Assets.xcassets */,
+				FFBFC3D127A587AC0088C717 /* Fonts */,
 				FF78AA4227A579ED0099F90F /* AppDelegate.swift */,
 				FF78AA4427A579ED0099F90F /* SceneDelegate.swift */,
-				FF78AA4627A579ED0099F90F /* ViewController.swift */,
-				FF78AA4827A579ED0099F90F /* Main.storyboard */,
-				FF78AA4B27A579EF0099F90F /* Assets.xcassets */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FFBFC36027A57F5A0088C717 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
 				FF78AA4D27A579EF0099F90F /* LaunchScreen.storyboard */,
 				FF78AA5027A579EF0099F90F /* Info.plist */,
 			);
-			path = Dalel;
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		FFBFC36127A57FAE0088C717 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		FFBFC36227A57FBA0088C717 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC38227A581DF0088C717 /* Login */,
+				FFBFC38127A581D20088C717 /* Register */,
+				FFBFC38027A581C60088C717 /* Language */,
+				FFBFC37F27A581B80088C717 /* OnBoarding */,
+				FFBFC37E27A581AB0088C717 /* ResetPassword */,
+				FFBFC37D27A5819D0088C717 /* Verification */,
+				FFBFC38727A5820B0088C717 /* Home */,
+				FFBFC39127A584AD0088C717 /* SchoolDetails */,
+				FFBFC38C27A584850088C717 /* SubHome */,
+				FFBFC39B27A5852F0088C717 /* Search */,
+				FFBFC39627A584E20088C717 /* AddComment */,
+				FFBFC3A027A585530088C717 /* SpecficSearch */,
+				FFBFC3B027A586830088C717 /* Places */,
+				FFBFC3AB27A5864D0088C717 /* AddPlace */,
+				FFBFC3BA27A586F10088C717 /* OurVision */,
+				FFBFC3B927A586E40088C717 /* OurGoal */,
+				FFBFC3BF27A587120088C717 /* ContactUs */,
+				FFBFC3C427A587370088C717 /* Terms&Condition */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FFBFC37D27A5819D0088C717 /* Verification */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC37927A580B00088C717 /* VerificationViewController.swift */,
+				FFBFC37A27A580B00088C717 /* VerificationViewController.xib */,
+			);
+			path = Verification;
+			sourceTree = "<group>";
+		};
+		FFBFC37E27A581AB0088C717 /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC37527A5808F0088C717 /* ResetPasswordViewController.swift */,
+				FFBFC37627A5808F0088C717 /* ResetPasswordViewController.xib */,
+			);
+			path = ResetPassword;
+			sourceTree = "<group>";
+		};
+		FFBFC37F27A581B80088C717 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC37127A5804A0088C717 /* OnBoardingViewController.swift */,
+				FFBFC37227A5804A0088C717 /* OnBoardingViewController.xib */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		FFBFC38027A581C60088C717 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC36D27A580360088C717 /* LanguageViewController.swift */,
+				FFBFC36E27A580360088C717 /* LanguageViewController.xib */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		FFBFC38127A581D20088C717 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC36927A580020088C717 /* RegisterViewController.swift */,
+				FFBFC36A27A580020088C717 /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		FFBFC38227A581DF0088C717 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC36327A57FD00088C717 /* LoginViewController.swift */,
+				FFBFC36427A57FD00088C717 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FFBFC38727A5820B0088C717 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF78AA4827A579ED0099F90F /* Main.storyboard */,
+				FF78AA4627A579ED0099F90F /* ViewController.swift */,
+				FFBFC38327A582050088C717 /* HomeTableViewController.swift */,
+				FFBFC3A127A585AF0088C717 /* FavoriteViewController.swift */,
+				FFBFC3A527A586290088C717 /* ProfileViewController.swift */,
+				FFBFC3A327A585E30088C717 /* NotificationViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FFBFC38C27A584850088C717 /* SubHome */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC38827A5844B0088C717 /* SchoolsViewController.swift */,
+				FFBFC38927A5844B0088C717 /* SchoolsViewController.xib */,
+			);
+			path = SubHome;
+			sourceTree = "<group>";
+		};
+		FFBFC39127A584AD0088C717 /* SchoolDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC38D27A584A00088C717 /* SchoolDetailsViewController.swift */,
+				FFBFC38E27A584A00088C717 /* SchoolDetailsViewController.xib */,
+			);
+			path = SchoolDetails;
+			sourceTree = "<group>";
+		};
+		FFBFC39627A584E20088C717 /* AddComment */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC39227A584DD0088C717 /* AddCommentViewController.swift */,
+				FFBFC39327A584DD0088C717 /* AddCommentViewController.xib */,
+			);
+			path = AddComment;
+			sourceTree = "<group>";
+		};
+		FFBFC39B27A5852F0088C717 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC39727A585280088C717 /* SearchViewController.swift */,
+				FFBFC39827A585280088C717 /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		FFBFC3A027A585530088C717 /* SpecficSearch */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC39C27A585490088C717 /* SpecificSearchViewController.swift */,
+				FFBFC39D27A585490088C717 /* SpecificSearchViewController.xib */,
+			);
+			path = SpecficSearch;
+			sourceTree = "<group>";
+		};
+		FFBFC3AB27A5864D0088C717 /* AddPlace */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC3A727A586480088C717 /* AddPlaceViewController.swift */,
+				FFBFC3A827A586480088C717 /* AddPlaceViewController.xib */,
+			);
+			path = AddPlace;
+			sourceTree = "<group>";
+		};
+		FFBFC3B027A586830088C717 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC3D227A5AFBA0088C717 /* PlacesTableViewController.swift */,
+				FFBFC3D327A5AFBA0088C717 /* PlacesTableViewController.xib */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		FFBFC3B927A586E40088C717 /* OurGoal */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC3B527A586BC0088C717 /* OurGoalViewController.swift */,
+				FFBFC3B627A586BC0088C717 /* OurGoalViewController.xib */,
+			);
+			path = OurGoal;
+			sourceTree = "<group>";
+		};
+		FFBFC3BA27A586F10088C717 /* OurVision */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC3B127A586A50088C717 /* OurVisionViewController.swift */,
+				FFBFC3B227A586A50088C717 /* OurVisionViewController.xib */,
+			);
+			path = OurVision;
+			sourceTree = "<group>";
+		};
+		FFBFC3BF27A587120088C717 /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC3BB27A5870E0088C717 /* ContactUsViewController.swift */,
+				FFBFC3BC27A5870E0088C717 /* ContactUsViewController.xib */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
+		FFBFC3C427A587370088C717 /* Terms&Condition */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC3C027A587320088C717 /* TermsAndConditionViewController.swift */,
+				FFBFC3C127A587320088C717 /* TermsAndConditionViewController.xib */,
+			);
+			path = "Terms&Condition";
+			sourceTree = "<group>";
+		};
+		FFBFC3D127A587AC0088C717 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC3CE27A587A30088C717 /* Amazon-Ember-Medium.ttf */,
+				FFBFC3D027A587A50088C717 /* Amazon-Ember-MediumItalic.ttf */,
+				FFBFC3CC27A587A10088C717 /* AmazonEmber_Bd.ttf */,
+				FFBFC3CB27A587A00088C717 /* AmazonEmber_BdIt.ttf */,
+				FFBFC3C827A5879D0088C717 /* AmazonEmber_He.ttf */,
+				FFBFC3CD27A587A20088C717 /* AmazonEmber_HeIt.ttf */,
+				FFBFC3C727A5879C0088C717 /* AmazonEmber_Lt.ttf */,
+				FFBFC3CF27A587A40088C717 /* AmazonEmber_LtIt.ttf */,
+				FFBFC3C927A5879E0088C717 /* AmazonEmber_Rg.ttf */,
+				FFBFC3CA27A5879F0088C717 /* AmazonEmber_RgIt.ttf */,
+				FFBFC3C527A5879B0088C717 /* AmazonEmber_Th.ttf */,
+				FFBFC3C627A5879C0088C717 /* AmazonEmber_ThIt.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +420,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF78AA5327A579EF0099F90F /* Build configuration list for PBXNativeTarget "Dalel" */;
 			buildPhases = (
+				CF92F9B5AA54A3A0AF7AFC59 /* [CP] Check Pods Manifest.lock */,
 				FF78AA3B27A579ED0099F90F /* Sources */,
 				FF78AA3C27A579ED0099F90F /* Frameworks */,
 				FF78AA3D27A579ED0099F90F /* Resources */,
+				8D9EDECA9F4BAF4FBFA08E1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,21 +473,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBFC3C327A587320088C717 /* TermsAndConditionViewController.xib in Resources */,
+				FFBFC39527A584DD0088C717 /* AddCommentViewController.xib in Resources */,
+				FFBFC37427A5804A0088C717 /* OnBoardingViewController.xib in Resources */,
+				FFBFC36627A57FD00088C717 /* LoginViewController.xib in Resources */,
+				FFBFC3B827A586BC0088C717 /* OurGoalViewController.xib in Resources */,
+				FFBFC3D527A5AFBA0088C717 /* PlacesTableViewController.xib in Resources */,
+				FFBFC36C27A580020088C717 /* RegisterViewController.xib in Resources */,
+				FFBFC3AA27A586480088C717 /* AddPlaceViewController.xib in Resources */,
+				FFBFC37027A580360088C717 /* LanguageViewController.xib in Resources */,
+				FFBFC3BE27A5870E0088C717 /* ContactUsViewController.xib in Resources */,
+				FFBFC38B27A5844B0088C717 /* SchoolsViewController.xib in Resources */,
+				FFBFC39F27A585490088C717 /* SpecificSearchViewController.xib in Resources */,
 				FF78AA4F27A579EF0099F90F /* LaunchScreen.storyboard in Resources */,
+				FFBFC37827A5808F0088C717 /* ResetPasswordViewController.xib in Resources */,
+				FFBFC39027A584A00088C717 /* SchoolDetailsViewController.xib in Resources */,
 				FF78AA4C27A579EF0099F90F /* Assets.xcassets in Resources */,
+				FFBFC3B427A586A50088C717 /* OurVisionViewController.xib in Resources */,
 				FF78AA4A27A579ED0099F90F /* Main.storyboard in Resources */,
+				FFBFC37C27A580B00088C717 /* VerificationViewController.xib in Resources */,
+				FFBFC39A27A585280088C717 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D9EDECA9F4BAF4FBFA08E1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF92F9B5AA54A3A0AF7AFC59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dalel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF78AA3B27A579ED0099F90F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBFC36527A57FD00088C717 /* LoginViewController.swift in Sources */,
+				FFBFC36B27A580020088C717 /* RegisterViewController.swift in Sources */,
+				FFBFC37327A5804A0088C717 /* OnBoardingViewController.swift in Sources */,
+				FFBFC37727A5808F0088C717 /* ResetPasswordViewController.swift in Sources */,
+				FFBFC3C227A587320088C717 /* TermsAndConditionViewController.swift in Sources */,
+				FFBFC3B727A586BC0088C717 /* OurGoalViewController.swift in Sources */,
+				FFBFC38527A582050088C717 /* HomeTableViewController.swift in Sources */,
+				FFBFC36F27A580360088C717 /* LanguageViewController.swift in Sources */,
+				FFBFC3A627A586290088C717 /* ProfileViewController.swift in Sources */,
+				FFBFC3A227A585AF0088C717 /* FavoriteViewController.swift in Sources */,
 				FF78AA4727A579ED0099F90F /* ViewController.swift in Sources */,
+				FFBFC3A927A586480088C717 /* AddPlaceViewController.swift in Sources */,
+				FFBFC39E27A585490088C717 /* SpecificSearchViewController.swift in Sources */,
+				FFBFC3BD27A5870E0088C717 /* ContactUsViewController.swift in Sources */,
+				FFBFC38F27A584A00088C717 /* SchoolDetailsViewController.swift in Sources */,
+				FFBFC39927A585280088C717 /* SearchViewController.swift in Sources */,
+				FFBFC37B27A580B00088C717 /* VerificationViewController.swift in Sources */,
+				FFBFC3A427A585E30088C717 /* NotificationViewController.swift in Sources */,
+				FFBFC3D427A5AFBA0088C717 /* PlacesTableViewController.swift in Sources */,
+				FFBFC39427A584DD0088C717 /* AddCommentViewController.swift in Sources */,
+				FFBFC3B327A586A50088C717 /* OurVisionViewController.swift in Sources */,
 				FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */,
+				FFBFC38A27A5844B0088C717 /* SchoolsViewController.swift in Sources */,
 				FF78AA4527A579ED0099F90F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +712,7 @@
 		};
 		FF78AA5427A579EF0099F90F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDAE285294AE5A146EF7BAFC /* Pods-Dalel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,7 +720,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z5W9MX2B58;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Dalel/Info.plist;
+				INFOPLIST_FILE = /Users/shgardi/Desktop/Dalel/Dalel/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -312,6 +741,7 @@
 		};
 		FF78AA5527A579EF0099F90F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D39720B9AF372EB3449E031F /* Pods-Dalel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,7 +749,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z5W9MX2B58;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Dalel/Info.plist;
+				INFOPLIST_FILE = /Users/shgardi/Desktop/Dalel/Dalel/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

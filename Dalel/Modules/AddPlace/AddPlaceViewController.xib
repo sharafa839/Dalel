@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmazonEmber_Bd.ttf">
+            <string>AmazonEmber-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddPlaceViewController" customModule="Dalel" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اهلا بك في دليل التعليم" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpR-EV-53y">
+                    <rect key="frame" x="123" y="94" width="168.5" height="22"/>
+                    <fontDescription key="fontDescription" name="AmazonEmber-Bold" family="Amazon Ember" pointSize="18"/>
+                    <color key="textColor" name="MainColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اضف مكانك في دليل التعليم " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TkB-1G-PXA">
+                    <rect key="frame" x="81" y="136" width="252" height="27"/>
+                    <fontDescription key="fontDescription" name="AmazonEmber-Bold" family="Amazon Ember" pointSize="22"/>
+                    <color key="textColor" name="MainColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wqw-De-0qT">
+                    <rect key="frame" x="40" y="203" width="334" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jnN-Cv-alU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dbI-8h-YT0">
+                    <rect key="frame" x="40" y="276" width="334" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="fF2-Vg-Pdq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="esr-Ua-MKK">
+                    <rect key="frame" x="40" y="354" width="334" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="6ew-aT-rdR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5a-Pm-SY5">
+                    <rect key="frame" x="40" y="516" width="334" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="YWr-dm-3Xw"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="الصور"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjU-hb-CPd">
+                    <rect key="frame" x="40" y="621" width="334" height="50"/>
+                    <color key="backgroundColor" name="MainColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="xuB-og-14f"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="اضافة "/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wqw-De-0qT" firstAttribute="top" secondItem="TkB-1G-PXA" secondAttribute="bottom" constant="40" id="7Ba-lN-SNN"/>
+                <constraint firstItem="dbI-8h-YT0" firstAttribute="leading" secondItem="wqw-De-0qT" secondAttribute="leading" id="Bje-Fm-dPj"/>
+                <constraint firstItem="esr-Ua-MKK" firstAttribute="trailing" secondItem="dbI-8h-YT0" secondAttribute="trailing" id="DMM-Vn-8jU"/>
+                <constraint firstItem="VjU-hb-CPd" firstAttribute="leading" secondItem="t5a-Pm-SY5" secondAttribute="leading" id="DTY-GP-dgL"/>
+                <constraint firstItem="wqw-De-0qT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="ESd-2P-7RA"/>
+                <constraint firstItem="mpR-EV-53y" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IxP-ax-YzT"/>
+                <constraint firstItem="VjU-hb-CPd" firstAttribute="top" secondItem="t5a-Pm-SY5" secondAttribute="bottom" constant="65" id="NBH-Az-r9a"/>
+                <constraint firstItem="t5a-Pm-SY5" firstAttribute="trailing" secondItem="esr-Ua-MKK" secondAttribute="trailing" id="NSR-mH-GYd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wqw-De-0qT" secondAttribute="trailing" constant="40" id="OeN-MY-1NZ"/>
+                <constraint firstItem="esr-Ua-MKK" firstAttribute="top" secondItem="dbI-8h-YT0" secondAttribute="bottom" constant="38" id="OuY-W5-WIN"/>
+                <constraint firstItem="TkB-1G-PXA" firstAttribute="top" secondItem="mpR-EV-53y" secondAttribute="bottom" constant="20" id="SgO-iY-VVg"/>
+                <constraint firstItem="TkB-1G-PXA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SwP-hq-C9i"/>
+                <constraint firstItem="mpR-EV-53y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="ZAF-9v-Xkl"/>
+                <constraint firstItem="t5a-Pm-SY5" firstAttribute="top" secondItem="esr-Ua-MKK" secondAttribute="bottom" constant="52" id="a0L-gg-cBM"/>
+                <constraint firstItem="esr-Ua-MKK" firstAttribute="leading" secondItem="dbI-8h-YT0" secondAttribute="leading" id="bwW-yc-m8D"/>
+                <constraint firstItem="dbI-8h-YT0" firstAttribute="trailing" secondItem="wqw-De-0qT" secondAttribute="trailing" id="eQ0-Hg-WuD"/>
+                <constraint firstItem="dbI-8h-YT0" firstAttribute="top" secondItem="wqw-De-0qT" secondAttribute="bottom" constant="33" id="fpn-U3-zTP"/>
+                <constraint firstItem="t5a-Pm-SY5" firstAttribute="leading" secondItem="esr-Ua-MKK" secondAttribute="leading" id="ieD-C7-pd3"/>
+                <constraint firstItem="VjU-hb-CPd" firstAttribute="trailing" secondItem="t5a-Pm-SY5" secondAttribute="trailing" id="q0b-6p-DU1"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="88"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="MainColor">
+            <color red="0.28235294117647058" green="0.792156862745098" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

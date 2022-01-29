@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SchoolsViewController" customModule="Dalel" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="britich_school" translatesAutoresizingMaskIntoConstraints="NO" id="XQU-Yy-OA6">
+                    <rect key="frame" x="0.0" y="44" width="414" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="170" id="xPE-sl-JpA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المدارس" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xq-Ma-Fm8">
+                    <rect key="frame" x="179" y="143" width="56.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Mz9-tM-372">
+                    <rect key="frame" x="0.0" y="214" width="414" height="648"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0oo-lH-KRx">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XQU-Yy-OA6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ccp-WC-Tlw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mz9-tM-372" secondAttribute="trailing" id="Kht-qZ-LMC"/>
+                <constraint firstItem="Mz9-tM-372" firstAttribute="top" secondItem="XQU-Yy-OA6" secondAttribute="bottom" id="Q9H-dM-zCd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Mz9-tM-372" secondAttribute="bottom" id="UIo-xV-dZu"/>
+                <constraint firstItem="XQU-Yy-OA6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="X4x-wK-IZY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XQU-Yy-OA6" secondAttribute="trailing" id="YEI-kP-YGD"/>
+                <constraint firstItem="Mz9-tM-372" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZYb-E3-qpY"/>
+                <constraint firstItem="4xq-Ma-Fm8" firstAttribute="centerX" secondItem="XQU-Yy-OA6" secondAttribute="centerX" id="i17-ji-U7h"/>
+                <constraint firstItem="4xq-Ma-Fm8" firstAttribute="centerY" secondItem="XQU-Yy-OA6" secondAttribute="centerY" constant="24.5" id="ili-PZ-ooL"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="88"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="britich_school" width="375" height="309"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmazonEmber_Bd.ttf">
+            <string>AmazonEmber-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCommentViewController" customModule="Dalel" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="MzB-2W-PPB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من فضلك اضف تقييمك" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7r-wH-JlN">
+                    <rect key="frame" x="60" y="64" width="294" height="26.5"/>
+                    <fontDescription key="fontDescription" name="AmazonEmber-Bold" family="Amazon Ember" pointSize="22"/>
+                    <color key="textColor" name="MainColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fR2-IJ-QWw">
+                    <rect key="frame" x="40" y="276.5" width="334" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="e6g-SD-A7D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6pc-Qe-xhx">
+                    <rect key="frame" x="40" y="354.5" width="334" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="vS1-DU-l8u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cS-cX-B5G">
+                    <rect key="frame" x="40" y="494.5" width="334" height="50"/>
+                    <color key="backgroundColor" name="MainColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="OSU-kM-csR"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="اضافة "/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-a2-DNp">
+                    <rect key="frame" x="40" y="203.5" width="334" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="r5l-Bt-d3E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DI6-g1-D4t">
+                    <rect key="frame" x="60" y="110.5" width="294" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr6-Jq-AEP">
+                            <rect key="frame" x="0.0" y="0.0" width="59" height="43"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Star 6"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fu6-uz-C7h">
+                            <rect key="frame" x="59" y="0.0" width="58.5" height="43"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Star 6"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4x-9v-Hba">
+                            <rect key="frame" x="117.5" y="0.0" width="59" height="43"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Star 6"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWB-Pq-4oO">
+                            <rect key="frame" x="176.5" y="0.0" width="58.5" height="43"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Star 6"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HH5-jc-4g0">
+                            <rect key="frame" x="235" y="0.0" width="59" height="43"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Star 6"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hCt-pe-OEJ"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2cS-cX-B5G" firstAttribute="centerX" secondItem="MzB-2W-PPB" secondAttribute="centerX" id="0mf-Np-2TY"/>
+                <constraint firstItem="DI6-g1-D4t" firstAttribute="top" secondItem="R7r-wH-JlN" secondAttribute="bottom" constant="20" id="31w-Ms-yyY"/>
+                <constraint firstItem="2cS-cX-B5G" firstAttribute="trailing" secondItem="6pc-Qe-xhx" secondAttribute="trailing" id="3BD-3l-wdu"/>
+                <constraint firstItem="fR2-IJ-QWw" firstAttribute="top" secondItem="NfG-a2-DNp" secondAttribute="bottom" constant="33" id="3ey-q4-9RP"/>
+                <constraint firstItem="2cS-cX-B5G" firstAttribute="leading" secondItem="6pc-Qe-xhx" secondAttribute="leading" id="H29-Yg-anK"/>
+                <constraint firstItem="DI6-g1-D4t" firstAttribute="centerX" secondItem="MzB-2W-PPB" secondAttribute="centerX" id="HTL-eI-BV8"/>
+                <constraint firstItem="fR2-IJ-QWw" firstAttribute="leading" secondItem="NfG-a2-DNp" secondAttribute="leading" id="LZF-Lx-Iun"/>
+                <constraint firstItem="R7r-wH-JlN" firstAttribute="top" secondItem="hCt-pe-OEJ" secondAttribute="top" constant="20" id="M0v-DF-yWm"/>
+                <constraint firstItem="6pc-Qe-xhx" firstAttribute="leading" secondItem="fR2-IJ-QWw" secondAttribute="leading" id="Pb1-97-Asm"/>
+                <constraint firstItem="fR2-IJ-QWw" firstAttribute="trailing" secondItem="NfG-a2-DNp" secondAttribute="trailing" id="Y4h-eK-9JZ"/>
+                <constraint firstItem="NfG-a2-DNp" firstAttribute="top" secondItem="DI6-g1-D4t" secondAttribute="bottom" constant="50" id="be6-xS-vEo"/>
+                <constraint firstItem="2cS-cX-B5G" firstAttribute="top" secondItem="6pc-Qe-xhx" secondAttribute="bottom" constant="30" id="cAS-cY-4Ep"/>
+                <constraint firstItem="6pc-Qe-xhx" firstAttribute="top" secondItem="fR2-IJ-QWw" secondAttribute="bottom" constant="38" id="cak-R5-Seh"/>
+                <constraint firstItem="DI6-g1-D4t" firstAttribute="trailing" secondItem="R7r-wH-JlN" secondAttribute="trailing" id="gNl-Ah-qWb"/>
+                <constraint firstItem="NfG-a2-DNp" firstAttribute="leading" secondItem="hCt-pe-OEJ" secondAttribute="leading" constant="40" id="gou-tL-TLZ"/>
+                <constraint firstItem="hCt-pe-OEJ" firstAttribute="trailing" secondItem="R7r-wH-JlN" secondAttribute="trailing" constant="60" id="mOY-wi-G8T"/>
+                <constraint firstItem="R7r-wH-JlN" firstAttribute="centerX" secondItem="MzB-2W-PPB" secondAttribute="centerX" id="oiP-uL-4rF"/>
+                <constraint firstItem="6pc-Qe-xhx" firstAttribute="trailing" secondItem="fR2-IJ-QWw" secondAttribute="trailing" id="zGS-oZ-lqj"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="88"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Star 6" width="32" height="29"/>
+        <namedColor name="MainColor">
+            <color red="0.28235294117647058" green="0.792156862745098" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

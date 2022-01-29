@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Amazon-Ember-MediumItalic.ttf">
+            <string>AmazonEmber-MediumItalic</string>
+        </array>
+        <array key="AmazonEmber_Bd.ttf">
+            <string>AmazonEmber-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Dalel" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Daleel_logo_2" translatesAutoresizingMaskIntoConstraints="NO" id="nKB-Sd-cz0">
+                    <rect key="frame" x="157" y="52" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Hw0-On-eSg"/>
+                        <constraint firstAttribute="width" constant="100" id="qgo-XT-Grp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="قم بانشاء حساب جديد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyZ-He-pOC">
+                    <rect key="frame" x="211" y="168" width="163" height="22"/>
+                    <fontDescription key="fontDescription" name="AmazonEmber-Bold" family="Amazon Ember" pointSize="18"/>
+                    <color key="textColor" name="MainColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AEM-J0-TEn" customClass="MDCBaseTextField">
+                    <rect key="frame" x="40" y="244" width="334" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Pe-ok-9Bo" customClass="MDCBaseTextField">
+                    <rect key="frame" x="40" y="294" width="272" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Z31-hW-A8t">
+                    <rect key="frame" x="122" y="206" width="252" height="22"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="برجاء ملئ الحقول التالية للمتابعة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18e-q5-eDd">
+                            <rect key="frame" x="0.0" y="0.0" width="214.5" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحبا" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZC-ar-0zk">
+                            <rect key="frame" x="216.5" y="0.0" width="35.5" height="22"/>
+                            <fontDescription key="fontDescription" name="AmazonEmber-MediumItalic" family="Amazon Ember" pointSize="18"/>
+                            <color key="textColor" systemColor="systemOrangeColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nSF-XO-LAN" customClass="MDCBaseTextField">
+                    <rect key="frame" x="40" y="344" width="334" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zh6-np-amd" customClass="MDCBaseTextField">
+                    <rect key="frame" x="40" y="394" width="334" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwf-Mo-6Ha" customClass="MDCBaseTextField">
+                    <rect key="frame" x="40" y="444" width="334" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ljh-Bn-sGK" customClass="MDCBaseTextField">
+                    <rect key="frame" x="40" y="494" width="334" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vb5-Hz-O3L">
+                    <rect key="frame" x="317" y="294" width="57" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ije-fu-BCa">
+                    <rect key="frame" x="40" y="544" width="334" height="50"/>
+                    <color key="backgroundColor" name="MainColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="pbU-Kh-lMv"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="HbG-7m-E9Y">
+                    <rect key="frame" x="86" y="608" width="242" height="31"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVW-vK-cnG">
+                            <rect key="frame" x="0.0" y="0.0" width="170" height="31"/>
+                            <color key="tintColor" name="MainColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="قم بتسجيل الدخول"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" لديك حساب " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ld-gg-hkE">
+                            <rect key="frame" x="171" y="0.0" width="71" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="HbG-7m-E9Y" firstAttribute="trailing" secondItem="ije-fu-BCa" secondAttribute="trailing" constant="-46" id="0T4-PU-jBn"/>
+                <constraint firstItem="HbG-7m-E9Y" firstAttribute="top" secondItem="ije-fu-BCa" secondAttribute="bottom" constant="14" id="0ha-YD-eh3"/>
+                <constraint firstItem="ije-fu-BCa" firstAttribute="trailing" secondItem="Ljh-Bn-sGK" secondAttribute="trailing" id="0o0-Ri-3Eb"/>
+                <constraint firstItem="nSF-XO-LAN" firstAttribute="trailing" secondItem="AEM-J0-TEn" secondAttribute="trailing" id="211-YT-q2E"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iyZ-He-pOC" secondAttribute="trailing" constant="40" id="2za-MJ-nrN"/>
+                <constraint firstItem="Ljh-Bn-sGK" firstAttribute="leading" secondItem="dwf-Mo-6Ha" secondAttribute="leading" id="4LS-W3-Dcm"/>
+                <constraint firstItem="4Pe-ok-9Bo" firstAttribute="centerX" secondItem="AEM-J0-TEn" secondAttribute="centerX" constant="-31" id="6B7-IF-i8H"/>
+                <constraint firstItem="4Pe-ok-9Bo" firstAttribute="top" secondItem="AEM-J0-TEn" secondAttribute="bottom" constant="16" id="8G4-mQ-63p"/>
+                <constraint firstItem="dwf-Mo-6Ha" firstAttribute="trailing" secondItem="zh6-np-amd" secondAttribute="trailing" id="99k-Ta-Pof"/>
+                <constraint firstItem="ije-fu-BCa" firstAttribute="leading" secondItem="Ljh-Bn-sGK" secondAttribute="leading" id="Atc-UF-xma"/>
+                <constraint firstItem="nSF-XO-LAN" firstAttribute="top" secondItem="4Pe-ok-9Bo" secondAttribute="bottom" constant="16" id="BqF-yx-g5D"/>
+                <constraint firstItem="ije-fu-BCa" firstAttribute="top" secondItem="Ljh-Bn-sGK" secondAttribute="bottom" constant="16" id="HeY-dW-1V2"/>
+                <constraint firstItem="zh6-np-amd" firstAttribute="trailing" secondItem="nSF-XO-LAN" secondAttribute="trailing" id="IZ4-Y2-IWO"/>
+                <constraint firstItem="Z31-hW-A8t" firstAttribute="trailing" secondItem="iyZ-He-pOC" secondAttribute="trailing" id="JNa-5k-LBz"/>
+                <constraint firstItem="Vb5-Hz-O3L" firstAttribute="top" secondItem="AEM-J0-TEn" secondAttribute="bottom" constant="16" id="KtJ-Vt-Xel"/>
+                <constraint firstItem="nSF-XO-LAN" firstAttribute="leading" secondItem="AEM-J0-TEn" secondAttribute="leading" id="MeU-pq-CLF"/>
+                <constraint firstItem="nKB-Sd-cz0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="N08-fa-f1a"/>
+                <constraint firstItem="nKB-Sd-cz0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="O3n-cT-Fdc"/>
+                <constraint firstItem="Z31-hW-A8t" firstAttribute="top" secondItem="iyZ-He-pOC" secondAttribute="bottom" constant="16" id="WRE-Ia-4KI"/>
+                <constraint firstItem="AEM-J0-TEn" firstAttribute="top" secondItem="Z31-hW-A8t" secondAttribute="bottom" constant="16" id="XqN-ct-RfR"/>
+                <constraint firstItem="4Pe-ok-9Bo" firstAttribute="leading" secondItem="AEM-J0-TEn" secondAttribute="leading" id="b5G-yu-o57"/>
+                <constraint firstItem="Vb5-Hz-O3L" firstAttribute="leading" secondItem="4Pe-ok-9Bo" secondAttribute="trailing" constant="5" id="bqL-EJ-igt"/>
+                <constraint firstItem="HbG-7m-E9Y" firstAttribute="leading" secondItem="ije-fu-BCa" secondAttribute="leading" constant="46" id="d30-dQ-4vw"/>
+                <constraint firstItem="Ljh-Bn-sGK" firstAttribute="top" secondItem="dwf-Mo-6Ha" secondAttribute="bottom" constant="16" id="dAl-kh-9tm"/>
+                <constraint firstItem="4Pe-ok-9Bo" firstAttribute="trailing" secondItem="AEM-J0-TEn" secondAttribute="trailing" constant="-62" id="hRT-NB-9NH"/>
+                <constraint firstItem="AEM-J0-TEn" firstAttribute="trailing" secondItem="Z31-hW-A8t" secondAttribute="trailing" id="jaI-yx-YPc"/>
+                <constraint firstItem="dwf-Mo-6Ha" firstAttribute="top" secondItem="zh6-np-amd" secondAttribute="bottom" constant="16" id="jcJ-qr-Dxi"/>
+                <constraint firstItem="AEM-J0-TEn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="m6F-fe-Lyg"/>
+                <constraint firstItem="Ljh-Bn-sGK" firstAttribute="trailing" secondItem="dwf-Mo-6Ha" secondAttribute="trailing" id="nUF-8X-4vN"/>
+                <constraint firstItem="Vb5-Hz-O3L" firstAttribute="trailing" secondItem="AEM-J0-TEn" secondAttribute="trailing" id="nXb-Zd-DSg"/>
+                <constraint firstItem="iyZ-He-pOC" firstAttribute="top" secondItem="nKB-Sd-cz0" secondAttribute="bottom" constant="16" id="qaj-YC-fgS"/>
+                <constraint firstItem="dwf-Mo-6Ha" firstAttribute="leading" secondItem="zh6-np-amd" secondAttribute="leading" id="rWQ-P2-dxF"/>
+                <constraint firstItem="zh6-np-amd" firstAttribute="leading" secondItem="nSF-XO-LAN" secondAttribute="leading" id="vxa-jX-pIY"/>
+                <constraint firstItem="zh6-np-amd" firstAttribute="top" secondItem="nSF-XO-LAN" secondAttribute="bottom" constant="16" id="xbM-wG-ZLE"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="87.723214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Daleel_logo_2" width="1000" height="1000"/>
+        <namedColor name="MainColor">
+            <color red="0.28235294117647058" green="0.792156862745098" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
