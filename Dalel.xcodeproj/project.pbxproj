@@ -14,6 +14,11 @@
 		FF78AA4A27A579ED0099F90F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4827A579ED0099F90F /* Main.storyboard */; };
 		FF78AA4C27A579EF0099F90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4B27A579EF0099F90F /* Assets.xcassets */; };
 		FF78AA4F27A579EF0099F90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4D27A579EF0099F90F /* LaunchScreen.storyboard */; };
+		FF7F21AB27ADFD5B007606DB /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21A927ADFD5B007606DB /* ErrorResponse.swift */; };
+		FF7F21AC27ADFD5B007606DB /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21AA27ADFD5B007606DB /* BaseResponse.swift */; };
+		FF7F21AD27ADFD5B007606DB /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21A827ADFD5B007606DB /* TargetType.swift */; };
+		FF7F21B427ADFD89007606DB /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B327ADFD89007606DB /* BaseApi.swift */; };
+		FF7F21B727AE05C4007606DB /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B627AE05C4007606DB /* EndPoints.swift */; };
 		FFBFC36527A57FD00088C717 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36327A57FD00088C717 /* LoginViewController.swift */; };
 		FFBFC36627A57FD00088C717 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC36427A57FD00088C717 /* LoginViewController.xib */; };
 		FFBFC36B27A580020088C717 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36927A580020088C717 /* RegisterViewController.swift */; };
@@ -66,6 +71,15 @@
 		FF78AA4B27A579EF0099F90F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF78AA4E27A579EF0099F90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF78AA5027A579EF0099F90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7F21A827ADFD5B007606DB /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		FF7F21A927ADFD5B007606DB /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		FF7F21AA27ADFD5B007606DB /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		FF7F21AF27ADFD62007606DB /* UsersNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersNetworking.swift; sourceTree = "<group>"; };
+		FF7F21B027ADFD62007606DB /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		FF7F21B127ADFD62007606DB /* AuthParmters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthParmters.swift; sourceTree = "<group>"; };
+		FF7F21B227ADFD62007606DB /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
+		FF7F21B327ADFD89007606DB /* BaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseApi.swift; path = ../../../Baladna/Baladna/NetworkLayer/BaseNetwork/BaseApi.swift; sourceTree = "<group>"; };
+		FF7F21B627AE05C4007606DB /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		FFBFC36327A57FD00088C717 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFBFC36427A57FD00088C717 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		FFBFC36927A580020088C717 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +190,25 @@
 			path = Dalel;
 			sourceTree = "<group>";
 		};
+		FF7F21AE27ADFD62007606DB /* AuthNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				FF7F21B527ADFE07007606DB /* AuthModels */,
+				FF7F21AF27ADFD62007606DB /* UsersNetworking.swift */,
+				FF7F21B127ADFD62007606DB /* AuthParmters.swift */,
+				FF7F21B227ADFD62007606DB /* AuthApi.swift */,
+			);
+			path = AuthNetworking;
+			sourceTree = "<group>";
+		};
+		FF7F21B527ADFE07007606DB /* AuthModels */ = {
+			isa = PBXGroup;
+			children = (
+				FF7F21B027ADFD62007606DB /* RegisterModel.swift */,
+			);
+			path = AuthModels;
+			sourceTree = "<group>";
+		};
 		FFBFC35E27A57EAC0088C717 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +232,12 @@
 		FFBFC36127A57FAE0088C717 /* Network Layer */ = {
 			isa = PBXGroup;
 			children = (
+				FF7F21AA27ADFD5B007606DB /* BaseResponse.swift */,
+				FF7F21A927ADFD5B007606DB /* ErrorResponse.swift */,
+				FF7F21B327ADFD89007606DB /* BaseApi.swift */,
+				FF7F21A827ADFD5B007606DB /* TargetType.swift */,
+				FF7F21AE27ADFD62007606DB /* AuthNetworking */,
+				FF7F21B627AE05C4007606DB /* EndPoints.swift */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -550,25 +589,30 @@
 				FFBFC37327A5804A0088C717 /* OnBoardingViewController.swift in Sources */,
 				FFBFC37727A5808F0088C717 /* ResetPasswordViewController.swift in Sources */,
 				FFBFC3C227A587320088C717 /* TermsAndConditionViewController.swift in Sources */,
+				FF7F21AB27ADFD5B007606DB /* ErrorResponse.swift in Sources */,
 				FFBFC3B727A586BC0088C717 /* OurGoalViewController.swift in Sources */,
 				FFBFC38527A582050088C717 /* HomeTableViewController.swift in Sources */,
 				FFBFC36F27A580360088C717 /* LanguageViewController.swift in Sources */,
 				FFBFC3A627A586290088C717 /* ProfileViewController.swift in Sources */,
 				FFBFC3A227A585AF0088C717 /* FavoriteViewController.swift in Sources */,
 				FF78AA4727A579ED0099F90F /* ViewController.swift in Sources */,
+				FF7F21AD27ADFD5B007606DB /* TargetType.swift in Sources */,
 				FFBFC3A927A586480088C717 /* AddPlaceViewController.swift in Sources */,
 				FFBFC39E27A585490088C717 /* SpecificSearchViewController.swift in Sources */,
 				FFBFC3BD27A5870E0088C717 /* ContactUsViewController.swift in Sources */,
 				FFBFC38F27A584A00088C717 /* SchoolDetailsViewController.swift in Sources */,
 				FFBFC39927A585280088C717 /* SearchViewController.swift in Sources */,
+				FF7F21B727AE05C4007606DB /* EndPoints.swift in Sources */,
 				FFBFC37B27A580B00088C717 /* VerificationViewController.swift in Sources */,
 				FFBFC3A427A585E30088C717 /* NotificationViewController.swift in Sources */,
 				FFBFC3D427A5AFBA0088C717 /* PlacesTableViewController.swift in Sources */,
+				FF7F21B427ADFD89007606DB /* BaseApi.swift in Sources */,
 				FFBFC39427A584DD0088C717 /* AddCommentViewController.swift in Sources */,
 				FFBFC3B327A586A50088C717 /* OurVisionViewController.swift in Sources */,
 				FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */,
 				FFBFC38A27A5844B0088C717 /* SchoolsViewController.swift in Sources */,
 				FF78AA4527A579ED0099F90F /* SceneDelegate.swift in Sources */,
+				FF7F21AC27ADFD5B007606DB /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,7 +764,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z5W9MX2B58;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = /Users/shgardi/Desktop/Dalel/Dalel/Configuration/Info.plist;
+				INFOPLIST_FILE = /Users/shgardi/Desktop/Home/Dalel/Dalel/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -749,7 +793,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z5W9MX2B58;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = /Users/shgardi/Desktop/Dalel/Dalel/Configuration/Info.plist;
+				INFOPLIST_FILE = /Users/shgardi/Desktop/Home/Dalel/Dalel/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
