@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		54844C3FD69E01E615CFF16B /* Pods_Dalel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A0A0FEC18C33B733889F49 /* Pods_Dalel.framework */; };
 		FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4227A579ED0099F90F /* AppDelegate.swift */; };
-		FF78AA4527A579ED0099F90F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4427A579ED0099F90F /* SceneDelegate.swift */; };
 		FF78AA4727A579ED0099F90F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4627A579ED0099F90F /* ViewController.swift */; };
 		FF78AA4A27A579ED0099F90F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4827A579ED0099F90F /* Main.storyboard */; };
 		FF78AA4C27A579EF0099F90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4B27A579EF0099F90F /* Assets.xcassets */; };
@@ -19,6 +18,40 @@
 		FF7F21AD27ADFD5B007606DB /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21A827ADFD5B007606DB /* TargetType.swift */; };
 		FF7F21B427ADFD89007606DB /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B327ADFD89007606DB /* BaseApi.swift */; };
 		FF7F21B727AE05C4007606DB /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B627AE05C4007606DB /* EndPoints.swift */; };
+		FF7F21B927AECAD8007606DB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B827AECAD8007606DB /* LoginModel.swift */; };
+		FF7F21BB27AECB30007606DB /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21BA27AECB30007606DB /* Logout.swift */; };
+		FF7F21BE27AED210007606DB /* ProfileApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21BD27AED210007606DB /* ProfileApi.swift */; };
+		FF7F21C027AED222007606DB /* ProfileNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21BF27AED222007606DB /* ProfileNetworking.swift */; };
+		FF7F21C227AED458007606DB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21C127AED458007606DB /* Router.swift */; };
+		FF7F21DD27AEFBF9007606DB /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21D327AEFBF8007606DB /* Alert.swift */; };
+		FF7F21DE27AEFBF9007606DB /* UIButton + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21CB27AEFBF7007606DB /* UIButton + extension.swift */; };
+		FF7F21DF27AEFBF9007606DB /* UIView + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21D627AEFBF9007606DB /* UIView + extension.swift */; };
+		FF7F21E027AEFBF9007606DB /* CollectionCell + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21CE27AEFBF8007606DB /* CollectionCell + extension.swift */; };
+		FF7F21E127AEFBF9007606DB /* DispatchQueue + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21CF27AEFBF8007606DB /* DispatchQueue + Extensions.swift */; };
+		FF7F21E227AEFBF9007606DB /* HapticEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21D427AEFBF8007606DB /* HapticEffect.swift */; };
+		FF7F21E327AEFBF9007606DB /* imageSliderShowCong.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21D827AEFBF9007606DB /* imageSliderShowCong.swift */; };
+		FF7F21E427AEFBF9007606DB /* Double + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21DC27AEFBF9007606DB /* Double + Extension.swift */; };
+		FF7F21E527AEFBF9007606DB /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21D127AEFBF8007606DB /* DesignView.swift */; };
+		FF7F21E627AEFBF9007606DB /* TimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21D527AEFBF8007606DB /* TimeHelper.swift */; };
+		FF7F21E727AEFBF9007606DB /* HelperK.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21CC27AEFBF7007606DB /* HelperK.swift */; };
+		FF7F21E827AEFBF9007606DB /* HelperFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21C827AEFBF7007606DB /* HelperFunc.swift */; };
+		FF7F21E927AEFBF9007606DB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21D927AEFBF9007606DB /* CardView.swift */; };
+		FF7F21EA27AEFBF9007606DB /* LottieHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21D227AEFBF8007606DB /* LottieHelper.swift */; };
+		FF7F21EB27AEFBF9007606DB /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21D027AEFBF8007606DB /* LocalizationManager.swift */; };
+		FF7F21EC27AEFBF9007606DB /* RightToLeftTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21D727AEFBF9007606DB /* RightToLeftTransition.swift */; };
+		FF7F21ED27AEFBF9007606DB /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21CD27AEFBF7007606DB /* General.swift */; };
+		FF7F21EE27AEFBF9007606DB /* TableView + Extesnions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21CA27AEFBF7007606DB /* TableView + Extesnions.swift */; };
+		FF7F21EF27AEFBFA007606DB /* TableViewController + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21DA27AEFBF9007606DB /* TableViewController + extension.swift */; };
+		FF7F21F027AEFBFA007606DB /* UITextField + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21DB27AEFBF9007606DB /* UITextField + extension.swift */; };
+		FF7F21F127AEFBFA007606DB /* ViewController + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21C927AEFBF7007606DB /* ViewController + extensions.swift */; };
+		FF7F21F627AEFC23007606DB /* CheckLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21F527AEFC23007606DB /* CheckLanguage.swift */; };
+		FF7F21F727AEFC23007606DB /* ActivityIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21F427AEFC23007606DB /* ActivityIndicatorManager.swift */; };
+		FF7F21F827AEFC23007606DB /* Str + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21F327AEFC23007606DB /* Str + Extension.swift */; };
+		FF7F21FA27AEFC29007606DB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21F927AEFC28007606DB /* Colors.swift */; };
+		FF7F21FD27AEFE54007606DB /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21FC27AEFE54007606DB /* RegisterViewModel.swift */; };
+		FF7F21FF27AF0574007606DB /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B227ADFD62007606DB /* AuthApi.swift */; };
+		FF7F220027AF0597007606DB /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B027ADFD62007606DB /* RegisterModel.swift */; };
+		FF7F220127AF05F9007606DB /* UsersNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21AF27ADFD62007606DB /* UsersNetworking.swift */; };
 		FFBFC36527A57FD00088C717 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36327A57FD00088C717 /* LoginViewController.swift */; };
 		FFBFC36627A57FD00088C717 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC36427A57FD00088C717 /* LoginViewController.xib */; };
 		FFBFC36B27A580020088C717 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36927A580020088C717 /* RegisterViewController.swift */; };
@@ -65,21 +98,50 @@
 		DDAE285294AE5A146EF7BAFC /* Pods-Dalel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dalel.debug.xcconfig"; path = "Target Support Files/Pods-Dalel/Pods-Dalel.debug.xcconfig"; sourceTree = "<group>"; };
 		FF78AA3F27A579ED0099F90F /* Dalel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dalel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF78AA4227A579ED0099F90F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF78AA4427A579ED0099F90F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF78AA4627A579ED0099F90F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF78AA4927A579ED0099F90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF78AA4B27A579EF0099F90F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF78AA4E27A579EF0099F90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FF78AA5027A579EF0099F90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF7F21A827ADFD5B007606DB /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		FF7F21A927ADFD5B007606DB /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		FF7F21AA27ADFD5B007606DB /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		FF7F21AF27ADFD62007606DB /* UsersNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersNetworking.swift; sourceTree = "<group>"; };
 		FF7F21B027ADFD62007606DB /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
-		FF7F21B127ADFD62007606DB /* AuthParmters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthParmters.swift; sourceTree = "<group>"; };
 		FF7F21B227ADFD62007606DB /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
 		FF7F21B327ADFD89007606DB /* BaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseApi.swift; path = ../../../Baladna/Baladna/NetworkLayer/BaseNetwork/BaseApi.swift; sourceTree = "<group>"; };
 		FF7F21B627AE05C4007606DB /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		FF7F21B827AECAD8007606DB /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		FF7F21BA27AECB30007606DB /* Logout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
+		FF7F21BD27AED210007606DB /* ProfileApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileApi.swift; sourceTree = "<group>"; };
+		FF7F21BF27AED222007606DB /* ProfileNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNetworking.swift; sourceTree = "<group>"; };
+		FF7F21C127AED458007606DB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FF7F21C427AED8FB007606DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7F21C827AEFBF7007606DB /* HelperFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunc.swift; sourceTree = "<group>"; };
+		FF7F21C927AEFBF7007606DB /* ViewController + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + extensions.swift"; sourceTree = "<group>"; };
+		FF7F21CA27AEFBF7007606DB /* TableView + Extesnions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView + Extesnions.swift"; sourceTree = "<group>"; };
+		FF7F21CB27AEFBF7007606DB /* UIButton + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + extension.swift"; sourceTree = "<group>"; };
+		FF7F21CC27AEFBF7007606DB /* HelperK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperK.swift; sourceTree = "<group>"; };
+		FF7F21CD27AEFBF7007606DB /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		FF7F21CE27AEFBF8007606DB /* CollectionCell + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionCell + extension.swift"; sourceTree = "<group>"; };
+		FF7F21CF27AEFBF8007606DB /* DispatchQueue + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue + Extensions.swift"; sourceTree = "<group>"; };
+		FF7F21D027AEFBF8007606DB /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
+		FF7F21D127AEFBF8007606DB /* DesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
+		FF7F21D227AEFBF8007606DB /* LottieHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieHelper.swift; sourceTree = "<group>"; };
+		FF7F21D327AEFBF8007606DB /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		FF7F21D427AEFBF8007606DB /* HapticEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticEffect.swift; sourceTree = "<group>"; };
+		FF7F21D527AEFBF8007606DB /* TimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHelper.swift; sourceTree = "<group>"; };
+		FF7F21D627AEFBF9007606DB /* UIView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + extension.swift"; sourceTree = "<group>"; };
+		FF7F21D727AEFBF9007606DB /* RightToLeftTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightToLeftTransition.swift; sourceTree = "<group>"; };
+		FF7F21D827AEFBF9007606DB /* imageSliderShowCong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSliderShowCong.swift; sourceTree = "<group>"; };
+		FF7F21D927AEFBF9007606DB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FF7F21DA27AEFBF9007606DB /* TableViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewController + extension.swift"; sourceTree = "<group>"; };
+		FF7F21DB27AEFBF9007606DB /* UITextField + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + extension.swift"; sourceTree = "<group>"; };
+		FF7F21DC27AEFBF9007606DB /* Double + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double + Extension.swift"; sourceTree = "<group>"; };
+		FF7F21F327AEFC23007606DB /* Str + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Str + Extension.swift"; sourceTree = "<group>"; };
+		FF7F21F427AEFC23007606DB /* ActivityIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorManager.swift; sourceTree = "<group>"; };
+		FF7F21F527AEFC23007606DB /* CheckLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLanguage.swift; sourceTree = "<group>"; };
+		FF7F21F927AEFC28007606DB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FF7F21FC27AEFE54007606DB /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		FFBFC36327A57FD00088C717 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFBFC36427A57FD00088C717 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		FFBFC36927A580020088C717 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -182,9 +244,12 @@
 		FF78AA4127A579ED0099F90F /* Dalel */ = {
 			isa = PBXGroup;
 			children = (
+				FF7F21C327AED45A007606DB /* Router */,
 				FFBFC36227A57FBA0088C717 /* Modules */,
 				FFBFC36127A57FAE0088C717 /* Network Layer */,
 				FFBFC35E27A57EAC0088C717 /* Core */,
+				FF7F21F227AEFC01007606DB /* CustomizeComponents */,
+				FF7F21F927AEFC28007606DB /* Colors.swift */,
 				FFBFC36027A57F5A0088C717 /* Configuration */,
 			);
 			path = Dalel;
@@ -193,10 +258,10 @@
 		FF7F21AE27ADFD62007606DB /* AuthNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				FF7F21B527ADFE07007606DB /* AuthModels */,
-				FF7F21AF27ADFD62007606DB /* UsersNetworking.swift */,
-				FF7F21B127ADFD62007606DB /* AuthParmters.swift */,
 				FF7F21B227ADFD62007606DB /* AuthApi.swift */,
+				FF7F21B027ADFD62007606DB /* RegisterModel.swift */,
+				FF7F21AF27ADFD62007606DB /* UsersNetworking.swift */,
+				FF7F21B527ADFE07007606DB /* AuthModels */,
 			);
 			path = AuthNetworking;
 			sourceTree = "<group>";
@@ -204,9 +269,75 @@
 		FF7F21B527ADFE07007606DB /* AuthModels */ = {
 			isa = PBXGroup;
 			children = (
-				FF7F21B027ADFD62007606DB /* RegisterModel.swift */,
+				FF7F21B827AECAD8007606DB /* LoginModel.swift */,
+				FF7F21BA27AECB30007606DB /* Logout.swift */,
 			);
 			path = AuthModels;
+			sourceTree = "<group>";
+		};
+		FF7F21BC27AED1FE007606DB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FF7F21BD27AED210007606DB /* ProfileApi.swift */,
+				FF7F21BF27AED222007606DB /* ProfileNetworking.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		FF7F21C327AED45A007606DB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FF7F21C127AED458007606DB /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FF7F21F227AEFC01007606DB /* CustomizeComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FF7F21D327AEFBF8007606DB /* Alert.swift */,
+				FF7F21D927AEFBF9007606DB /* CardView.swift */,
+				FF7F21CE27AEFBF8007606DB /* CollectionCell + extension.swift */,
+				FF7F21D127AEFBF8007606DB /* DesignView.swift */,
+				FF7F21CF27AEFBF8007606DB /* DispatchQueue + Extensions.swift */,
+				FF7F21DC27AEFBF9007606DB /* Double + Extension.swift */,
+				FF7F21CD27AEFBF7007606DB /* General.swift */,
+				FF7F21D427AEFBF8007606DB /* HapticEffect.swift */,
+				FF7F21C827AEFBF7007606DB /* HelperFunc.swift */,
+				FF7F21CC27AEFBF7007606DB /* HelperK.swift */,
+				FF7F21D827AEFBF9007606DB /* imageSliderShowCong.swift */,
+				FF7F21D027AEFBF8007606DB /* LocalizationManager.swift */,
+				FF7F21D227AEFBF8007606DB /* LottieHelper.swift */,
+				FF7F21D727AEFBF9007606DB /* RightToLeftTransition.swift */,
+				FF7F21CA27AEFBF7007606DB /* TableView + Extesnions.swift */,
+				FF7F21DA27AEFBF9007606DB /* TableViewController + extension.swift */,
+				FF7F21D527AEFBF8007606DB /* TimeHelper.swift */,
+				FF7F21CB27AEFBF7007606DB /* UIButton + extension.swift */,
+				FF7F21DB27AEFBF9007606DB /* UITextField + extension.swift */,
+				FF7F21D627AEFBF9007606DB /* UIView + extension.swift */,
+				FF7F21C927AEFBF7007606DB /* ViewController + extensions.swift */,
+				FF7F21F427AEFC23007606DB /* ActivityIndicatorManager.swift */,
+				FF7F21F527AEFC23007606DB /* CheckLanguage.swift */,
+				FF7F21F327AEFC23007606DB /* Str + Extension.swift */,
+			);
+			path = CustomizeComponents;
+			sourceTree = "<group>";
+		};
+		FF7F21FB27AEFE41007606DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC36927A580020088C717 /* RegisterViewController.swift */,
+				FFBFC36A27A580020088C717 /* RegisterViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF7F21FE27AEFE59007606DB /* RegisterViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF7F21FC27AEFE54007606DB /* RegisterViewModel.swift */,
+			);
+			path = RegisterViewModel;
 			sourceTree = "<group>";
 		};
 		FFBFC35E27A57EAC0088C717 /* Core */ = {
@@ -215,7 +346,6 @@
 				FF78AA4B27A579EF0099F90F /* Assets.xcassets */,
 				FFBFC3D127A587AC0088C717 /* Fonts */,
 				FF78AA4227A579ED0099F90F /* AppDelegate.swift */,
-				FF78AA4427A579ED0099F90F /* SceneDelegate.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -223,8 +353,8 @@
 		FFBFC36027A57F5A0088C717 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				FF7F21C427AED8FB007606DB /* Info.plist */,
 				FF78AA4D27A579EF0099F90F /* LaunchScreen.storyboard */,
-				FF78AA5027A579EF0099F90F /* Info.plist */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -232,12 +362,13 @@
 		FFBFC36127A57FAE0088C717 /* Network Layer */ = {
 			isa = PBXGroup;
 			children = (
+				FF7F21BC27AED1FE007606DB /* Profile */,
 				FF7F21AA27ADFD5B007606DB /* BaseResponse.swift */,
 				FF7F21A927ADFD5B007606DB /* ErrorResponse.swift */,
 				FF7F21B327ADFD89007606DB /* BaseApi.swift */,
+				FF7F21B627AE05C4007606DB /* EndPoints.swift */,
 				FF7F21A827ADFD5B007606DB /* TargetType.swift */,
 				FF7F21AE27ADFD62007606DB /* AuthNetworking */,
-				FF7F21B627AE05C4007606DB /* EndPoints.swift */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -306,8 +437,8 @@
 		FFBFC38127A581D20088C717 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				FFBFC36927A580020088C717 /* RegisterViewController.swift */,
-				FFBFC36A27A580020088C717 /* RegisterViewController.xib */,
+				FF7F21FB27AEFE41007606DB /* View */,
+				FF7F21FE27AEFE59007606DB /* RegisterViewModel */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -584,34 +715,67 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7F21FF27AF0574007606DB /* AuthApi.swift in Sources */,
 				FFBFC36527A57FD00088C717 /* LoginViewController.swift in Sources */,
 				FFBFC36B27A580020088C717 /* RegisterViewController.swift in Sources */,
+				FF7F21F627AEFC23007606DB /* CheckLanguage.swift in Sources */,
 				FFBFC37327A5804A0088C717 /* OnBoardingViewController.swift in Sources */,
+				FF7F21EE27AEFBF9007606DB /* TableView + Extesnions.swift in Sources */,
+				FF7F220127AF05F9007606DB /* UsersNetworking.swift in Sources */,
 				FFBFC37727A5808F0088C717 /* ResetPasswordViewController.swift in Sources */,
+				FF7F220027AF0597007606DB /* RegisterModel.swift in Sources */,
+				FF7F21EA27AEFBF9007606DB /* LottieHelper.swift in Sources */,
 				FFBFC3C227A587320088C717 /* TermsAndConditionViewController.swift in Sources */,
+				FF7F21E627AEFBF9007606DB /* TimeHelper.swift in Sources */,
 				FF7F21AB27ADFD5B007606DB /* ErrorResponse.swift in Sources */,
 				FFBFC3B727A586BC0088C717 /* OurGoalViewController.swift in Sources */,
 				FFBFC38527A582050088C717 /* HomeTableViewController.swift in Sources */,
 				FFBFC36F27A580360088C717 /* LanguageViewController.swift in Sources */,
+				FF7F21E427AEFBF9007606DB /* Double + Extension.swift in Sources */,
+				FF7F21E727AEFBF9007606DB /* HelperK.swift in Sources */,
 				FFBFC3A627A586290088C717 /* ProfileViewController.swift in Sources */,
+				FF7F21E327AEFBF9007606DB /* imageSliderShowCong.swift in Sources */,
+				FF7F21EC27AEFBF9007606DB /* RightToLeftTransition.swift in Sources */,
 				FFBFC3A227A585AF0088C717 /* FavoriteViewController.swift in Sources */,
+				FF7F21E227AEFBF9007606DB /* HapticEffect.swift in Sources */,
 				FF78AA4727A579ED0099F90F /* ViewController.swift in Sources */,
 				FF7F21AD27ADFD5B007606DB /* TargetType.swift in Sources */,
+				FF7F21E927AEFBF9007606DB /* CardView.swift in Sources */,
 				FFBFC3A927A586480088C717 /* AddPlaceViewController.swift in Sources */,
+				FF7F21F027AEFBFA007606DB /* UITextField + extension.swift in Sources */,
 				FFBFC39E27A585490088C717 /* SpecificSearchViewController.swift in Sources */,
 				FFBFC3BD27A5870E0088C717 /* ContactUsViewController.swift in Sources */,
 				FFBFC38F27A584A00088C717 /* SchoolDetailsViewController.swift in Sources */,
+				FF7F21E527AEFBF9007606DB /* DesignView.swift in Sources */,
 				FFBFC39927A585280088C717 /* SearchViewController.swift in Sources */,
+				FF7F21F727AEFC23007606DB /* ActivityIndicatorManager.swift in Sources */,
 				FF7F21B727AE05C4007606DB /* EndPoints.swift in Sources */,
 				FFBFC37B27A580B00088C717 /* VerificationViewController.swift in Sources */,
+				FF7F21DF27AEFBF9007606DB /* UIView + extension.swift in Sources */,
+				FF7F21EF27AEFBFA007606DB /* TableViewController + extension.swift in Sources */,
+				FF7F21DD27AEFBF9007606DB /* Alert.swift in Sources */,
+				FF7F21E027AEFBF9007606DB /* CollectionCell + extension.swift in Sources */,
 				FFBFC3A427A585E30088C717 /* NotificationViewController.swift in Sources */,
 				FFBFC3D427A5AFBA0088C717 /* PlacesTableViewController.swift in Sources */,
+				FF7F21E827AEFBF9007606DB /* HelperFunc.swift in Sources */,
+				FF7F21F127AEFBFA007606DB /* ViewController + extensions.swift in Sources */,
+				FF7F21C227AED458007606DB /* Router.swift in Sources */,
+				FF7F21E127AEFBF9007606DB /* DispatchQueue + Extensions.swift in Sources */,
+				FF7F21DE27AEFBF9007606DB /* UIButton + extension.swift in Sources */,
+				FF7F21FD27AEFE54007606DB /* RegisterViewModel.swift in Sources */,
+				FF7F21C027AED222007606DB /* ProfileNetworking.swift in Sources */,
+				FF7F21BE27AED210007606DB /* ProfileApi.swift in Sources */,
 				FF7F21B427ADFD89007606DB /* BaseApi.swift in Sources */,
+				FF7F21EB27AEFBF9007606DB /* LocalizationManager.swift in Sources */,
 				FFBFC39427A584DD0088C717 /* AddCommentViewController.swift in Sources */,
+				FF7F21FA27AEFC29007606DB /* Colors.swift in Sources */,
 				FFBFC3B327A586A50088C717 /* OurVisionViewController.swift in Sources */,
+				FF7F21ED27AEFBF9007606DB /* General.swift in Sources */,
+				FF7F21B927AECAD8007606DB /* LoginModel.swift in Sources */,
+				FF7F21F827AEFC23007606DB /* Str + Extension.swift in Sources */,
+				FF7F21BB27AECB30007606DB /* Logout.swift in Sources */,
 				FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */,
 				FFBFC38A27A5844B0088C717 /* SchoolsViewController.swift in Sources */,
-				FF78AA4527A579ED0099F90F /* SceneDelegate.swift in Sources */,
 				FF7F21AC27ADFD5B007606DB /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -767,7 +931,9 @@
 				INFOPLIST_FILE = /Users/shgardi/Desktop/Home/Dalel/Dalel/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -796,7 +962,9 @@
 				INFOPLIST_FILE = /Users/shgardi/Desktop/Home/Dalel/Dalel/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
