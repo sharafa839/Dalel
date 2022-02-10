@@ -126,6 +126,7 @@ class RegisterViewController: UIViewController {
         phoneCode.delegate = self
 
     }
+    
     func setupViewModel(){
         viewModel.onError.subscribe {  error in
             

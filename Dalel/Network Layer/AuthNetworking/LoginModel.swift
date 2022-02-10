@@ -2,24 +2,21 @@
 //  LoginModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 05/02/2022.
+//  Created by Shgardi on 10/02/2022.
 //
 
 import Foundation
-
-// MARK: - LoginModel
 struct LoginModel: Codable {
-    var payload: Payload?
+    var payload: LoginPayload?
     var status: Bool?
     var code: Int?
-    var messages: String?
+    var messages: JSONNull?
 }
 
 // MARK: - Payload
-struct Payload: Codable {
-    var userID: String?
-    var userLogo: String?
-    var userType, tokenType, token, tokenExpiresAt: String?
+struct LoginPayload: Codable {
+    var userID, userLogo, userType, tokenType: String?
+    var token, tokenExpiresAt: String?
 
     enum CodingKeys: String, CodingKey {
         case userID = "user_id"

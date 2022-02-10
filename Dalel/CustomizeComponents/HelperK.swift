@@ -28,7 +28,7 @@ class HelperK: NSObject {
       //  let sb = UIStoryboard(name: "Main", bundle: nil)
       //  var vc: UIViewController
         
-        if self.checkFristTime() == true {
+        if self.checkFirstTime() == true {
                 if self.checkUserToken() == true {
                     if self.getType() == "customer" {
                         let sb = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "main")
@@ -69,7 +69,7 @@ class HelperK: NSObject {
       //  let sb = UIStoryboard(name: "Main", bundle: nil)
       //  var vc: UIViewController
         
-        if self.checkFristTime() == true {
+        if self.checkFirstTime() == true {
                 if self.checkUserToken() == true {
                    
                         let sb = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "hom")
@@ -163,14 +163,14 @@ class HelperK: NSObject {
         return (def.object(forKey: "token") as? String) != nil
     }
     
-    class func saveFristTime(token: Int) {
+    class func saveFristTime(token: Bool) {
         let def = UserDefaults.standard
         def.setValue(token, forKey: "fTime")
         def.synchronize()
     }
-    class func checkFristTime()->Bool {
+    class func checkFirstTime()->Bool {
         let def = UserDefaults.standard
-        return (def.object(forKey: "fTime") as? Int) != nil
+        return (def.object(forKey: "fTime") as? Bool) != nil
     }
     class func saveDate(token: String) {
         let def = UserDefaults.standard

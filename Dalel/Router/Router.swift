@@ -12,7 +12,38 @@ class Router {
         guard  let window = window else {
             return
         }
-        let vc = RegisterViewController()
-        window.rootViewController = vc
+        let login = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        let x =   UINavigationController(rootViewController: login)
+        window.rootViewController = x
+        window.makeKeyAndVisible()
+    }
+    
+    class func setLaunch(window:UIWindow?){
+        guard HelperK.checkUserToken() == true else {
+            if HelperK.checkFirstTime() {
+                setRoot(nibName: OnBoardingViewController.loadFromNib(), window: window)
+            }else {
+                setRoot(nibName: LoginViewController.loadFromNib(), window: window)
+            }
+            return
+        }
+        setRoot(nibName: MainTabBar(), window: window)
+    }
+
+    class func setRoot(nibName:UIViewController,window:UIWindow?){
+        
+        let navigationViewController = UINavigationController(rootViewController: nibName)
+        window?.rootViewController = navigationViewController
+        window?.makeKeyAndVisible()
+    }
+}
+
+extension UIViewController {
+    static func loadFromNib() -> Self {
+        func instantiateFromNib<T: UIViewController>() -> T {
+            return T.init(nibName: String(describing: T.self), bundle: nil)
+        }
+
+        return instantiateFromNib()
     }
 }

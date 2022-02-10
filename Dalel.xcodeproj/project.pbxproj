@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		54844C3FD69E01E615CFF16B /* Pods_Dalel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A0A0FEC18C33B733889F49 /* Pods_Dalel.framework */; };
 		FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4227A579ED0099F90F /* AppDelegate.swift */; };
-		FF78AA4727A579ED0099F90F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4627A579ED0099F90F /* ViewController.swift */; };
+		FF78AA4727A579ED0099F90F /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4627A579ED0099F90F /* MainTabBar.swift */; };
 		FF78AA4A27A579ED0099F90F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4827A579ED0099F90F /* Main.storyboard */; };
 		FF78AA4C27A579EF0099F90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4B27A579EF0099F90F /* Assets.xcassets */; };
 		FF78AA4F27A579EF0099F90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4D27A579EF0099F90F /* LaunchScreen.storyboard */; };
@@ -18,7 +18,6 @@
 		FF7F21AD27ADFD5B007606DB /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21A827ADFD5B007606DB /* TargetType.swift */; };
 		FF7F21B427ADFD89007606DB /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B327ADFD89007606DB /* BaseApi.swift */; };
 		FF7F21B727AE05C4007606DB /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B627AE05C4007606DB /* EndPoints.swift */; };
-		FF7F21B927AECAD8007606DB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B827AECAD8007606DB /* LoginModel.swift */; };
 		FF7F21BB27AECB30007606DB /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21BA27AECB30007606DB /* Logout.swift */; };
 		FF7F21BE27AED210007606DB /* ProfileApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21BD27AED210007606DB /* ProfileApi.swift */; };
 		FF7F21C027AED222007606DB /* ProfileNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21BF27AED222007606DB /* ProfileNetworking.swift */; };
@@ -52,6 +51,8 @@
 		FF7F21FF27AF0574007606DB /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B227ADFD62007606DB /* AuthApi.swift */; };
 		FF7F220027AF0597007606DB /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B027ADFD62007606DB /* RegisterModel.swift */; };
 		FF7F220127AF05F9007606DB /* UsersNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21AF27ADFD62007606DB /* UsersNetworking.swift */; };
+		FF7F620727B54014004D334E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F620627B54014004D334E /* LoginViewModel.swift */; };
+		FF7F620927B54FC8004D334E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F620827B54FC8004D334E /* LoginModel.swift */; };
 		FFBFC36527A57FD00088C717 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36327A57FD00088C717 /* LoginViewController.swift */; };
 		FFBFC36627A57FD00088C717 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC36427A57FD00088C717 /* LoginViewController.xib */; };
 		FFBFC36B27A580020088C717 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36927A580020088C717 /* RegisterViewController.swift */; };
@@ -98,7 +99,7 @@
 		DDAE285294AE5A146EF7BAFC /* Pods-Dalel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dalel.debug.xcconfig"; path = "Target Support Files/Pods-Dalel/Pods-Dalel.debug.xcconfig"; sourceTree = "<group>"; };
 		FF78AA3F27A579ED0099F90F /* Dalel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dalel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF78AA4227A579ED0099F90F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF78AA4627A579ED0099F90F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF78AA4627A579ED0099F90F /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		FF78AA4927A579ED0099F90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF78AA4B27A579EF0099F90F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF78AA4E27A579EF0099F90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,7 +111,6 @@
 		FF7F21B227ADFD62007606DB /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
 		FF7F21B327ADFD89007606DB /* BaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseApi.swift; path = ../../../Baladna/Baladna/NetworkLayer/BaseNetwork/BaseApi.swift; sourceTree = "<group>"; };
 		FF7F21B627AE05C4007606DB /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
-		FF7F21B827AECAD8007606DB /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		FF7F21BA27AECB30007606DB /* Logout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
 		FF7F21BD27AED210007606DB /* ProfileApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileApi.swift; sourceTree = "<group>"; };
 		FF7F21BF27AED222007606DB /* ProfileNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNetworking.swift; sourceTree = "<group>"; };
@@ -142,6 +142,8 @@
 		FF7F21F527AEFC23007606DB /* CheckLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLanguage.swift; sourceTree = "<group>"; };
 		FF7F21F927AEFC28007606DB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FF7F21FC27AEFE54007606DB /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		FF7F620627B54014004D334E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FF7F620827B54FC8004D334E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		FFBFC36327A57FD00088C717 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFBFC36427A57FD00088C717 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		FFBFC36927A580020088C717 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 			children = (
 				FF7F21B227ADFD62007606DB /* AuthApi.swift */,
 				FF7F21B027ADFD62007606DB /* RegisterModel.swift */,
+				FF7F620827B54FC8004D334E /* LoginModel.swift */,
 				FF7F21AF27ADFD62007606DB /* UsersNetworking.swift */,
 				FF7F21B527ADFE07007606DB /* AuthModels */,
 			);
@@ -269,7 +272,6 @@
 		FF7F21B527ADFE07007606DB /* AuthModels */ = {
 			isa = PBXGroup;
 			children = (
-				FF7F21B827AECAD8007606DB /* LoginModel.swift */,
 				FF7F21BA27AECB30007606DB /* Logout.swift */,
 			);
 			path = AuthModels;
@@ -338,6 +340,15 @@
 				FF7F21FC27AEFE54007606DB /* RegisterViewModel.swift */,
 			);
 			path = RegisterViewModel;
+			sourceTree = "<group>";
+		};
+		FF7F620527B53FFE004D334E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC36327A57FD00088C717 /* LoginViewController.swift */,
+				FFBFC36427A57FD00088C717 /* LoginViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FFBFC35E27A57EAC0088C717 /* Core */ = {
@@ -446,8 +457,8 @@
 		FFBFC38227A581DF0088C717 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				FFBFC36327A57FD00088C717 /* LoginViewController.swift */,
-				FFBFC36427A57FD00088C717 /* LoginViewController.xib */,
+				FF7F620527B53FFE004D334E /* View */,
+				FF7F620627B54014004D334E /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -456,7 +467,7 @@
 			isa = PBXGroup;
 			children = (
 				FF78AA4827A579ED0099F90F /* Main.storyboard */,
-				FF78AA4627A579ED0099F90F /* ViewController.swift */,
+				FF78AA4627A579ED0099F90F /* MainTabBar.swift */,
 				FFBFC38327A582050088C717 /* HomeTableViewController.swift */,
 				FFBFC3A127A585AF0088C717 /* FavoriteViewController.swift */,
 				FFBFC3A527A586290088C717 /* ProfileViewController.swift */,
@@ -736,9 +747,10 @@
 				FFBFC3A627A586290088C717 /* ProfileViewController.swift in Sources */,
 				FF7F21E327AEFBF9007606DB /* imageSliderShowCong.swift in Sources */,
 				FF7F21EC27AEFBF9007606DB /* RightToLeftTransition.swift in Sources */,
+				FF7F620927B54FC8004D334E /* LoginModel.swift in Sources */,
 				FFBFC3A227A585AF0088C717 /* FavoriteViewController.swift in Sources */,
 				FF7F21E227AEFBF9007606DB /* HapticEffect.swift in Sources */,
-				FF78AA4727A579ED0099F90F /* ViewController.swift in Sources */,
+				FF78AA4727A579ED0099F90F /* MainTabBar.swift in Sources */,
 				FF7F21AD27ADFD5B007606DB /* TargetType.swift in Sources */,
 				FF7F21E927AEFBF9007606DB /* CardView.swift in Sources */,
 				FFBFC3A927A586480088C717 /* AddPlaceViewController.swift in Sources */,
@@ -771,12 +783,12 @@
 				FF7F21FA27AEFC29007606DB /* Colors.swift in Sources */,
 				FFBFC3B327A586A50088C717 /* OurVisionViewController.swift in Sources */,
 				FF7F21ED27AEFBF9007606DB /* General.swift in Sources */,
-				FF7F21B927AECAD8007606DB /* LoginModel.swift in Sources */,
 				FF7F21F827AEFC23007606DB /* Str + Extension.swift in Sources */,
 				FF7F21BB27AECB30007606DB /* Logout.swift in Sources */,
 				FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */,
 				FFBFC38A27A5844B0088C717 /* SchoolsViewController.swift in Sources */,
 				FF7F21AC27ADFD5B007606DB /* BaseResponse.swift in Sources */,
+				FF7F620727B54014004D334E /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

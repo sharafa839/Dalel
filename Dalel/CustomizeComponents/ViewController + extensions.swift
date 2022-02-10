@@ -14,6 +14,17 @@ extension UIViewController {
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
     }
     
+//        func setRoot(_ viewController: UIViewController, withNavigation: Bool = false, animated: Bool = true) {
+//            let controller: UIViewController
+//            if withNavigation {
+//                controller = UINavigationController(rootViewController: viewController)
+//            } else {
+//                controller = viewController
+//            }
+//            AppUtilities.changeRoot(root: controller, animated: animated)
+//        }
+//    
+    
     func hideNavigationBar(){
         // Hide the navigation bar on the this view controller
         self.navigationController?.setNavigationBarHidden(true, animated: true)
@@ -49,3 +60,4 @@ print(url)
     }
     }
 }
+

@@ -46,55 +46,55 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="قم بانشاء حساب جديد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyZ-He-pOC">
-                    <rect key="frame" x="211" y="168" width="163" height="22"/>
+                    <rect key="frame" x="40" y="168" width="163" height="22"/>
                     <fontDescription key="fontDescription" name="AmazonEmber-Bold" family="Amazon Ember" pointSize="18"/>
                     <color key="textColor" name="MainColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AEM-J0-TEn" customClass="MDCFilledTextField">
-                    <rect key="frame" x="40" y="244" width="334" height="34"/>
+                    <rect key="frame" x="40" y="244" width="294.5" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Pe-ok-9Bo" customClass="FPNTextField" customModule="FlagPhoneNumber">
-                    <rect key="frame" x="40" y="294" width="334" height="18.5"/>
+                    <rect key="frame" x="40" y="294" width="294.5" height="18.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Z31-hW-A8t">
-                    <rect key="frame" x="122" y="206" width="252" height="22"/>
+                    <rect key="frame" x="40" y="206" width="294.5" height="22"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="برجاء ملئ الحقول التالية للمتابعة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18e-q5-eDd">
-                            <rect key="frame" x="0.0" y="0.0" width="214.5" height="22"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحبا" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZC-ar-0zk">
-                            <rect key="frame" x="216.5" y="0.0" width="35.5" height="22"/>
+                            <rect key="frame" x="0.0" y="0.0" width="35.5" height="22"/>
                             <fontDescription key="fontDescription" name="AmazonEmber-MediumItalic" family="Amazon Ember" pointSize="18"/>
                             <color key="textColor" systemColor="systemOrangeColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="برجاء ملئ الحقول التالية للمتابعة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18e-q5-eDd">
+                            <rect key="frame" x="37.5" y="0.0" width="257" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                 </stackView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nSF-XO-LAN" customClass="MDCFilledTextField">
-                    <rect key="frame" x="40" y="328.5" width="334" height="34"/>
+                    <rect key="frame" x="40" y="328.5" width="294.5" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwf-Mo-6Ha" customClass="MDCFilledTextField">
-                    <rect key="frame" x="40" y="378.5" width="334" height="34"/>
+                    <rect key="frame" x="40" y="378.5" width="294.5" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ljh-Bn-sGK" customClass="DropDown" customModule="iOSDropDown">
-                    <rect key="frame" x="40" y="428.5" width="334" height="34"/>
+                    <rect key="frame" x="40" y="428.5" width="294.5" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ije-fu-BCa">
-                    <rect key="frame" x="40" y="478.5" width="334" height="50"/>
+                    <rect key="frame" x="40" y="478.5" width="294.5" height="50"/>
                     <color key="backgroundColor" name="MainColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="pbU-Kh-lMv"/>
@@ -104,7 +104,7 @@
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="HbG-7m-E9Y">
-                    <rect key="frame" x="86" y="542.5" width="242" height="31"/>
+                    <rect key="frame" x="86" y="542.5" width="202.5" height="31"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" لديك حساب " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ld-gg-hkE">
                             <rect key="frame" x="0.0" y="0.0" width="71" height="31"/>
@@ -113,7 +113,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVW-vK-cnG">
-                            <rect key="frame" x="72" y="0.0" width="170" height="31"/>
+                            <rect key="frame" x="72" y="0.0" width="130.5" height="31"/>
                             <color key="tintColor" name="MainColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="قم بتسجيل الدخول"/>
@@ -128,18 +128,17 @@
                 <constraint firstItem="HbG-7m-E9Y" firstAttribute="top" secondItem="ije-fu-BCa" secondAttribute="bottom" constant="14" id="0ha-YD-eh3"/>
                 <constraint firstItem="ije-fu-BCa" firstAttribute="trailing" secondItem="Ljh-Bn-sGK" secondAttribute="trailing" id="0o0-Ri-3Eb"/>
                 <constraint firstItem="nSF-XO-LAN" firstAttribute="trailing" secondItem="AEM-J0-TEn" secondAttribute="trailing" id="211-YT-q2E"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iyZ-He-pOC" secondAttribute="trailing" constant="40" id="2za-MJ-nrN"/>
                 <constraint firstItem="Ljh-Bn-sGK" firstAttribute="leading" secondItem="dwf-Mo-6Ha" secondAttribute="leading" id="4LS-W3-Dcm"/>
                 <constraint firstItem="4Pe-ok-9Bo" firstAttribute="top" secondItem="AEM-J0-TEn" secondAttribute="bottom" constant="16" id="8G4-mQ-63p"/>
                 <constraint firstItem="ije-fu-BCa" firstAttribute="leading" secondItem="Ljh-Bn-sGK" secondAttribute="leading" id="Atc-UF-xma"/>
                 <constraint firstItem="nSF-XO-LAN" firstAttribute="top" secondItem="4Pe-ok-9Bo" secondAttribute="bottom" constant="16" id="BqF-yx-g5D"/>
                 <constraint firstItem="ije-fu-BCa" firstAttribute="top" secondItem="Ljh-Bn-sGK" secondAttribute="bottom" constant="16" id="HeY-dW-1V2"/>
-                <constraint firstItem="Z31-hW-A8t" firstAttribute="trailing" secondItem="iyZ-He-pOC" secondAttribute="trailing" id="JNa-5k-LBz"/>
                 <constraint firstItem="dwf-Mo-6Ha" firstAttribute="leading" secondItem="nSF-XO-LAN" secondAttribute="leading" id="M4k-ZZ-L9H"/>
                 <constraint firstItem="nSF-XO-LAN" firstAttribute="leading" secondItem="AEM-J0-TEn" secondAttribute="leading" id="MeU-pq-CLF"/>
                 <constraint firstItem="nKB-Sd-cz0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="N08-fa-f1a"/>
                 <constraint firstItem="dwf-Mo-6Ha" firstAttribute="top" secondItem="nSF-XO-LAN" secondAttribute="bottom" constant="16" id="NDe-Ae-QGU"/>
                 <constraint firstItem="nKB-Sd-cz0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="O3n-cT-Fdc"/>
+                <constraint firstItem="iyZ-He-pOC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="P4t-5W-vbN"/>
                 <constraint firstItem="dwf-Mo-6Ha" firstAttribute="trailing" secondItem="nSF-XO-LAN" secondAttribute="trailing" id="QZh-KF-pPb"/>
                 <constraint firstItem="Z31-hW-A8t" firstAttribute="top" secondItem="iyZ-He-pOC" secondAttribute="bottom" constant="16" id="WRE-Ia-4KI"/>
                 <constraint firstItem="AEM-J0-TEn" firstAttribute="top" secondItem="Z31-hW-A8t" secondAttribute="bottom" constant="16" id="XqN-ct-RfR"/>
@@ -151,6 +150,7 @@
                 <constraint firstItem="Ljh-Bn-sGK" firstAttribute="trailing" secondItem="dwf-Mo-6Ha" secondAttribute="trailing" id="nUF-8X-4vN"/>
                 <constraint firstItem="iyZ-He-pOC" firstAttribute="top" secondItem="nKB-Sd-cz0" secondAttribute="bottom" constant="16" id="qaj-YC-fgS"/>
                 <constraint firstItem="4Pe-ok-9Bo" firstAttribute="trailing" secondItem="AEM-J0-TEn" secondAttribute="trailing" id="tSF-gq-LFK"/>
+                <constraint firstItem="Z31-hW-A8t" firstAttribute="leading" secondItem="iyZ-He-pOC" secondAttribute="leading" id="tsB-qj-ByG"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="87.723214285714278"/>
         </view>

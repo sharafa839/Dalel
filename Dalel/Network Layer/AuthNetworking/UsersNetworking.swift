@@ -58,7 +58,7 @@ extension AuthNetworking:TargetType{
                      "type": type
                  ], encoding:JSONEncoding.prettyPrinted)
         case .login(let phone, let password):
-            return .requestParmters(parms: ["phone":phone,"password":password], encoding: JSONEncoding.default)
+            return .requestParmters(parms: ["phone":phone,"password":password], encoding: JSONEncoding.prettyPrinted)
         case .loginByEmail(let email, let password):
             return .requestParmters(parms: ["email":email,"password":password], encoding: JSONEncoding.default)
         case .logout:
