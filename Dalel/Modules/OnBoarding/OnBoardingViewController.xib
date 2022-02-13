@@ -1,22 +1,95 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmazonEmber_Bd.ttf">
+            <string>AmazonEmber-Bold</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoardingViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoardingViewController" customModule="Dalel" customModuleProvider="target">
             <connections>
+                <outlet property="Image" destination="ezW-ao-mWW" id="c2Y-0a-mst"/>
+                <outlet property="pageController" destination="qh4-6b-0d2" id="R9x-ey-R7v"/>
+                <outlet property="skipButton" destination="YHo-en-R5Z" id="Ifd-pD-ZHw"/>
+                <outlet property="textLabel" destination="Tsb-px-Uw5" id="Vpt-d1-BbL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bg (2)" translatesAutoresizingMaskIntoConstraints="NO" id="QlL-mA-dYr">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsb-px-Uw5">
+                    <rect key="frame" x="20" y="134" width="374" height="30"/>
+                    <fontDescription key="fontDescription" name="AmazonEmber-Bold" family="Amazon Ember" pointSize="25"/>
+                    <color key="textColor" systemColor="systemBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qh4-6b-0d2">
+                    <rect key="frame" x="129" y="624" width="156" height="26"/>
+                    <connections>
+                        <action selector="ChangeCurrentPage:" destination="-1" eventType="valueChanged" id="CMX-YZ-A8J"/>
+                    </connections>
+                </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHo-en-R5Z">
+                    <rect key="frame" x="80" y="494" width="254" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="N7o-V1-QH3"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="systemBackgroundColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="skipButton:" destination="-1" eventType="touchUpInside" id="ycY-dB-YZ4"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unsplash_o_lLsdVTxak" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezW-ao-mWW">
+                    <rect key="frame" x="82" y="184" width="250" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="URH-e3-K7f"/>
+                        <constraint firstAttribute="width" constant="250" id="VLa-2k-m3S"/>
+                    </constraints>
+                </imageView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="QlL-mA-dYr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1KR-h0-4Ln"/>
+                <constraint firstItem="QlL-mA-dYr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D8K-Os-itq"/>
+                <constraint firstItem="ezW-ao-mWW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dia-6E-0bR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YHo-en-R5Z" secondAttribute="trailing" constant="80" id="I16-1k-5gF"/>
+                <constraint firstItem="Tsb-px-Uw5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="90" id="PbV-se-aJs"/>
+                <constraint firstAttribute="trailing" secondItem="QlL-mA-dYr" secondAttribute="trailing" id="Pmr-sD-mBA"/>
+                <constraint firstItem="YHo-en-R5Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="Qt5-cF-Q2u"/>
+                <constraint firstAttribute="bottom" secondItem="QlL-mA-dYr" secondAttribute="bottom" id="W7d-Ic-f1m"/>
+                <constraint firstItem="ezW-ao-mWW" firstAttribute="top" secondItem="Tsb-px-Uw5" secondAttribute="bottom" constant="20" id="Wu9-SA-1ch"/>
+                <constraint firstItem="Tsb-px-Uw5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="aUt-m6-a3T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tsb-px-Uw5" secondAttribute="trailing" constant="20" id="ctp-XT-Adf"/>
+                <constraint firstItem="qh4-6b-0d2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hcp-vS-uzP"/>
+                <constraint firstItem="YHo-en-R5Z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iAK-6g-eaA"/>
+                <constraint firstItem="qh4-6b-0d2" firstAttribute="top" secondItem="YHo-en-R5Z" secondAttribute="bottom" constant="80" id="t8v-h7-tTD"/>
+                <constraint firstItem="YHo-en-R5Z" firstAttribute="top" secondItem="ezW-ao-mWW" secondAttribute="bottom" constant="60" id="vPh-Qn-DIL"/>
+                <constraint firstItem="Tsb-px-Uw5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xfZ-Xy-Xqw"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="49.553571428571423"/>
         </view>
     </objects>
+    <resources>
+        <image name="Bg (2)" width="375" height="812"/>
+        <image name="unsplash_o_lLsdVTxak" width="115" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import AVFoundation
 protocol AuthenticationProtocol {
     func register(name: String, email: String, password: String, phone: String,phoneCode:String, type: String,compeletion : @escaping(Result<BaseResponse<LoginModel>?,NSError>,ErrorResponse?)->Void)
     func login(phone:String,password:String,compeletion:@escaping(Result<BaseResponse<LoginModel>?,NSError>,ErrorResponse?)->Void)

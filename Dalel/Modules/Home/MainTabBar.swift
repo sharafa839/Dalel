@@ -12,6 +12,7 @@ class MainTabBar: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideNavigationBar()
+        
     }
 
 

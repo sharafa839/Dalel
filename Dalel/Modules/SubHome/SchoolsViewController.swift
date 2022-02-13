@@ -9,6 +9,9 @@ import UIKit
 
 class SchoolsViewController: UIViewController {
 
+    @IBOutlet weak var subCategorycollectionView: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,3 +30,4 @@ class SchoolsViewController: UIViewController {
     */
 
 }
+ 

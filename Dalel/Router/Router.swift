@@ -21,13 +21,18 @@ class Router {
     class func setLaunch(window:UIWindow?){
         guard HelperK.checkUserToken() == true else {
             if HelperK.checkFirstTime() {
-                setRoot(nibName: OnBoardingViewController.loadFromNib(), window: window)
-            }else {
                 setRoot(nibName: LoginViewController.loadFromNib(), window: window)
+
+            }else {
+                setRoot(nibName: OnBoardingViewController.loadFromNib(), window: window)
+
             }
             return
         }
-        setRoot(nibName: MainTabBar(), window: window)
+//        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//        let tabBar = storyBoard.instantiateViewController(withIdentifier: "main")
+//        setRoot(nibName: tabBar, window: window)
+        setRoot(nibName: AddCommentViewController.loadFromNib(), window: window)
     }
 
     class func setRoot(nibName:UIViewController,window:UIWindow?){

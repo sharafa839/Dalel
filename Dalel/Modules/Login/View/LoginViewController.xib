@@ -36,42 +36,42 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Daleel_logo_2" translatesAutoresizingMaskIntoConstraints="NO" id="Y4c-eK-mv8">
-                    <rect key="frame" x="143" y="104" width="128" height="128"/>
+                    <rect key="frame" x="143" y="64" width="128" height="128"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="GHs-vk-86J"/>
                         <constraint firstAttribute="width" constant="128" id="Mte-ts-qxq"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحبا بعودتك " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35L-ia-c7v">
-                    <rect key="frame" x="45" y="344" width="104.5" height="22"/>
+                    <rect key="frame" x="45" y="232" width="104.5" height="22"/>
                     <fontDescription key="fontDescription" name="AmazonEmber-Bold" family="Amazon Ember" pointSize="18"/>
                     <color key="textColor" name="MainColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سجل الدخول للمتابعة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpX-zR-FuS">
-                    <rect key="frame" x="45" y="398" width="131.5" height="22"/>
+                    <rect key="frame" x="45" y="274" width="131.5" height="22"/>
                     <fontDescription key="fontDescription" name="AmazonEmber-MediumItalic" family="Amazon Ember" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gqd-OF-tMU" customClass="MDCFilledTextField">
-                    <rect key="frame" x="45" y="460" width="324" height="34"/>
+                    <rect key="frame" x="45" y="326" width="324" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyU-KG-Atl" customClass="MDCFilledTextField">
-                    <rect key="frame" x="45" y="524" width="324" height="34"/>
+                    <rect key="frame" x="45" y="376" width="324" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5d-OS-avG">
-                    <rect key="frame" x="234" y="578" width="135" height="31"/>
+                    <rect key="frame" x="234" y="430" width="135" height="31"/>
                     <color key="tintColor" name="MainColor"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="هل نسيت كلمة السر"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqb-Ts-Oex">
-                    <rect key="frame" x="40" y="659" width="334" height="50"/>
+                    <rect key="frame" x="40" y="481" width="334" height="50"/>
                     <color key="backgroundColor" name="MainColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Yo9-sF-zJ1"/>
@@ -81,13 +81,13 @@
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="ليس لديك حساب " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBl-4s-Igl">
-                    <rect key="frame" x="174" y="728" width="200" height="20.5"/>
+                    <rect key="frame" x="174" y="550" width="200" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMB-Gh-yJx">
-                    <rect key="frame" x="40" y="719" width="119.5" height="31"/>
+                    <rect key="frame" x="40" y="541" width="119.5" height="31"/>
                     <color key="tintColor" name="MainColor"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="قم بالاشتراك  الان"/>
@@ -96,8 +96,9 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="XpX-zR-FuS" firstAttribute="top" secondItem="35L-ia-c7v" secondAttribute="bottom" constant="32" id="2vJ-lM-gCc"/>
-                <constraint firstItem="gqd-OF-tMU" firstAttribute="top" secondItem="XpX-zR-FuS" secondAttribute="bottom" constant="40" id="7kD-sE-fXH"/>
+                <constraint firstItem="35L-ia-c7v" firstAttribute="top" secondItem="Y4c-eK-mv8" secondAttribute="bottom" constant="40" id="2d4-nf-YXI"/>
+                <constraint firstItem="XpX-zR-FuS" firstAttribute="top" secondItem="35L-ia-c7v" secondAttribute="bottom" constant="20" id="2vJ-lM-gCc"/>
+                <constraint firstItem="gqd-OF-tMU" firstAttribute="top" secondItem="XpX-zR-FuS" secondAttribute="bottom" constant="30" id="7kD-sE-fXH"/>
                 <constraint firstItem="eyU-KG-Atl" firstAttribute="leading" secondItem="gqd-OF-tMU" secondAttribute="leading" id="8s2-Qi-gXU"/>
                 <constraint firstItem="eyU-KG-Atl" firstAttribute="trailing" secondItem="gqd-OF-tMU" secondAttribute="trailing" id="Bqt-ud-oqc"/>
                 <constraint firstItem="XpX-zR-FuS" firstAttribute="leading" secondItem="35L-ia-c7v" secondAttribute="leading" id="ClY-qs-2a6"/>
@@ -107,14 +108,13 @@
                 <constraint firstItem="eyU-KG-Atl" firstAttribute="centerX" secondItem="gqd-OF-tMU" secondAttribute="centerX" id="SAi-xZ-7ZX"/>
                 <constraint firstItem="35L-ia-c7v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="Tfd-H9-JWS"/>
                 <constraint firstItem="Y4c-eK-mv8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YKK-iu-azu"/>
-                <constraint firstItem="qqb-Ts-Oex" firstAttribute="top" secondItem="b5d-OS-avG" secondAttribute="bottom" constant="50" id="b9w-6r-RoV"/>
+                <constraint firstItem="qqb-Ts-Oex" firstAttribute="top" secondItem="b5d-OS-avG" secondAttribute="bottom" constant="20" id="b9w-6r-RoV"/>
                 <constraint firstItem="qqb-Ts-Oex" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="beB-qK-F9t"/>
-                <constraint firstItem="35L-ia-c7v" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="300" id="c9N-eR-J10"/>
-                <constraint firstItem="Y4c-eK-mv8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="cCs-Oq-Qad"/>
+                <constraint firstItem="Y4c-eK-mv8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="cCs-Oq-Qad"/>
                 <constraint firstItem="DBl-4s-Igl" firstAttribute="leading" secondItem="cMB-Gh-yJx" secondAttribute="trailing" constant="14.5" id="fIE-zB-aZj"/>
                 <constraint firstItem="cMB-Gh-yJx" firstAttribute="top" secondItem="qqb-Ts-Oex" secondAttribute="bottom" constant="10" id="fP9-Iu-4xL"/>
                 <constraint firstItem="cMB-Gh-yJx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="fr8-Yx-v94"/>
-                <constraint firstItem="eyU-KG-Atl" firstAttribute="top" secondItem="gqd-OF-tMU" secondAttribute="bottom" constant="30" id="fyY-0Q-egZ"/>
+                <constraint firstItem="eyU-KG-Atl" firstAttribute="top" secondItem="gqd-OF-tMU" secondAttribute="bottom" constant="16" id="fyY-0Q-egZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DBl-4s-Igl" secondAttribute="trailing" constant="40" id="lh8-fZ-rvz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gqd-OF-tMU" secondAttribute="trailing" constant="45" id="mjy-tx-o7f"/>
                 <constraint firstItem="DBl-4s-Igl" firstAttribute="top" secondItem="qqb-Ts-Oex" secondAttribute="bottom" constant="19" id="nOb-TZ-QfX"/>

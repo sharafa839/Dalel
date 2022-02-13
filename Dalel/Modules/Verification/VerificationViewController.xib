@@ -16,6 +16,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerificationViewController" customModule="Dalel" customModuleProvider="target">
             <connections>
+                <outlet property="_tf1" destination="4sK-hV-oAC" id="eKC-ok-KsA"/>
+                <outlet property="_tf2" destination="bqP-5w-AEj" id="4wH-Sw-PZf"/>
+                <outlet property="_tf3" destination="4YX-gV-nxl" id="jC1-WR-tfs"/>
+                <outlet property="_tf4" destination="avb-17-RHg" id="P9k-6O-2s6"/>
+                <outlet property="_tf5" destination="D3D-8k-HBV" id="xvI-59-hk6"/>
+                <outlet property="_tf6" destination="VL6-Tt-J60" id="jGA-OA-6qO"/>
+                <outlet property="codeNumberLabel" destination="1Wh-94-jYh" id="g0G-hP-6bc"/>
+                <outlet property="enterActivationCode" destination="3bB-1L-8DQ" id="InL-S6-EZF"/>
+                <outlet property="makeSureButton" destination="iut-Lz-APC" id="5HK-k0-qgE"/>
+                <outlet property="messageIsSent" destination="SMc-l3-yWp" id="bqy-qb-z9e"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -86,6 +96,9 @@
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="makeSureAction:" destination="-1" eventType="touchUpInside" id="Sz5-aE-3KG"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

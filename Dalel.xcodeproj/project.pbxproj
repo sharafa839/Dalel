@@ -13,6 +13,13 @@
 		FF78AA4A27A579ED0099F90F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4827A579ED0099F90F /* Main.storyboard */; };
 		FF78AA4C27A579EF0099F90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4B27A579EF0099F90F /* Assets.xcassets */; };
 		FF78AA4F27A579EF0099F90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4D27A579EF0099F90F /* LaunchScreen.storyboard */; };
+		FF7AC0E927B853830068D1DE /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AC0E827B853830068D1DE /* BaseApi.swift */; };
+		FF7AC0EB27B8538F0068D1DE /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AC0EA27B8538F0068D1DE /* BaseApi.swift */; };
+		FF7AC0ED27B853C50068D1DE /* BannerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AC0EC27B853C50068D1DE /* BannerApi.swift */; };
+		FF7AC0EF27B853CF0068D1DE /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AC0EE27B853CF0068D1DE /* BannerModel.swift */; };
+		FF7AC0F127B853E00068D1DE /* BannerNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AC0F027B853E00068D1DE /* BannerNetworking.swift */; };
+		FF7AC0F427B85B900068D1DE /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AC0F227B85B900068D1DE /* CategoriesCollectionViewCell.swift */; };
+		FF7AC0F527B85B900068D1DE /* CategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7AC0F327B85B900068D1DE /* CategoriesCollectionViewCell.xib */; };
 		FF7F21AB27ADFD5B007606DB /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21A927ADFD5B007606DB /* ErrorResponse.swift */; };
 		FF7F21AC27ADFD5B007606DB /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21AA27ADFD5B007606DB /* BaseResponse.swift */; };
 		FF7F21AD27ADFD5B007606DB /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21A827ADFD5B007606DB /* TargetType.swift */; };
@@ -53,6 +60,14 @@
 		FF7F220127AF05F9007606DB /* UsersNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21AF27ADFD62007606DB /* UsersNetworking.swift */; };
 		FF7F620727B54014004D334E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F620627B54014004D334E /* LoginViewModel.swift */; };
 		FF7F620927B54FC8004D334E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F620827B54FC8004D334E /* LoginModel.swift */; };
+		FF7F620F27B5799B004D334E /* OnBoardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F620E27B5799B004D334E /* OnBoardingViewModel.swift */; };
+		FF7F621127B5CB31004D334E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F621027B5CB31004D334E /* HomeViewModel.swift */; };
+		FF7F621327B5CB5E004D334E /* Categories Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F621227B5CB5E004D334E /* Categories Api.swift */; };
+		FF7F621527B5CB7A004D334E /* CategoriesNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F621427B5CB7A004D334E /* CategoriesNetworking.swift */; };
+		FF7F621827B5CFE4004D334E /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F621727B5CFE4004D334E /* CategoryModel.swift */; };
+		FF7F621A27B5D7D5004D334E /* CenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F621927B5D7D5004D334E /* CenterModel.swift */; };
+		FF7F621C27B5DAA4004D334E /* CenterNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F621B27B5DAA4004D334E /* CenterNetworking.swift */; };
+		FF7F621E27B5DAAE004D334E /* CenterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F621D27B5DAAE004D334E /* CenterApi.swift */; };
 		FFBFC36527A57FD00088C717 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36327A57FD00088C717 /* LoginViewController.swift */; };
 		FFBFC36627A57FD00088C717 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC36427A57FD00088C717 /* LoginViewController.xib */; };
 		FFBFC36B27A580020088C717 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36927A580020088C717 /* RegisterViewController.swift */; };
@@ -103,6 +118,14 @@
 		FF78AA4927A579ED0099F90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF78AA4B27A579EF0099F90F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF78AA4E27A579EF0099F90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF7AC0E727B853700068D1DE /* BaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
+		FF7AC0E827B853830068D1DE /* BaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseApi.swift; path = ../../../../Baladna/Baladna/NetworkLayer/BaseNetwork/BaseApi.swift; sourceTree = "<group>"; };
+		FF7AC0EA27B8538F0068D1DE /* BaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseApi.swift; path = ../../../../Baladna/Baladna/NetworkLayer/BaseNetwork/BaseApi.swift; sourceTree = "<group>"; };
+		FF7AC0EC27B853C50068D1DE /* BannerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerApi.swift; sourceTree = "<group>"; };
+		FF7AC0EE27B853CF0068D1DE /* BannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModel.swift; sourceTree = "<group>"; };
+		FF7AC0F027B853E00068D1DE /* BannerNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerNetworking.swift; sourceTree = "<group>"; };
+		FF7AC0F227B85B900068D1DE /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF7AC0F327B85B900068D1DE /* CategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		FF7F21A827ADFD5B007606DB /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		FF7F21A927ADFD5B007606DB /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		FF7F21AA27ADFD5B007606DB /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
@@ -144,6 +167,14 @@
 		FF7F21FC27AEFE54007606DB /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		FF7F620627B54014004D334E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FF7F620827B54FC8004D334E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		FF7F620E27B5799B004D334E /* OnBoardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewModel.swift; sourceTree = "<group>"; };
+		FF7F621027B5CB31004D334E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FF7F621227B5CB5E004D334E /* Categories Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categories Api.swift"; sourceTree = "<group>"; };
+		FF7F621427B5CB7A004D334E /* CategoriesNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesNetworking.swift; sourceTree = "<group>"; };
+		FF7F621727B5CFE4004D334E /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		FF7F621927B5D7D5004D334E /* CenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModel.swift; sourceTree = "<group>"; };
+		FF7F621B27B5DAA4004D334E /* CenterNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterNetworking.swift; sourceTree = "<group>"; };
+		FF7F621D27B5DAAE004D334E /* CenterApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterApi.swift; sourceTree = "<group>"; };
 		FFBFC36327A57FD00088C717 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFBFC36427A57FD00088C717 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		FFBFC36927A580020088C717 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -257,12 +288,42 @@
 			path = Dalel;
 			sourceTree = "<group>";
 		};
+		FF7AC0E427B850D80068D1DE /* CentersModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF7F621927B5D7D5004D334E /* CenterModel.swift */,
+			);
+			path = CentersModel;
+			sourceTree = "<group>";
+		};
+		FF7AC0E527B853440068D1DE /* CenterNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				FF7F621B27B5DAA4004D334E /* CenterNetworking.swift */,
+				FF7F621D27B5DAAE004D334E /* CenterApi.swift */,
+				FF7AC0E427B850D80068D1DE /* CentersModel */,
+			);
+			path = CenterNetworking;
+			sourceTree = "<group>";
+		};
+		FF7AC0E627B8536F0068D1DE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FF7AC0E827B853830068D1DE /* BaseApi.swift */,
+				FF7AC0EA27B8538F0068D1DE /* BaseApi.swift */,
+				FF7F21AA27ADFD5B007606DB /* BaseResponse.swift */,
+				FF7F21A927ADFD5B007606DB /* ErrorResponse.swift */,
+				FF7AC0E727B853700068D1DE /* BaseApi.swift */,
+				FF7F21B627AE05C4007606DB /* EndPoints.swift */,
+				FF7F21A827ADFD5B007606DB /* TargetType.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		FF7F21AE27ADFD62007606DB /* AuthNetworking */ = {
 			isa = PBXGroup;
 			children = (
 				FF7F21B227ADFD62007606DB /* AuthApi.swift */,
-				FF7F21B027ADFD62007606DB /* RegisterModel.swift */,
-				FF7F620827B54FC8004D334E /* LoginModel.swift */,
 				FF7F21AF27ADFD62007606DB /* UsersNetworking.swift */,
 				FF7F21B527ADFE07007606DB /* AuthModels */,
 			);
@@ -272,6 +333,8 @@
 		FF7F21B527ADFE07007606DB /* AuthModels */ = {
 			isa = PBXGroup;
 			children = (
+				FF7F21B027ADFD62007606DB /* RegisterModel.swift */,
+				FF7F620827B54FC8004D334E /* LoginModel.swift */,
 				FF7F21BA27AECB30007606DB /* Logout.swift */,
 			);
 			path = AuthModels;
@@ -351,6 +414,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FF7F621627B5CFCE004D334E /* CategoryNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				FF7F621227B5CB5E004D334E /* Categories Api.swift */,
+				FF7F621427B5CB7A004D334E /* CategoriesNetworking.swift */,
+				FF7F621727B5CFE4004D334E /* CategoryModel.swift */,
+			);
+			path = CategoryNetworking;
+			sourceTree = "<group>";
+		};
 		FFBFC35E27A57EAC0088C717 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,12 +447,14 @@
 			isa = PBXGroup;
 			children = (
 				FF7F21BC27AED1FE007606DB /* Profile */,
-				FF7F21AA27ADFD5B007606DB /* BaseResponse.swift */,
-				FF7F21A927ADFD5B007606DB /* ErrorResponse.swift */,
+				FF7AC0E627B8536F0068D1DE /* Base */,
 				FF7F21B327ADFD89007606DB /* BaseApi.swift */,
-				FF7F21B627AE05C4007606DB /* EndPoints.swift */,
-				FF7F21A827ADFD5B007606DB /* TargetType.swift */,
 				FF7F21AE27ADFD62007606DB /* AuthNetworking */,
+				FF7F621627B5CFCE004D334E /* CategoryNetworking */,
+				FF7AC0E527B853440068D1DE /* CenterNetworking */,
+				FF7AC0EC27B853C50068D1DE /* BannerApi.swift */,
+				FF7AC0F027B853E00068D1DE /* BannerNetworking.swift */,
+				FF7AC0EE27B853CF0068D1DE /* BannerModel.swift */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -432,6 +507,7 @@
 			children = (
 				FFBFC37127A5804A0088C717 /* OnBoardingViewController.swift */,
 				FFBFC37227A5804A0088C717 /* OnBoardingViewController.xib */,
+				FF7F620E27B5799B004D334E /* OnBoardingViewModel.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -469,6 +545,9 @@
 				FF78AA4827A579ED0099F90F /* Main.storyboard */,
 				FF78AA4627A579ED0099F90F /* MainTabBar.swift */,
 				FFBFC38327A582050088C717 /* HomeTableViewController.swift */,
+				FF7AC0F227B85B900068D1DE /* CategoriesCollectionViewCell.swift */,
+				FF7AC0F327B85B900068D1DE /* CategoriesCollectionViewCell.xib */,
+				FF7F621027B5CB31004D334E /* HomeViewModel.swift */,
 				FFBFC3A127A585AF0088C717 /* FavoriteViewController.swift */,
 				FFBFC3A527A586290088C717 /* ProfileViewController.swift */,
 				FFBFC3A327A585E30088C717 /* NotificationViewController.swift */,
@@ -665,6 +744,7 @@
 				FFBFC37027A580360088C717 /* LanguageViewController.xib in Resources */,
 				FFBFC3BE27A5870E0088C717 /* ContactUsViewController.xib in Resources */,
 				FFBFC38B27A5844B0088C717 /* SchoolsViewController.xib in Resources */,
+				FF7AC0F527B85B900068D1DE /* CategoriesCollectionViewCell.xib in Resources */,
 				FFBFC39F27A585490088C717 /* SpecificSearchViewController.xib in Resources */,
 				FF78AA4F27A579EF0099F90F /* LaunchScreen.storyboard in Resources */,
 				FFBFC37827A5808F0088C717 /* ResetPasswordViewController.xib in Resources */,
@@ -734,22 +814,29 @@
 				FF7F21EE27AEFBF9007606DB /* TableView + Extesnions.swift in Sources */,
 				FF7F220127AF05F9007606DB /* UsersNetworking.swift in Sources */,
 				FFBFC37727A5808F0088C717 /* ResetPasswordViewController.swift in Sources */,
+				FF7AC0F427B85B900068D1DE /* CategoriesCollectionViewCell.swift in Sources */,
+				FF7F621127B5CB31004D334E /* HomeViewModel.swift in Sources */,
+				FF7AC0EF27B853CF0068D1DE /* BannerModel.swift in Sources */,
 				FF7F220027AF0597007606DB /* RegisterModel.swift in Sources */,
 				FF7F21EA27AEFBF9007606DB /* LottieHelper.swift in Sources */,
+				FF7F621527B5CB7A004D334E /* CategoriesNetworking.swift in Sources */,
 				FFBFC3C227A587320088C717 /* TermsAndConditionViewController.swift in Sources */,
 				FF7F21E627AEFBF9007606DB /* TimeHelper.swift in Sources */,
 				FF7F21AB27ADFD5B007606DB /* ErrorResponse.swift in Sources */,
 				FFBFC3B727A586BC0088C717 /* OurGoalViewController.swift in Sources */,
+				FF7F621A27B5D7D5004D334E /* CenterModel.swift in Sources */,
 				FFBFC38527A582050088C717 /* HomeTableViewController.swift in Sources */,
 				FFBFC36F27A580360088C717 /* LanguageViewController.swift in Sources */,
 				FF7F21E427AEFBF9007606DB /* Double + Extension.swift in Sources */,
 				FF7F21E727AEFBF9007606DB /* HelperK.swift in Sources */,
 				FFBFC3A627A586290088C717 /* ProfileViewController.swift in Sources */,
+				FF7F621827B5CFE4004D334E /* CategoryModel.swift in Sources */,
 				FF7F21E327AEFBF9007606DB /* imageSliderShowCong.swift in Sources */,
 				FF7F21EC27AEFBF9007606DB /* RightToLeftTransition.swift in Sources */,
 				FF7F620927B54FC8004D334E /* LoginModel.swift in Sources */,
 				FFBFC3A227A585AF0088C717 /* FavoriteViewController.swift in Sources */,
 				FF7F21E227AEFBF9007606DB /* HapticEffect.swift in Sources */,
+				FF7AC0ED27B853C50068D1DE /* BannerApi.swift in Sources */,
 				FF78AA4727A579ED0099F90F /* MainTabBar.swift in Sources */,
 				FF7F21AD27ADFD5B007606DB /* TargetType.swift in Sources */,
 				FF7F21E927AEFBF9007606DB /* CardView.swift in Sources */,
@@ -759,8 +846,11 @@
 				FFBFC3BD27A5870E0088C717 /* ContactUsViewController.swift in Sources */,
 				FFBFC38F27A584A00088C717 /* SchoolDetailsViewController.swift in Sources */,
 				FF7F21E527AEFBF9007606DB /* DesignView.swift in Sources */,
+				FF7F621C27B5DAA4004D334E /* CenterNetworking.swift in Sources */,
+				FF7F621E27B5DAAE004D334E /* CenterApi.swift in Sources */,
 				FFBFC39927A585280088C717 /* SearchViewController.swift in Sources */,
 				FF7F21F727AEFC23007606DB /* ActivityIndicatorManager.swift in Sources */,
+				FF7F620F27B5799B004D334E /* OnBoardingViewModel.swift in Sources */,
 				FF7F21B727AE05C4007606DB /* EndPoints.swift in Sources */,
 				FFBFC37B27A580B00088C717 /* VerificationViewController.swift in Sources */,
 				FF7F21DF27AEFBF9007606DB /* UIView + extension.swift in Sources */,
@@ -772,12 +862,15 @@
 				FF7F21E827AEFBF9007606DB /* HelperFunc.swift in Sources */,
 				FF7F21F127AEFBFA007606DB /* ViewController + extensions.swift in Sources */,
 				FF7F21C227AED458007606DB /* Router.swift in Sources */,
+				FF7AC0E927B853830068D1DE /* BaseApi.swift in Sources */,
 				FF7F21E127AEFBF9007606DB /* DispatchQueue + Extensions.swift in Sources */,
 				FF7F21DE27AEFBF9007606DB /* UIButton + extension.swift in Sources */,
 				FF7F21FD27AEFE54007606DB /* RegisterViewModel.swift in Sources */,
 				FF7F21C027AED222007606DB /* ProfileNetworking.swift in Sources */,
 				FF7F21BE27AED210007606DB /* ProfileApi.swift in Sources */,
+				FF7F621327B5CB5E004D334E /* Categories Api.swift in Sources */,
 				FF7F21B427ADFD89007606DB /* BaseApi.swift in Sources */,
+				FF7AC0F127B853E00068D1DE /* BannerNetworking.swift in Sources */,
 				FF7F21EB27AEFBF9007606DB /* LocalizationManager.swift in Sources */,
 				FFBFC39427A584DD0088C717 /* AddCommentViewController.swift in Sources */,
 				FF7F21FA27AEFC29007606DB /* Colors.swift in Sources */,
@@ -787,6 +880,7 @@
 				FF7F21BB27AECB30007606DB /* Logout.swift in Sources */,
 				FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */,
 				FFBFC38A27A5844B0088C717 /* SchoolsViewController.swift in Sources */,
+				FF7AC0EB27B8538F0068D1DE /* BaseApi.swift in Sources */,
 				FF7F21AC27ADFD5B007606DB /* BaseResponse.swift in Sources */,
 				FF7F620727B54014004D334E /* LoginViewModel.swift in Sources */,
 			);

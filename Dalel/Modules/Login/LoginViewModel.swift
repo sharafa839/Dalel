@@ -47,6 +47,7 @@ class LoginViewModel:AuthenticationProtocol{
                 guard let response = response?.payload else {
                     return
                 }
+                HelperK.saveToken(token: response.payload?.token ?? "")
                 self.onSuccess.onNext(response)
                 
             }

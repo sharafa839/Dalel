@@ -14,20 +14,35 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCommentViewController" customModule="Dalel" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCommentViewController" customModule="Dalel" customModuleProvider="target">
+            <connections>
+                <outlet property="_1stButton" destination="xr6-Jq-AEP" id="74A-k5-yO9"/>
+                <outlet property="_2stButton" destination="fu6-uz-C7h" id="WOO-1z-DSw"/>
+                <outlet property="_3stButton" destination="p4x-9v-Hba" id="jxe-Gc-Cgr"/>
+                <outlet property="_4stButton" destination="ZWB-Pq-4oO" id="Mcp-wv-KRr"/>
+                <outlet property="_5stButton" destination="HH5-jc-4g0" id="MPx-Xh-4h2"/>
+                <outlet property="addCommentButton" destination="2cS-cX-B5G" id="Kv9-u7-bZF"/>
+                <outlet property="addReviewLabel" destination="R7r-wH-JlN" id="Cwe-6n-6Dx"/>
+                <outlet property="emailTextField" destination="fR2-IJ-QWw" id="bZA-1r-nKf"/>
+                <outlet property="nameTextField" destination="NfG-a2-DNp" id="ytu-YF-9kz"/>
+                <outlet property="opinionsTextField" destination="6pc-Qe-xhx" id="91C-QO-9dU"/>
+                <outlet property="rateInText" destination="VJD-Ky-rmR" id="VSy-xG-lRi"/>
+                <outlet property="view" destination="MzB-2W-PPB" id="Dcq-SZ-MAY"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="MzB-2W-PPB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من فضلك اضف تقييمك" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7r-wH-JlN">
-                    <rect key="frame" x="60" y="64" width="294" height="26.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="please add review" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7r-wH-JlN">
+                    <rect key="frame" x="40" y="64" width="334" height="26.5"/>
                     <fontDescription key="fontDescription" name="AmazonEmber-Bold" family="Amazon Ember" pointSize="22"/>
                     <color key="textColor" name="MainColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fR2-IJ-QWw">
-                    <rect key="frame" x="40" y="276.5" width="334" height="40"/>
+                    <rect key="frame" x="40" y="264.5" width="334" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="e6g-SD-A7D"/>
                     </constraints>
@@ -35,7 +50,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6pc-Qe-xhx">
-                    <rect key="frame" x="40" y="354.5" width="334" height="110"/>
+                    <rect key="frame" x="40" y="342.5" width="334" height="110"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="110" id="vS1-DU-l8u"/>
                     </constraints>
@@ -43,7 +58,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cS-cX-B5G">
-                    <rect key="frame" x="40" y="494.5" width="334" height="50"/>
+                    <rect key="frame" x="40" y="482.5" width="334" height="50"/>
                     <color key="backgroundColor" name="MainColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="OSU-kM-csR"/>
@@ -51,9 +66,12 @@
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="اضافة "/>
+                    <connections>
+                        <action selector="addCommentAction:" destination="-1" eventType="touchUpInside" id="iSA-Se-9A2"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-a2-DNp">
-                    <rect key="frame" x="40" y="203.5" width="334" height="40"/>
+                    <rect key="frame" x="40" y="191.5" width="334" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="r5l-Bt-d3E"/>
                     </constraints>
@@ -61,33 +79,54 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DI6-g1-D4t">
-                    <rect key="frame" x="60" y="110.5" width="294" height="43"/>
+                    <rect key="frame" x="40" y="110.5" width="334" height="31"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr6-Jq-AEP">
-                            <rect key="frame" x="0.0" y="0.0" width="59" height="43"/>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr6-Jq-AEP">
+                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="31"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="Star 6"/>
+                            <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system"/>
+                            <connections>
+                                <action selector="rateButton:" destination="-1" eventType="touchUpInside" id="Hry-0P-fg4"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fu6-uz-C7h">
-                            <rect key="frame" x="59" y="0.0" width="58.5" height="43"/>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fu6-uz-C7h">
+                            <rect key="frame" x="55.5" y="0.0" width="56" height="31"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="Star 6"/>
+                            <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system"/>
+                            <connections>
+                                <action selector="rateButton:" destination="-1" eventType="touchUpInside" id="dCy-IK-VXy"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4x-9v-Hba">
-                            <rect key="frame" x="117.5" y="0.0" width="59" height="43"/>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4x-9v-Hba">
+                            <rect key="frame" x="111.5" y="0.0" width="55.5" height="31"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="Star 6"/>
+                            <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system"/>
+                            <connections>
+                                <action selector="rateButton:" destination="-1" eventType="touchUpInside" id="c71-na-Zmv"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWB-Pq-4oO">
-                            <rect key="frame" x="176.5" y="0.0" width="58.5" height="43"/>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWB-Pq-4oO">
+                            <rect key="frame" x="167" y="0.0" width="55.5" height="31"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="Star 6"/>
+                            <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system"/>
+                            <connections>
+                                <action selector="rateButton:" destination="-1" eventType="touchUpInside" id="e2p-y9-8o6"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HH5-jc-4g0">
-                            <rect key="frame" x="235" y="0.0" width="59" height="43"/>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HH5-jc-4g0">
+                            <rect key="frame" x="222.5" y="0.0" width="56" height="31"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="Star 6"/>
+                            <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system"/>
+                            <connections>
+                                <action selector="rateButton:" destination="-1" eventType="touchUpInside" id="iUo-F1-D6h"/>
+                            </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJD-Ky-rmR">
+                            <rect key="frame" x="278.5" y="0.0" width="55.5" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                 </stackView>
             </subviews>
@@ -98,18 +137,18 @@
                 <constraint firstItem="DI6-g1-D4t" firstAttribute="top" secondItem="R7r-wH-JlN" secondAttribute="bottom" constant="20" id="31w-Ms-yyY"/>
                 <constraint firstItem="2cS-cX-B5G" firstAttribute="trailing" secondItem="6pc-Qe-xhx" secondAttribute="trailing" id="3BD-3l-wdu"/>
                 <constraint firstItem="fR2-IJ-QWw" firstAttribute="top" secondItem="NfG-a2-DNp" secondAttribute="bottom" constant="33" id="3ey-q4-9RP"/>
+                <constraint firstItem="R7r-wH-JlN" firstAttribute="leading" secondItem="hCt-pe-OEJ" secondAttribute="leading" constant="40" id="5ax-1p-FB6"/>
                 <constraint firstItem="2cS-cX-B5G" firstAttribute="leading" secondItem="6pc-Qe-xhx" secondAttribute="leading" id="H29-Yg-anK"/>
                 <constraint firstItem="DI6-g1-D4t" firstAttribute="centerX" secondItem="MzB-2W-PPB" secondAttribute="centerX" id="HTL-eI-BV8"/>
                 <constraint firstItem="fR2-IJ-QWw" firstAttribute="leading" secondItem="NfG-a2-DNp" secondAttribute="leading" id="LZF-Lx-Iun"/>
                 <constraint firstItem="R7r-wH-JlN" firstAttribute="top" secondItem="hCt-pe-OEJ" secondAttribute="top" constant="20" id="M0v-DF-yWm"/>
                 <constraint firstItem="6pc-Qe-xhx" firstAttribute="leading" secondItem="fR2-IJ-QWw" secondAttribute="leading" id="Pb1-97-Asm"/>
+                <constraint firstItem="DI6-g1-D4t" firstAttribute="leading" secondItem="R7r-wH-JlN" secondAttribute="leading" id="Vw1-X5-oho"/>
                 <constraint firstItem="fR2-IJ-QWw" firstAttribute="trailing" secondItem="NfG-a2-DNp" secondAttribute="trailing" id="Y4h-eK-9JZ"/>
                 <constraint firstItem="NfG-a2-DNp" firstAttribute="top" secondItem="DI6-g1-D4t" secondAttribute="bottom" constant="50" id="be6-xS-vEo"/>
                 <constraint firstItem="2cS-cX-B5G" firstAttribute="top" secondItem="6pc-Qe-xhx" secondAttribute="bottom" constant="30" id="cAS-cY-4Ep"/>
                 <constraint firstItem="6pc-Qe-xhx" firstAttribute="top" secondItem="fR2-IJ-QWw" secondAttribute="bottom" constant="38" id="cak-R5-Seh"/>
-                <constraint firstItem="DI6-g1-D4t" firstAttribute="trailing" secondItem="R7r-wH-JlN" secondAttribute="trailing" id="gNl-Ah-qWb"/>
                 <constraint firstItem="NfG-a2-DNp" firstAttribute="leading" secondItem="hCt-pe-OEJ" secondAttribute="leading" constant="40" id="gou-tL-TLZ"/>
-                <constraint firstItem="hCt-pe-OEJ" firstAttribute="trailing" secondItem="R7r-wH-JlN" secondAttribute="trailing" constant="60" id="mOY-wi-G8T"/>
                 <constraint firstItem="R7r-wH-JlN" firstAttribute="centerX" secondItem="MzB-2W-PPB" secondAttribute="centerX" id="oiP-uL-4rF"/>
                 <constraint firstItem="6pc-Qe-xhx" firstAttribute="trailing" secondItem="fR2-IJ-QWw" secondAttribute="trailing" id="zGS-oZ-lqj"/>
             </constraints>
@@ -117,7 +156,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Star 6" width="32" height="29"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="MainColor">
             <color red="0.28235294117647058" green="0.792156862745098" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

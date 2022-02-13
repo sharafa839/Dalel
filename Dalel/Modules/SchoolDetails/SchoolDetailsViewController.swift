@@ -9,6 +9,30 @@ import UIKit
 
 class SchoolDetailsViewController: UIViewController {
 
+    @IBOutlet weak var schoolNameLabel: UILabel!
+    @IBOutlet weak var _1stButton: UIButton!
+    @IBOutlet weak var _2stButton: UIButton!
+    @IBOutlet weak var _3stButton: UIButton!
+    @IBOutlet weak var _4stButton: UIButton!
+    @IBOutlet weak var _5stButton: UIButton!
+    @IBOutlet weak var rateInTextLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var ourServicesLabel: UILabel!
+    
+    @IBOutlet weak var ourServicesDescriptionLabel: UILabel!
+    @IBOutlet weak var kindLabel: UILabel!
+    @IBOutlet weak var kindDescriptionLabel: UILabel!
+    @IBOutlet weak var loactionLabel: UILabel!
+    @IBOutlet weak var locationDescriptionLabel: UILabel!
+    @IBOutlet weak var callUsLabel: UILabel!
+    @IBOutlet weak var phoneNumberButton: UIButton!
+    @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var addCommentButton: UIButton!
+    @IBOutlet weak var commentTableView: UITableView!
+    @IBOutlet weak var categoriesLabel: UILabel!
+    @IBOutlet weak var categoryCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +40,13 @@ class SchoolDetailsViewController: UIViewController {
     }
 
 
+    @IBAction func makeFavoriteButton(_ sender: Any) {
+    }
+    @IBAction func backButton(_ sender: Any) {
+    }
+    @IBAction func addCommentAction(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
