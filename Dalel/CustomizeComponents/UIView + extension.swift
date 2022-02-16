@@ -39,12 +39,13 @@ extension UIView {
           self.clipsToBounds = true
       }
     
-    func floatView(raduis: CGFloat) {
+    func floatView(raduis: CGFloat,color:UIColor) {
            self.layer.cornerRadius = raduis
-           self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowColor = UIColor(named: "MainColor")?.cgColor
            self.layer.shadowOffset = CGSize(width: 0, height: 5)
            self.layer.shadowOpacity = 0.2
            self.layer.shadowRadius = 4
+        self.layer.borderColor = color.cgColor
        }
     
     func pinEdges(to other: UIView) {
@@ -230,7 +231,15 @@ extension UIView {
            }
     
     // MARK:- Colors
+    static var nib : UINib {
+        return UINib(nibName : "\(self)",bundle : nil)
+    }
     
+    static var identifier: String {
+        return String(describing: self)
+    }
+    
+
     func setGradientBackground(colorOne: UIColor, colorTwo: UIColor) {
           let gradientLayer = CAGradientLayer()
           gradientLayer.frame = bounds

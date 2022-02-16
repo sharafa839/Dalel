@@ -9,9 +9,10 @@ import Foundation
 struct BaseResponse<T:Codable>:Codable {
     var status:Bool?
     var payload:T?
-    
+    var message:String?
     enum CodingKeys:String,CodingKey {
         case status = "status"
         case payload = "payload"
+        case message
     }
 }

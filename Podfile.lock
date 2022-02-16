@@ -78,6 +78,11 @@ PODS:
     - GoogleUtilities/Environment (~> 7.2)
     - nanopb (~> 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleMaps (5.1.0):
+    - GoogleMaps/Maps (= 5.1.0)
+  - GoogleMaps/Base (5.1.0)
+  - GoogleMaps/Maps (5.1.0):
+    - GoogleMaps/Base
   - GoogleUtilities/AppDelegateSwizzler (7.7.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -205,6 +210,7 @@ DEPENDENCIES:
   - Firebase/Core
   - FlagPhoneNumber
   - Gallery
+  - GoogleMaps
   - ImageSlideshow
   - ImageSlideshow/Kingfisher
   - iOSDropDown
@@ -243,6 +249,7 @@ SPEC REPOS:
     - Gallery
     - GoogleAppMeasurement
     - GoogleDataTransport
+    - GoogleMaps
     - GoogleUtilities
     - GTMSessionFetcher
     - ImageSlideshow
@@ -284,6 +291,7 @@ SPEC CHECKSUMS:
   Gallery: b7fc1aeb68a39ad6d2c423574750196bf9b25e5c
   GoogleAppMeasurement: aa3cb422fab2b05d2efac543a5720d1a85b9dea5
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
+  GoogleMaps: 086ae1dab659eaa7339bdb30fc88e2f44e7c597c
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
@@ -310,6 +318,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
 
-PODFILE CHECKSUM: 543c90ac882e0d1473a5c7b3552f36ed62a04d6c
+PODFILE CHECKSUM: dbb4615a0cd4797f17f9861c5e984ddfd7301eea
 
 COCOAPODS: 1.11.0

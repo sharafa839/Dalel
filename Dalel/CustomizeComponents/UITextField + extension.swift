@@ -18,11 +18,7 @@ extension UITextField {
          self.clipsToBounds = true
     }
     
-    func drawBorder(raduis:CGFloat, borderColor:UIColor) {
-        self.layer.borderColor = borderColor.cgColor
-        self.layer.borderWidth = 0.5
-        self.setRoundCorners(raduis)
-    }
+
     
     func placeHolderColor(color: UIColor) {
     let placeholderAttributedString = NSMutableAttributedString(attributedString: self.attributedPlaceholder!)
@@ -139,4 +135,11 @@ extension UITextField {
 //    
     
     
+}
+extension UIView {
+    func drawBorder(raduis:CGFloat, borderColor:UIColor) {
+        self.layer.borderColor = borderColor.cgColor
+        self.layer.borderWidth = 1
+        self.setRoundCorners(raduis)
+    }
 }

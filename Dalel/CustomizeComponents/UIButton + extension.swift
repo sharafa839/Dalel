@@ -10,12 +10,7 @@ import UIKit
 
 extension UIButton {
     
-    func drawBorder(raduis:CGFloat, borderColor:UIColor) {
-           self.layer.borderColor = borderColor.cgColor
-           self.layer.borderWidth = 1.5
-           self.setRoundCorners(raduis)
-       }
-    
+  
     func alignText(spacing: CGFloat = 8.0) {
         if let image = self.imageView?.image {
             let imageSize: CGSize = image.size

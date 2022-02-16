@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		54844C3FD69E01E615CFF16B /* Pods_Dalel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A0A0FEC18C33B733889F49 /* Pods_Dalel.framework */; };
+		FF6100A227BC40CE001A7F31 /* CategoryCentersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100A127BC40CE001A7F31 /* CategoryCentersModel.swift */; };
+		FF6100A527BC5420001A7F31 /* SingleCenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100A427BC5420001A7F31 /* SingleCenterModel.swift */; };
+		FF6100A827BC5AE1001A7F31 /* SchoolDetailesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100A727BC5AE1001A7F31 /* SchoolDetailesViewModel.swift */; };
+		FF6100AB27BC5E3D001A7F31 /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100AA27BC5E3D001A7F31 /* ReviewModel.swift */; };
+		FF6100AE27BC63E7001A7F31 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100AC27BC63E7001A7F31 /* CommentTableViewCell.swift */; };
+		FF6100AF27BC63E7001A7F31 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6100AD27BC63E7001A7F31 /* CommentTableViewCell.xib */; };
+		FF6100B127BC7686001A7F31 /* MakeFavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100B027BC7686001A7F31 /* MakeFavoriteModel.swift */; };
 		FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4227A579ED0099F90F /* AppDelegate.swift */; };
 		FF78AA4727A579ED0099F90F /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4627A579ED0099F90F /* MainTabBar.swift */; };
 		FF78AA4A27A579ED0099F90F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4827A579ED0099F90F /* Main.storyboard */; };
@@ -112,6 +119,13 @@
 		D39720B9AF372EB3449E031F /* Pods-Dalel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dalel.release.xcconfig"; path = "Target Support Files/Pods-Dalel/Pods-Dalel.release.xcconfig"; sourceTree = "<group>"; };
 		D6A0A0FEC18C33B733889F49 /* Pods_Dalel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dalel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAE285294AE5A146EF7BAFC /* Pods-Dalel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dalel.debug.xcconfig"; path = "Target Support Files/Pods-Dalel/Pods-Dalel.debug.xcconfig"; sourceTree = "<group>"; };
+		FF6100A127BC40CE001A7F31 /* CategoryCentersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCentersModel.swift; sourceTree = "<group>"; };
+		FF6100A427BC5420001A7F31 /* SingleCenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCenterModel.swift; sourceTree = "<group>"; };
+		FF6100A727BC5AE1001A7F31 /* SchoolDetailesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailesViewModel.swift; sourceTree = "<group>"; };
+		FF6100AA27BC5E3D001A7F31 /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
+		FF6100AC27BC63E7001A7F31 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		FF6100AD27BC63E7001A7F31 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		FF6100B027BC7686001A7F31 /* MakeFavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeFavoriteModel.swift; sourceTree = "<group>"; };
 		FF78AA3F27A579ED0099F90F /* Dalel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dalel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF78AA4227A579ED0099F90F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF78AA4627A579ED0099F90F /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
@@ -256,6 +270,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF6100A327BC4C43001A7F31 /* BannerNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				FF7AC0EC27B853C50068D1DE /* BannerApi.swift */,
+				FF7AC0F027B853E00068D1DE /* BannerNetworking.swift */,
+				FF7AC0EE27B853CF0068D1DE /* BannerModel.swift */,
+			);
+			path = BannerNetworking;
+			sourceTree = "<group>";
+		};
+		FF6100A627BC5ACB001A7F31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC38D27A584A00088C717 /* SchoolDetailsViewController.swift */,
+				FF6100AC27BC63E7001A7F31 /* CommentTableViewCell.swift */,
+				FF6100AD27BC63E7001A7F31 /* CommentTableViewCell.xib */,
+				FFBFC38E27A584A00088C717 /* SchoolDetailsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF6100A927BC5AEB001A7F31 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF6100A727BC5AE1001A7F31 /* SchoolDetailesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FF78AA3627A579ED0099F90F = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +335,9 @@
 			isa = PBXGroup;
 			children = (
 				FF7F621927B5D7D5004D334E /* CenterModel.swift */,
+				FF6100B027BC7686001A7F31 /* MakeFavoriteModel.swift */,
+				FF6100AA27BC5E3D001A7F31 /* ReviewModel.swift */,
+				FF6100A427BC5420001A7F31 /* SingleCenterModel.swift */,
 			);
 			path = CentersModel;
 			sourceTree = "<group>";
@@ -420,6 +466,7 @@
 				FF7F621227B5CB5E004D334E /* Categories Api.swift */,
 				FF7F621427B5CB7A004D334E /* CategoriesNetworking.swift */,
 				FF7F621727B5CFE4004D334E /* CategoryModel.swift */,
+				FF6100A127BC40CE001A7F31 /* CategoryCentersModel.swift */,
 			);
 			path = CategoryNetworking;
 			sourceTree = "<group>";
@@ -452,9 +499,7 @@
 				FF7F21AE27ADFD62007606DB /* AuthNetworking */,
 				FF7F621627B5CFCE004D334E /* CategoryNetworking */,
 				FF7AC0E527B853440068D1DE /* CenterNetworking */,
-				FF7AC0EC27B853C50068D1DE /* BannerApi.swift */,
-				FF7AC0F027B853E00068D1DE /* BannerNetworking.swift */,
-				FF7AC0EE27B853CF0068D1DE /* BannerModel.swift */,
+				FF6100A327BC4C43001A7F31 /* BannerNetworking */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -567,8 +612,8 @@
 		FFBFC39127A584AD0088C717 /* SchoolDetails */ = {
 			isa = PBXGroup;
 			children = (
-				FFBFC38D27A584A00088C717 /* SchoolDetailsViewController.swift */,
-				FFBFC38E27A584A00088C717 /* SchoolDetailsViewController.xib */,
+				FF6100A627BC5ACB001A7F31 /* View */,
+				FF6100A927BC5AEB001A7F31 /* ViewModel */,
 			);
 			path = SchoolDetails;
 			sourceTree = "<group>";
@@ -685,6 +730,7 @@
 				FF78AA3C27A579ED0099F90F /* Frameworks */,
 				FF78AA3D27A579ED0099F90F /* Resources */,
 				8D9EDECA9F4BAF4FBFA08E1C /* [CP] Embed Pods Frameworks */,
+				2A30102F656C70CBC57FD8AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -752,6 +798,7 @@
 				FF78AA4C27A579EF0099F90F /* Assets.xcassets in Resources */,
 				FFBFC3B427A586A50088C717 /* OurVisionViewController.xib in Resources */,
 				FF78AA4A27A579ED0099F90F /* Main.storyboard in Resources */,
+				FF6100AF27BC63E7001A7F31 /* CommentTableViewCell.xib in Resources */,
 				FFBFC37C27A580B00088C717 /* VerificationViewController.xib in Resources */,
 				FFBFC39A27A585280088C717 /* SearchViewController.xib in Resources */,
 			);
@@ -760,6 +807,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2A30102F656C70CBC57FD8AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8D9EDECA9F4BAF4FBFA08E1C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -808,6 +872,7 @@
 			files = (
 				FF7F21FF27AF0574007606DB /* AuthApi.swift in Sources */,
 				FFBFC36527A57FD00088C717 /* LoginViewController.swift in Sources */,
+				FF6100A227BC40CE001A7F31 /* CategoryCentersModel.swift in Sources */,
 				FFBFC36B27A580020088C717 /* RegisterViewController.swift in Sources */,
 				FF7F21F627AEFC23007606DB /* CheckLanguage.swift in Sources */,
 				FFBFC37327A5804A0088C717 /* OnBoardingViewController.swift in Sources */,
@@ -830,6 +895,7 @@
 				FF7F21E427AEFBF9007606DB /* Double + Extension.swift in Sources */,
 				FF7F21E727AEFBF9007606DB /* HelperK.swift in Sources */,
 				FFBFC3A627A586290088C717 /* ProfileViewController.swift in Sources */,
+				FF6100AE27BC63E7001A7F31 /* CommentTableViewCell.swift in Sources */,
 				FF7F621827B5CFE4004D334E /* CategoryModel.swift in Sources */,
 				FF7F21E327AEFBF9007606DB /* imageSliderShowCong.swift in Sources */,
 				FF7F21EC27AEFBF9007606DB /* RightToLeftTransition.swift in Sources */,
@@ -849,6 +915,7 @@
 				FF7F621C27B5DAA4004D334E /* CenterNetworking.swift in Sources */,
 				FF7F621E27B5DAAE004D334E /* CenterApi.swift in Sources */,
 				FFBFC39927A585280088C717 /* SearchViewController.swift in Sources */,
+				FF6100AB27BC5E3D001A7F31 /* ReviewModel.swift in Sources */,
 				FF7F21F727AEFC23007606DB /* ActivityIndicatorManager.swift in Sources */,
 				FF7F620F27B5799B004D334E /* OnBoardingViewModel.swift in Sources */,
 				FF7F21B727AE05C4007606DB /* EndPoints.swift in Sources */,
@@ -860,6 +927,8 @@
 				FFBFC3A427A585E30088C717 /* NotificationViewController.swift in Sources */,
 				FFBFC3D427A5AFBA0088C717 /* PlacesTableViewController.swift in Sources */,
 				FF7F21E827AEFBF9007606DB /* HelperFunc.swift in Sources */,
+				FF6100B127BC7686001A7F31 /* MakeFavoriteModel.swift in Sources */,
+				FF6100A827BC5AE1001A7F31 /* SchoolDetailesViewModel.swift in Sources */,
 				FF7F21F127AEFBFA007606DB /* ViewController + extensions.swift in Sources */,
 				FF7F21C227AED458007606DB /* Router.swift in Sources */,
 				FF7AC0E927B853830068D1DE /* BaseApi.swift in Sources */,
@@ -875,6 +944,7 @@
 				FFBFC39427A584DD0088C717 /* AddCommentViewController.swift in Sources */,
 				FF7F21FA27AEFC29007606DB /* Colors.swift in Sources */,
 				FFBFC3B327A586A50088C717 /* OurVisionViewController.swift in Sources */,
+				FF6100A527BC5420001A7F31 /* SingleCenterModel.swift in Sources */,
 				FF7F21ED27AEFBF9007606DB /* General.swift in Sources */,
 				FF7F21F827AEFC23007606DB /* Str + Extension.swift in Sources */,
 				FF7F21BB27AECB30007606DB /* Logout.swift in Sources */,

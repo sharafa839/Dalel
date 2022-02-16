@@ -35,5 +35,6 @@ pod 'CountryPickerSwift'
 pod 'RxDataSources'
 pod 'SSCustomTabbar'
  pod 'Moya'
+ pod 'GoogleMaps'
 
 end

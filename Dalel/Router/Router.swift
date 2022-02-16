@@ -29,10 +29,9 @@ class Router {
             }
             return
         }
-//        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-//        let tabBar = storyBoard.instantiateViewController(withIdentifier: "main")
-//        setRoot(nibName: tabBar, window: window)
-        setRoot(nibName: AddCommentViewController.loadFromNib(), window: window)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let tabBar = storyBoard.instantiateViewController(withIdentifier: "main")
+        setRoot(nibName: tabBar, window: window)
     }
 
     class func setRoot(nibName:UIViewController,window:UIWindow?){

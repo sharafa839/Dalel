@@ -94,7 +94,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GX8-JB-vYm">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GX8-JB-vYm" customClass="ImageSlideshow" customModule="ImageSlideshow">
                                                     <rect key="frame" x="20" y="11" width="374" height="186"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
@@ -120,35 +120,23 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZPm-xd-8Vq">
-                                                    <rect key="frame" x="36" y="57" width="342" height="162"/>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZPm-xd-8Vq">
+                                                    <rect key="frame" x="36" y="57" width="342" height="208"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dh8-F2-cJK">
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dh8-F2-cJK">
                                                         <size key="itemSize" width="128" height="128"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0Xy-r2-Y4l">
-                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qE4-UW-f1F">
-                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                            </collectionViewCellContentView>
-                                                        </collectionViewCell>
-                                                    </cells>
-                                                    <connections>
-                                                        <outlet property="dataSource" destination="KY5-7e-Ll0" id="CIy-DL-bmN"/>
-                                                        <outlet property="delegate" destination="KY5-7e-Ll0" id="h6c-1X-Rfc"/>
-                                                    </connections>
+                                                    <cells/>
                                                 </collectionView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ZPm-xd-8Vq" secondAttribute="bottom" id="D6N-id-9SU"/>
                                                 <constraint firstItem="ZPm-xd-8Vq" firstAttribute="leading" secondItem="bRZ-i9-F8E" secondAttribute="leadingMargin" constant="16" id="G3I-Ya-HQu"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ZPm-xd-8Vq" secondAttribute="trailing" constant="16" id="PRT-dh-XGu"/>
                                                 <constraint firstItem="ZPm-xd-8Vq" firstAttribute="top" secondItem="ZrM-jq-K3r" secondAttribute="bottom" constant="26.5" id="XhP-CI-gRN"/>
-                                                <constraint firstItem="ZPm-xd-8Vq" firstAttribute="centerY" secondItem="bRZ-i9-F8E" secondAttribute="centerY" id="Xpv-oh-6G1"/>
                                                 <constraint firstItem="ZPm-xd-8Vq" firstAttribute="centerX" secondItem="bRZ-i9-F8E" secondAttribute="centerX" id="qqN-G9-fba"/>
                                                 <constraint firstItem="ZrM-jq-K3r" firstAttribute="leading" secondItem="bRZ-i9-F8E" secondAttribute="leading" constant="8" id="sla-Dj-a3D"/>
                                                 <constraint firstItem="ZrM-jq-K3r" firstAttribute="top" secondItem="bRZ-i9-F8E" secondAttribute="top" constant="10" id="wnW-Tc-wzS"/>
@@ -176,23 +164,13 @@
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dbM-IS-lE6">
                                                     <rect key="frame" x="36" y="50" width="342" height="176"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="15y-tW-68J">
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="15y-tW-68J">
                                                         <size key="itemSize" width="190" height="176"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Oeb-YK-9G0">
-                                                            <rect key="frame" x="0.0" y="0.0" width="94" height="98"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GVW-OZ-gst">
-                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="98"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                            </collectionViewCellContentView>
-                                                            <size key="customSize" width="94" height="98"/>
-                                                        </collectionViewCell>
-                                                    </cells>
+                                                    <cells/>
                                                     <connections>
                                                         <outlet property="dataSource" destination="KY5-7e-Ll0" id="uh1-ae-77J"/>
                                                         <outlet property="delegate" destination="KY5-7e-Ll0" id="qfm-fj-tOq"/>
@@ -281,36 +259,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="جديد المدارس" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uge-h3-Afb">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جديد المدارس" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uge-h3-Afb">
                                                     <rect key="frame" x="28" y="21" width="96.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSv-Yq-6fN">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSv-Yq-6fN">
                                                     <rect key="frame" x="292" y="15" width="94" height="31"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="اعرض المزيد"/>
                                                 </button>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JPe-eE-dns">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JPe-eE-dns">
                                                     <rect key="frame" x="40" y="56.5" width="334" height="163"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jLZ-uK-H3H">
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jLZ-uK-H3H">
                                                         <size key="itemSize" width="128" height="128"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uqT-vU-XNT">
-                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="3aI-NY-niL">
-                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                            </collectionViewCellContentView>
-                                                        </collectionViewCell>
-                                                    </cells>
+                                                    <cells/>
                                                     <connections>
                                                         <outlet property="dataSource" destination="KY5-7e-Ll0" id="s0g-Tt-C62"/>
                                                         <outlet property="delegate" destination="KY5-7e-Ll0" id="eUv-lj-P1W"/>
@@ -336,36 +305,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="جديد المعاهد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hA-0r-lio">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جديد المعاهد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hA-0r-lio">
                                                     <rect key="frame" x="28" y="21" width="92.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvK-Nt-rnq">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvK-Nt-rnq">
                                                     <rect key="frame" x="292" y="15" width="94" height="31"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="اعرض المزيد"/>
                                                 </button>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uxh-zL-Obi">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="4" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uxh-zL-Obi">
                                                     <rect key="frame" x="32" y="50" width="350" height="213"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3fm-pq-xpv">
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3fm-pq-xpv">
                                                         <size key="itemSize" width="128" height="128"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CFv-ae-4Ur">
-                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="S3l-yB-J0d">
-                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                            </collectionViewCellContentView>
-                                                        </collectionViewCell>
-                                                    </cells>
+                                                    <cells/>
                                                     <connections>
                                                         <outlet property="dataSource" destination="KY5-7e-Ll0" id="3f7-hR-UFd"/>
                                                         <outlet property="delegate" destination="KY5-7e-Ll0" id="qSF-yC-zZF"/>
@@ -407,6 +367,7 @@
                         <outlet property="addYourCenterButton" destination="qd4-BN-mfW" id="x81-q3-TX7"/>
                         <outlet property="categoriesLabel" destination="ZrM-jq-K3r" id="LHB-FF-gsS"/>
                         <outlet property="childGardenLabel" destination="VqB-eb-Itd" id="FUj-4g-qlo"/>
+                        <outlet property="imageSlider" destination="GX8-JB-vYm" id="Lb9-BO-v05"/>
                         <outlet property="newSchoolsLabel" destination="uge-h3-Afb" id="v4l-SG-gIc"/>
                         <outlet property="newUniversityLabel" destination="5hA-0r-lio" id="Awx-Yi-41o"/>
                         <outlet property="rodaCollectionView" destination="dbM-IS-lE6" id="K5I-Eb-Od7"/>

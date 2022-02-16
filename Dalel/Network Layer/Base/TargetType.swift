@@ -27,3 +27,11 @@ protocol TargetType {
     var task : Task{get}
     var headers : [String:String]? {get}
 }
+extension TargetType {
+    var baseURL:String{
+        return ""
+    }
+    var headers : [String:String]?{
+        return ["Authorization":"Bearer\(HelperK.getUserToken())"]
+    }
+}

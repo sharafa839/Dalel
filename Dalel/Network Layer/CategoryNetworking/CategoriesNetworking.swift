@@ -30,7 +30,7 @@ extension Categories : TargetType {
             return "/categories\(id)"
 
         case .singleCategoriesCenterI(let id):
-            return "/categories/\(id)/center"
+            return "/categories/\(id)/centers"
         }
     }
     

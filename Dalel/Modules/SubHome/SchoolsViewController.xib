@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SchoolsViewController" customModule="Dalel" customModuleProvider="target">
             <connections>
                 <outlet property="subCategorycollectionView" destination="Mz9-tM-372" id="J81-Bt-D5J"/>
+                <outlet property="titleLabel" destination="4xq-Ma-Fm8" id="OT8-jb-qVS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
