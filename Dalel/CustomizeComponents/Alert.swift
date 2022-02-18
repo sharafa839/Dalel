@@ -21,32 +21,32 @@ class Alert {
         alert.addAction(UIAlertAction(title: btnTitle, style: .destructive, handler: nil))
         vc.present(alert, animated: true, completion: nil)
     }
-    class func alertErrorRestart(title: String, msg: String , vc: UIViewController) {
-        let alertController = UIAlertController(title: title, message: msg, preferredStyle: .alert)
-        
-        let cancelAction = UIAlertAction(title: General.stringForKey(key: "cancel"), style: .cancel, handler: nil)
-        let settingsAction = UIAlertAction(title: General.stringForKey(key: "login"), style: .destructive) { (UIAlertAction) in
-            
-            HelperK.restartApp()
-        }
-        alertController.addAction(cancelAction)
-        alertController.addAction(settingsAction)
-        vc.present(alertController, animated: true, completion: nil)
-    }
-    
-    class func showAlertLocationPermission(vc: UIViewController){
-        let alertController = UIAlertController(title: General.stringForKey(key: "locationPermissionRequired"), message: General.stringForKey(key: "locali"), preferredStyle: UIAlertController.Style.alert)
-        
-        let okAction = UIAlertAction(title: General
-            .stringForKey(key: "settings"), style: .default, handler: {(cAlertAction) in
-            //Redirect to Settings app
-            UIApplication.shared.open(URL(string:UIApplication.openSettingsURLString)!)
-        })
-        let cancelAction = UIAlertAction(title: General.stringForKey(key: "cancel"), style: .cancel)
-        alertController.addAction(cancelAction)
-        alertController.addAction(okAction)
-        vc.present(alertController, animated: true, completion: nil)
-    }
-    
+//    class func alertErrorRestart(title: String, msg: String , vc: UIViewController) {
+//        let alertController = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+//        
+//        let cancelAction = UIAlertAction(title: General.stringForKey(key: "cancel"), style: .cancel, handler: nil)
+//        let settingsAction = UIAlertAction(title: General.stringForKey(key: "login"), style: .destructive) { (UIAlertAction) in
+//            
+//            HelperK.restartApp()
+//        }
+//        alertController.addAction(cancelAction)
+//        alertController.addAction(settingsAction)
+//        vc.present(alertController, animated: true, completion: nil)
+//    }
+//    
+//    class func showAlertLocationPermission(vc: UIViewController){
+//        let alertController = UIAlertController(title: General.stringForKey(key: "locationPermissionRequired"), message: General.stringForKey(key: "locali"), preferredStyle: UIAlertController.Style.alert)
+//        
+//        let okAction = UIAlertAction(title: General
+//            .stringForKey(key: "settings"), style: .default, handler: {(cAlertAction) in
+//            //Redirect to Settings app
+//            UIApplication.shared.open(URL(string:UIApplication.openSettingsURLString)!)
+//        })
+//        let cancelAction = UIAlertAction(title: General.stringForKey(key: "cancel"), style: .cancel)
+//        alertController.addAction(cancelAction)
+//        alertController.addAction(okAction)
+//        vc.present(alertController, animated: true, completion: nil)
+//    }
+//    
 }
 //Alert.alertErrorRestart(title: General.stringForKey(key: "error"), msg: General.stringForKey(key: "ts"), vc: self)

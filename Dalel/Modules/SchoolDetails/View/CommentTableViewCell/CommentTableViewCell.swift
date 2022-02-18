@@ -29,7 +29,7 @@ class CommentTableViewCell: UITableViewCell {
     }
     func configure(review:ReviewsModelPayload){
         nameLabel.text = review.reviewableType
-        date.text = DateAndTimeInString(date: review.createdAt ?? "", local: "en_US").1
+        date.text = DateAndTimeInString(date: review.createdAt ?? "", local: "en_US").0
         averageRate(rate: review.rate ?? "0")
         commentLabe.text = review.review
     }
@@ -95,6 +95,7 @@ extension DateFormatter {
     func dateFromMultipleFormats(fromString dateString: String) -> Date? {
         let formats: [String] = [
             "yyyy-MM-dd'T'HH:mm:ss",
+            "yyyy-MM-dd' 'HH:mm:ss",
             "yyyy-MM-dd'T'HH:mm:ss.SSSSZ",
             "yyyy-MM-dd'T'HH:mm:ss.SSSSSZ",
             "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ",

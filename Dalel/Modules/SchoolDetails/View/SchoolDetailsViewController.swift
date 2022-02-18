@@ -9,9 +9,8 @@ import UIKit
 import CoreLocation
 import GoogleMaps
 
-class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-  
-    
+class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+
 
     @IBOutlet weak var schoolNameLabel: UILabel!
     @IBOutlet weak var _1stButton: UIButton!
@@ -44,8 +43,10 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
     
     
     var centerId:String?
+    var centersInCategory = [CagtegoryCenterModelPayload]()
     var singleCenter:SingleCenterPayload?
     let viewModel = SchoolDetailsViewModel()
+    let homeViewModel = SubHomeViewModel()
     var reviews = [ReviewsModelPayload]()
     init(centerId:String) {
         self.centerId = centerId
@@ -60,14 +61,14 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
         attachViewModel()
         subscribeViewModel()
-        setupTableView()
+        setupViews()
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
     }
-    override func viewDidDisappear(_ animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = false
     }
     
@@ -82,18 +83,31 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
                 return
             }
             self?.setupUI(singleCenter: singleCenter)
-           
+            self?.homeViewModel.getCategory(id: singleCenter.category?.id ?? "")
+
         }.disposed(by: viewModel.disposeBag)
         
         viewModel.reviews.subscribe { [weak self]review in
             guard let review = review.element else {return}
             self?.reviews.append(contentsOf: review)
+            self?.commentTableView.reloadData()
         }.disposed(by: viewModel.disposeBag)
         
         viewModel.markAsFavorite.subscribe {[weak self] isFavorite in
             guard let favorite = isFavorite.element else {return}
-            self?.favoriteButton.imageView?.tintColor = favorite ? .red : .gray
+            if favorite {
+                self?.favoriteButton.imageView?.tintColor =  .red
+
+            }else{
+            self?.favoriteButton.imageView?.tintColor =  .gray
+            }
         }.disposed(by: viewModel.disposeBag)
+        
+        homeViewModel.categories.subscribe { [weak self]centers in
+            self?.centersInCategory.append(contentsOf: centers.element ?? [CagtegoryCenterModelPayload]())
+            self?.categoryCollectionView.reloadData()
+        }.disposed(by: viewModel.disposeBag)
+
 
     }
     
@@ -121,16 +135,18 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         }
         ourServicesDescriptionLabel.text = singleCenter?.services?.first?.title ?? ""
         averageRate(rate: center.averageRate ?? "5")
-        getAddress(lat: singleCenter?.latitude ?? "0", lon: singleCenter?.longitude ?? "0") {[weak self] location in
-            self?.locationDescriptionLabel.text = location
-
-        }
+        locationDescriptionLabel.text = singleCenter?.address
     }
     
-    func setupTableView(){
+    func setupViews(){
         commentTableView.delegate = self
         commentTableView.dataSource = self
         commentTableView.register(CommentTableViewCell.nib, forCellReuseIdentifier: CommentTableViewCell.identifier)
+        commentTableView.rowHeight = 200
+        categoryCollectionView.delegate = self
+        categoryCollectionView.dataSource = self
+        categoryCollectionView.register(CategoriesCollectionViewCell.nib, forCellWithReuseIdentifier: CategoriesCollectionViewCell.identifier)
+
     }
     
    private func getAddress(lat:String,lon:String ,currentAdd : @escaping( _ returnAddress :String)->Void){
@@ -208,7 +224,7 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         navigationController?.popViewController(animated: true)
     }
     @IBAction func addCommentAction(_ sender: Any) {
-        let AddCommentVc = AddCommentViewController()
+        let AddCommentVc = AddCommentViewController(id: centerId ?? "")
         navigationController?.pushViewController(AddCommentVc, animated: true)
         
     }
@@ -222,4 +238,19 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         cell.configure(review: reviews[indexPath.row])
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return centersInCategory.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoriesCollectionViewCell.identifier, for: indexPath) as! CategoriesCollectionViewCell
+        cell.configureCell(payload: centersInCategory[indexPath.row])
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 120, height: 160)
+    }
+    
 }

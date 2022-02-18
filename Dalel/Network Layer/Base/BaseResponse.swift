@@ -16,3 +16,15 @@ struct BaseResponse<T:Codable>:Codable {
         case message
     }
 }
+
+struct AnotherResponse<T:Codable>:Codable {
+    var status:Bool?
+    var payload:[T]?
+    var message:String?
+    var code:Int?
+    enum CodingKeys:String,CodingKey {
+        case status = "status"
+        case payload = "payload"
+        case message,code
+    }
+}

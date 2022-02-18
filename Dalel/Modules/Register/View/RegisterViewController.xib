@@ -52,17 +52,17 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AEM-J0-TEn" customClass="MDCFilledTextField">
-                    <rect key="frame" x="40" y="244" width="294.5" height="34"/>
+                    <rect key="frame" x="40" y="244" width="334" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Pe-ok-9Bo" customClass="FPNTextField" customModule="FlagPhoneNumber">
-                    <rect key="frame" x="40" y="294" width="294.5" height="18.5"/>
+                    <rect key="frame" x="40" y="294" width="334" height="18.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Z31-hW-A8t">
-                    <rect key="frame" x="40" y="206" width="294.5" height="22"/>
+                    <rect key="frame" x="40" y="206" width="334" height="22"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحبا" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZC-ar-0zk">
                             <rect key="frame" x="0.0" y="0.0" width="35.5" height="22"/>
@@ -71,7 +71,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="برجاء ملئ الحقول التالية للمتابعة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18e-q5-eDd">
-                            <rect key="frame" x="37.5" y="0.0" width="257" height="22"/>
+                            <rect key="frame" x="37.5" y="0.0" width="296.5" height="22"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -79,22 +79,22 @@
                     </subviews>
                 </stackView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nSF-XO-LAN" customClass="MDCFilledTextField">
-                    <rect key="frame" x="40" y="328.5" width="294.5" height="34"/>
+                    <rect key="frame" x="40" y="328.5" width="334" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwf-Mo-6Ha" customClass="MDCFilledTextField">
-                    <rect key="frame" x="40" y="378.5" width="294.5" height="34"/>
+                    <rect key="frame" x="40" y="378.5" width="334" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ljh-Bn-sGK" customClass="DropDown" customModule="iOSDropDown">
-                    <rect key="frame" x="40" y="428.5" width="294.5" height="34"/>
+                    <rect key="frame" x="40" y="428.5" width="334" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ije-fu-BCa">
-                    <rect key="frame" x="40" y="478.5" width="294.5" height="50"/>
+                    <rect key="frame" x="40" y="478.5" width="334" height="50"/>
                     <color key="backgroundColor" name="MainColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="pbU-Kh-lMv"/>
@@ -104,7 +104,7 @@
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="HbG-7m-E9Y">
-                    <rect key="frame" x="86" y="542.5" width="202.5" height="31"/>
+                    <rect key="frame" x="86" y="542.5" width="242" height="31"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" لديك حساب " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ld-gg-hkE">
                             <rect key="frame" x="0.0" y="0.0" width="71" height="31"/>
@@ -113,7 +113,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVW-vK-cnG">
-                            <rect key="frame" x="72" y="0.0" width="130.5" height="31"/>
+                            <rect key="frame" x="72" y="0.0" width="170" height="31"/>
                             <color key="tintColor" name="MainColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="قم بتسجيل الدخول"/>
@@ -142,6 +142,7 @@
                 <constraint firstItem="dwf-Mo-6Ha" firstAttribute="trailing" secondItem="nSF-XO-LAN" secondAttribute="trailing" id="QZh-KF-pPb"/>
                 <constraint firstItem="Z31-hW-A8t" firstAttribute="top" secondItem="iyZ-He-pOC" secondAttribute="bottom" constant="16" id="WRE-Ia-4KI"/>
                 <constraint firstItem="AEM-J0-TEn" firstAttribute="top" secondItem="Z31-hW-A8t" secondAttribute="bottom" constant="16" id="XqN-ct-RfR"/>
+                <constraint firstItem="Z31-hW-A8t" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZPC-gZ-jT6"/>
                 <constraint firstItem="4Pe-ok-9Bo" firstAttribute="leading" secondItem="AEM-J0-TEn" secondAttribute="leading" id="b5G-yu-o57"/>
                 <constraint firstItem="HbG-7m-E9Y" firstAttribute="leading" secondItem="ije-fu-BCa" secondAttribute="leading" constant="46" id="d30-dQ-4vw"/>
                 <constraint firstItem="Ljh-Bn-sGK" firstAttribute="top" secondItem="dwf-Mo-6Ha" secondAttribute="bottom" constant="16" id="dAl-kh-9tm"/>

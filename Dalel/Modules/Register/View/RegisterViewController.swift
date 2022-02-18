@@ -146,7 +146,7 @@ class RegisterViewController: UIViewController {
 //            let home = UINavigationController(rootViewController:main )
 //            home.modalPresentationStyle = .fullScreen
 //            self.present(home, animated: true, completion: nil)
-            Alert.alertPopUp(title: "Great !", msg:"wait to approve" , btnTitle: "ok", vc: self)
+            //Alert.alertPopUp(title: "Great !", msg:"wait to approve" , btnTitle: "ok", vc: self)
             
         }.disposed(by: viewModel.disposeBag)
     }

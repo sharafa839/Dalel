@@ -13,13 +13,14 @@ enum EndPoints {
         case loginByEmail = "/login?login_by_email"
         case logout = "/logout"
     }
-    enum Profile:String{
+    enum ProfilePath:String{
         case profile = "/profile"
         case getCenters = "/profile/show/my-centers"
         case updateProfile = "/profile/update"
         case updatePassword = "/profile/update/password"
         case updateFCMToken = "/profile/update/fcm_token"
         case updateProfileLogo = "/profile/update/logo"
+        case favorite = "/profile/show/my-favorites"
     }
     enum Banners:String {
         case listAllBanners = "/banners"

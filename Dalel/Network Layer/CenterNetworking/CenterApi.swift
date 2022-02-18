@@ -12,6 +12,9 @@ protocol CenterProtocol {
     func getReviews(id:String,compeletion:@escaping(_:Result<BaseResponse<[ReviewsModelPayload]>?,NSError>?,ErrorResponse?)->Void)
     func makeFavorite(id:String,compeletion:@escaping(_:Result<BaseResponse<MakeFavoriteModelPayload>?,NSError>?,ErrorResponse?)->Void)
     func makeUnFavorite(id:String,compeletion:@escaping(_:Result<BaseResponse<MakeFavoriteModelPayload>?,NSError>?,ErrorResponse?)->Void)
+    func submitReview(id:String,review:String,rate:
+                      Int,compeletion:@escaping(_:Result<BaseResponse<JSONAny>?,NSError>?,ErrorResponse?)->Void)
+    func searchInCenters(keyword:String,compeletion:@escaping(_:Result<BaseResponse<[SearchModelPayload]>?,NSError>?,ErrorResponse?)->Void)
 
 }
 
@@ -39,6 +42,16 @@ extension CenterProtocol {
         center.fetchData(target: .makeFavorite(id: id), responseClass: BaseResponse<MakeFavoriteModelPayload>.self, compeletion: compeletion)
 
     }
+    
+    func submitReview(id:String,review:String,rate:
+                      Int,compeletion:@escaping(_:Result<BaseResponse<JSONAny>?,NSError>?,ErrorResponse?)->Void){
+        center.fetchData(target: .submitReview(id: id, review: review, rate: rate), responseClass: BaseResponse<JSONAny>.self, compeletion: compeletion)
+    }
+    
+    func searchInCenters(keyword:String,compeletion:@escaping(_:Result<BaseResponse<[SearchModelPayload]>?,NSError>?,ErrorResponse?)->Void){
+        center.fetchData(target: .searchInCenters(key: keyword), responseClass: BaseResponse<[SearchModelPayload]>.self, compeletion: compeletion)
+    }
+
     
 }
 class CenterRepo:BaseApi<Centers>, AuthenticationProtocol{

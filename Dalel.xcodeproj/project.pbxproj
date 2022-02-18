@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		54844C3FD69E01E615CFF16B /* Pods_Dalel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A0A0FEC18C33B733889F49 /* Pods_Dalel.framework */; };
+		FF5115E527BE72A600B9FAA0 /* AddComentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115E427BE72A600B9FAA0 /* AddComentViewModel.swift */; };
+		FF5115E727BE8C4500B9FAA0 /* SubmitReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115E627BE8C4500B9FAA0 /* SubmitReview.swift */; };
+		FF5115E927BE923B00B9FAA0 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115E827BE923B00B9FAA0 /* SearchModel.swift */; };
+		FF5115EB27BE983B00B9FAA0 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115EA27BE983B00B9FAA0 /* SearchViewModel.swift */; };
+		FF5115ED27BEBD1000B9FAA0 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115EC27BEBD1000B9FAA0 /* ProfileModel.swift */; };
+		FF5115F027BEBDA600B9FAA0 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115EF27BEBDA500B9FAA0 /* FavoriteModel.swift */; };
+		FF5115F227BECA2500B9FAA0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115F127BECA2500B9FAA0 /* ProfileViewModel.swift */; };
 		FF6100A227BC40CE001A7F31 /* CategoryCentersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100A127BC40CE001A7F31 /* CategoryCentersModel.swift */; };
 		FF6100A527BC5420001A7F31 /* SingleCenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100A427BC5420001A7F31 /* SingleCenterModel.swift */; };
 		FF6100A827BC5AE1001A7F31 /* SchoolDetailesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100A727BC5AE1001A7F31 /* SchoolDetailesViewModel.swift */; };
@@ -75,6 +82,8 @@
 		FF7F621A27B5D7D5004D334E /* CenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F621927B5D7D5004D334E /* CenterModel.swift */; };
 		FF7F621C27B5DAA4004D334E /* CenterNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F621B27B5DAA4004D334E /* CenterNetworking.swift */; };
 		FF7F621E27B5DAAE004D334E /* CenterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F621D27B5DAAE004D334E /* CenterApi.swift */; };
+		FF83A05327BDD070008C2DB2 /* LanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF83A05227BDD070008C2DB2 /* LanguageViewModel.swift */; };
+		FF83A05527BDD601008C2DB2 /* SchoolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF83A05427BDD601008C2DB2 /* SchoolsViewModel.swift */; };
 		FFBFC36527A57FD00088C717 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36327A57FD00088C717 /* LoginViewController.swift */; };
 		FFBFC36627A57FD00088C717 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC36427A57FD00088C717 /* LoginViewController.xib */; };
 		FFBFC36B27A580020088C717 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC36927A580020088C717 /* RegisterViewController.swift */; };
@@ -119,6 +128,13 @@
 		D39720B9AF372EB3449E031F /* Pods-Dalel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dalel.release.xcconfig"; path = "Target Support Files/Pods-Dalel/Pods-Dalel.release.xcconfig"; sourceTree = "<group>"; };
 		D6A0A0FEC18C33B733889F49 /* Pods_Dalel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dalel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAE285294AE5A146EF7BAFC /* Pods-Dalel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dalel.debug.xcconfig"; path = "Target Support Files/Pods-Dalel/Pods-Dalel.debug.xcconfig"; sourceTree = "<group>"; };
+		FF5115E427BE72A600B9FAA0 /* AddComentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddComentViewModel.swift; sourceTree = "<group>"; };
+		FF5115E627BE8C4500B9FAA0 /* SubmitReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitReview.swift; sourceTree = "<group>"; };
+		FF5115E827BE923B00B9FAA0 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		FF5115EA27BE983B00B9FAA0 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		FF5115EC27BEBD1000B9FAA0 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		FF5115EF27BEBDA500B9FAA0 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		FF5115F127BECA2500B9FAA0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		FF6100A127BC40CE001A7F31 /* CategoryCentersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCentersModel.swift; sourceTree = "<group>"; };
 		FF6100A427BC5420001A7F31 /* SingleCenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCenterModel.swift; sourceTree = "<group>"; };
 		FF6100A727BC5AE1001A7F31 /* SchoolDetailesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailesViewModel.swift; sourceTree = "<group>"; };
@@ -189,6 +205,8 @@
 		FF7F621927B5D7D5004D334E /* CenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModel.swift; sourceTree = "<group>"; };
 		FF7F621B27B5DAA4004D334E /* CenterNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterNetworking.swift; sourceTree = "<group>"; };
 		FF7F621D27B5DAAE004D334E /* CenterApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterApi.swift; sourceTree = "<group>"; };
+		FF83A05227BDD070008C2DB2 /* LanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModel.swift; sourceTree = "<group>"; };
+		FF83A05427BDD601008C2DB2 /* SchoolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsViewModel.swift; sourceTree = "<group>"; };
 		FFBFC36327A57FD00088C717 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFBFC36427A57FD00088C717 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		FFBFC36927A580020088C717 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +288,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF5115E127BE719C00B9FAA0 /* CommentTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF6100AC27BC63E7001A7F31 /* CommentTableViewCell.swift */,
+				FF6100AD27BC63E7001A7F31 /* CommentTableViewCell.xib */,
+			);
+			path = CommentTableViewCell;
+			sourceTree = "<group>";
+		};
+		FF5115E227BE71B900B9FAA0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF83A05427BDD601008C2DB2 /* SchoolsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF5115E327BE71C900B9FAA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC38827A5844B0088C717 /* SchoolsViewController.swift */,
+				FFBFC38927A5844B0088C717 /* SchoolsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF5115EE27BEBD5800B9FAA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF5115EC27BEBD1000B9FAA0 /* ProfileModel.swift */,
+				FF5115EF27BEBDA500B9FAA0 /* FavoriteModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FF6100A327BC4C43001A7F31 /* BannerNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,9 +337,8 @@
 			isa = PBXGroup;
 			children = (
 				FFBFC38D27A584A00088C717 /* SchoolDetailsViewController.swift */,
-				FF6100AC27BC63E7001A7F31 /* CommentTableViewCell.swift */,
-				FF6100AD27BC63E7001A7F31 /* CommentTableViewCell.xib */,
 				FFBFC38E27A584A00088C717 /* SchoolDetailsViewController.xib */,
+				FF5115E127BE719C00B9FAA0 /* CommentTableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +387,8 @@
 			isa = PBXGroup;
 			children = (
 				FF7F621927B5D7D5004D334E /* CenterModel.swift */,
+				FF5115E827BE923B00B9FAA0 /* SearchModel.swift */,
+				FF5115E627BE8C4500B9FAA0 /* SubmitReview.swift */,
 				FF6100B027BC7686001A7F31 /* MakeFavoriteModel.swift */,
 				FF6100AA27BC5E3D001A7F31 /* ReviewModel.swift */,
 				FF6100A427BC5420001A7F31 /* SingleCenterModel.swift */,
@@ -389,6 +443,7 @@
 		FF7F21BC27AED1FE007606DB /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				FF5115EE27BEBD5800B9FAA0 /* Model */,
 				FF7F21BD27AED210007606DB /* ProfileApi.swift */,
 				FF7F21BF27AED222007606DB /* ProfileNetworking.swift */,
 			);
@@ -561,6 +616,7 @@
 			isa = PBXGroup;
 			children = (
 				FFBFC36D27A580360088C717 /* LanguageViewController.swift */,
+				FF83A05227BDD070008C2DB2 /* LanguageViewModel.swift */,
 				FFBFC36E27A580360088C717 /* LanguageViewController.xib */,
 			);
 			path = Language;
@@ -595,6 +651,7 @@
 				FF7F621027B5CB31004D334E /* HomeViewModel.swift */,
 				FFBFC3A127A585AF0088C717 /* FavoriteViewController.swift */,
 				FFBFC3A527A586290088C717 /* ProfileViewController.swift */,
+				FF5115F127BECA2500B9FAA0 /* ProfileViewModel.swift */,
 				FFBFC3A327A585E30088C717 /* NotificationViewController.swift */,
 			);
 			path = Home;
@@ -603,8 +660,8 @@
 		FFBFC38C27A584850088C717 /* SubHome */ = {
 			isa = PBXGroup;
 			children = (
-				FFBFC38827A5844B0088C717 /* SchoolsViewController.swift */,
-				FFBFC38927A5844B0088C717 /* SchoolsViewController.xib */,
+				FF5115E327BE71C900B9FAA0 /* View */,
+				FF5115E227BE71B900B9FAA0 /* ViewModel */,
 			);
 			path = SubHome;
 			sourceTree = "<group>";
@@ -622,6 +679,7 @@
 			isa = PBXGroup;
 			children = (
 				FFBFC39227A584DD0088C717 /* AddCommentViewController.swift */,
+				FF5115E427BE72A600B9FAA0 /* AddComentViewModel.swift */,
 				FFBFC39327A584DD0088C717 /* AddCommentViewController.xib */,
 			);
 			path = AddComment;
@@ -631,6 +689,7 @@
 			isa = PBXGroup;
 			children = (
 				FFBFC39727A585280088C717 /* SearchViewController.swift */,
+				FF5115EA27BE983B00B9FAA0 /* SearchViewModel.swift */,
 				FFBFC39827A585280088C717 /* SearchViewController.xib */,
 			);
 			path = Search;
@@ -880,6 +939,8 @@
 				FF7F220127AF05F9007606DB /* UsersNetworking.swift in Sources */,
 				FFBFC37727A5808F0088C717 /* ResetPasswordViewController.swift in Sources */,
 				FF7AC0F427B85B900068D1DE /* CategoriesCollectionViewCell.swift in Sources */,
+				FF5115F027BEBDA600B9FAA0 /* FavoriteModel.swift in Sources */,
+				FF5115E527BE72A600B9FAA0 /* AddComentViewModel.swift in Sources */,
 				FF7F621127B5CB31004D334E /* HomeViewModel.swift in Sources */,
 				FF7AC0EF27B853CF0068D1DE /* BannerModel.swift in Sources */,
 				FF7F220027AF0597007606DB /* RegisterModel.swift in Sources */,
@@ -901,9 +962,12 @@
 				FF7F21EC27AEFBF9007606DB /* RightToLeftTransition.swift in Sources */,
 				FF7F620927B54FC8004D334E /* LoginModel.swift in Sources */,
 				FFBFC3A227A585AF0088C717 /* FavoriteViewController.swift in Sources */,
+				FF5115EB27BE983B00B9FAA0 /* SearchViewModel.swift in Sources */,
 				FF7F21E227AEFBF9007606DB /* HapticEffect.swift in Sources */,
 				FF7AC0ED27B853C50068D1DE /* BannerApi.swift in Sources */,
+				FF5115E727BE8C4500B9FAA0 /* SubmitReview.swift in Sources */,
 				FF78AA4727A579ED0099F90F /* MainTabBar.swift in Sources */,
+				FF5115F227BECA2500B9FAA0 /* ProfileViewModel.swift in Sources */,
 				FF7F21AD27ADFD5B007606DB /* TargetType.swift in Sources */,
 				FF7F21E927AEFBF9007606DB /* CardView.swift in Sources */,
 				FFBFC3A927A586480088C717 /* AddPlaceViewController.swift in Sources */,
@@ -912,6 +976,7 @@
 				FFBFC3BD27A5870E0088C717 /* ContactUsViewController.swift in Sources */,
 				FFBFC38F27A584A00088C717 /* SchoolDetailsViewController.swift in Sources */,
 				FF7F21E527AEFBF9007606DB /* DesignView.swift in Sources */,
+				FF5115ED27BEBD1000B9FAA0 /* ProfileModel.swift in Sources */,
 				FF7F621C27B5DAA4004D334E /* CenterNetworking.swift in Sources */,
 				FF7F621E27B5DAAE004D334E /* CenterApi.swift in Sources */,
 				FFBFC39927A585280088C717 /* SearchViewController.swift in Sources */,
@@ -920,6 +985,7 @@
 				FF7F620F27B5799B004D334E /* OnBoardingViewModel.swift in Sources */,
 				FF7F21B727AE05C4007606DB /* EndPoints.swift in Sources */,
 				FFBFC37B27A580B00088C717 /* VerificationViewController.swift in Sources */,
+				FF83A05527BDD601008C2DB2 /* SchoolsViewModel.swift in Sources */,
 				FF7F21DF27AEFBF9007606DB /* UIView + extension.swift in Sources */,
 				FF7F21EF27AEFBFA007606DB /* TableViewController + extension.swift in Sources */,
 				FF7F21DD27AEFBF9007606DB /* Alert.swift in Sources */,
@@ -928,6 +994,7 @@
 				FFBFC3D427A5AFBA0088C717 /* PlacesTableViewController.swift in Sources */,
 				FF7F21E827AEFBF9007606DB /* HelperFunc.swift in Sources */,
 				FF6100B127BC7686001A7F31 /* MakeFavoriteModel.swift in Sources */,
+				FF83A05327BDD070008C2DB2 /* LanguageViewModel.swift in Sources */,
 				FF6100A827BC5AE1001A7F31 /* SchoolDetailesViewModel.swift in Sources */,
 				FF7F21F127AEFBFA007606DB /* ViewController + extensions.swift in Sources */,
 				FF7F21C227AED458007606DB /* Router.swift in Sources */,
@@ -949,6 +1016,7 @@
 				FF7F21F827AEFC23007606DB /* Str + Extension.swift in Sources */,
 				FF7F21BB27AECB30007606DB /* Logout.swift in Sources */,
 				FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */,
+				FF5115E927BE923B00B9FAA0 /* SearchModel.swift in Sources */,
 				FFBFC38A27A5844B0088C717 /* SchoolsViewController.swift in Sources */,
 				FF7AC0EB27B8538F0068D1DE /* BaseApi.swift in Sources */,
 				FF7F21AC27ADFD5B007606DB /* BaseResponse.swift in Sources */,

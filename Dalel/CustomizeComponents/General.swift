@@ -11,43 +11,43 @@ import UIKit
 public class General: NSObject {
 
     
-   class func stringForKey(key : String) -> String
-
-    {
-        
-        var currentMainBundle :Bundle
-        switch (UserDefaults.standard.string(forKey: "keyLanguage"))
-        {
-            
-        case "ar"?:
-            let path = Bundle.main.path(forResource: "ar", ofType: "lproj")
-            
-            currentMainBundle = Bundle(path: path!)!
-            
-            return currentMainBundle.localizedString(forKey: key, value:"key not found" , table: nil)
-            
-        case "en"?:
-            
-            
-            let path = Bundle.main.path(forResource: "en", ofType: "lproj")
-            
-            currentMainBundle = Bundle(path: path!)!
-            
-            return  currentMainBundle.localizedString(forKey: key, value:"key not found" , table: nil)
-            
-            
-        default:
-            let path = Bundle.main.path(forResource: "ar", ofType: "lproj")
-            
-            currentMainBundle = Bundle(path: path!)!
-            
-            currentMainBundle.localizedString(forKey: key, value:"key not found" , table: nil)
-            
-            return   currentMainBundle.localizedString(forKey: key, value:"key not found" , table: nil)
-        }
-        
-        
-    }
+//   class func stringForKey(key : String) -> String
+//
+//    {
+//        
+//        var currentMainBundle :Bundle
+//        switch (UserDefaults.standard.string(forKey: "keyLanguage"))
+//        {
+//            
+//        case "ar"?:
+//            let path = Bundle.main.path(forResource: "ar", ofType: "lproj")
+//            
+//            currentMainBundle = Bundle(path: path!)!
+//            
+//            return currentMainBundle.localizedString(forKey: key, value:"key not found" , table: nil)
+//            
+//        case "en"?:
+//            
+//            
+//            let path = Bundle.main.path(forResource: "en", ofType: "lproj")
+//            
+//            currentMainBundle = Bundle(path: path!)!
+//            
+//            return  currentMainBundle.localizedString(forKey: key, value:"key not found" , table: nil)
+//            
+//            
+//        default:
+//            let path = Bundle.main.path(forResource: "ar", ofType: "lproj")
+//            
+//            currentMainBundle = Bundle(path: path!)!
+//            
+//            currentMainBundle.localizedString(forKey: key, value:"key not found" , table: nil)
+//            
+//            return   currentMainBundle.localizedString(forKey: key, value:"key not found" , table: nil)
+//        }
+//        
+//        
+//    }
 
   class  func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -95,26 +95,26 @@ public class General: NSObject {
     }
     
     
-    class func changeLanguage(vc:UIViewController) {
-     let actionSheet = UIAlertController(title: General.stringForKey(key: "changeLanguage"), message: "", preferredStyle: .actionSheet)
-     actionSheet.addAction(UIAlertAction(title: General.stringForKey(key: "arabic"), style: .default, handler: { (action) in
-         if General.CurrentLanguage() == "ar" {
-             CheckLanguage.ChangeLanguage(NewLang: "en")
-         } else {
-             CheckLanguage.ChangeLanguage(NewLang: "ar")
-         }
-         HelperK.restartApp()
-         actionSheet.dismiss(animated: true, completion: nil)
-      }))
-    actionSheet.addAction(UIAlertAction(title: General.stringForKey(key: "cancel"), style: .cancel , handler: nil))
-    if UIDevice.current.userInterfaceIdiom == .pad{
-         if let currentPopoverpresentioncontroller = actionSheet.popoverPresentationController{
-             currentPopoverpresentioncontroller.permittedArrowDirections = []
-             currentPopoverpresentioncontroller.sourceRect = CGRect(x: (vc.view.bounds.midX), y: (vc.view.bounds.midY), width: 0, height: 0)
-             currentPopoverpresentioncontroller.sourceView = vc.view
-             vc.present(actionSheet, animated: true, completion: nil)
-         }}else{
-         vc.present(actionSheet, animated: true, completion: nil)
-     }}
-    
+//    class func changeLanguage(vc:UIViewController) {
+//     let actionSheet = UIAlertController(title: General.stringForKey(key: "changeLanguage"), message: "", preferredStyle: .actionSheet)
+//     actionSheet.addAction(UIAlertAction(title: General.stringForKey(key: "arabic"), style: .default, handler: { (action) in
+//         if General.CurrentLanguage() == "ar" {
+//             CheckLanguage.ChangeLanguage(NewLang: "en")
+//         } else {
+//             CheckLanguage.ChangeLanguage(NewLang: "ar")
+//         }
+//         HelperK.restartApp()
+//         actionSheet.dismiss(animated: true, completion: nil)
+//      }))
+//    actionSheet.addAction(UIAlertAction(title: General.stringForKey(key: "cancel"), style: .cancel , handler: nil))
+//    if UIDevice.current.userInterfaceIdiom == .pad{
+//         if let currentPopoverpresentioncontroller = actionSheet.popoverPresentationController{
+//             currentPopoverpresentioncontroller.permittedArrowDirections = []
+//             currentPopoverpresentioncontroller.sourceRect = CGRect(x: (vc.view.bounds.midX), y: (vc.view.bounds.midY), width: 0, height: 0)
+//             currentPopoverpresentioncontroller.sourceView = vc.view
+//             vc.present(actionSheet, animated: true, completion: nil)
+//         }}else{
+//         vc.present(actionSheet, animated: true, completion: nil)
+//     }}
+//    
 }

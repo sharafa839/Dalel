@@ -22,6 +22,13 @@ class HomeTableViewController: UITableViewController,UICollectionViewDelegate,UI
     @IBOutlet weak var childGardenLabel: UILabel!
     @IBOutlet weak var showMoreChildGardenButton: UIButton!
     @IBOutlet weak var categoriesLabel: UILabel!
+    @IBOutlet weak var searchButton: UIButton!{
+        didSet{
+            searchButton.setTitle("search", for: .normal)
+            searchButton.floatView(raduis: 10, color: .black)
+            
+        }
+    }
     @IBOutlet weak var imageSlider: ImageSlideshow!{
         didSet{
             self.imageSlider.configSliderShow()
@@ -48,6 +55,7 @@ var allCenters  = [CenterModelPayload]()
         attachViewMode()
         setupViewModel()
        setupObservers()
+        setupObserversUI()
     }
     
 
@@ -95,6 +103,33 @@ var allCenters  = [CenterModelPayload]()
     
     }
     
+    func setupObserversUI(){
+        searchButton.rx.tap.subscribe {[weak self] _ in
+            let searchVc = SearchViewController()
+            self?.navigationController?.pushViewController(searchVc, animated: true)
+        }.disposed(by: viewModel.disposeBag)
+
+        showMoreSchools.rx.tap.subscribe {[weak self] _ in
+            let categoryViewController = SchoolsViewController(centerId: "cce5da55-9651-463c-b0cc-84280fc5a53f", title: "schools".localizede)
+            
+            self?.navigationController?.pushViewController(categoryViewController, animated: true)
+        }.disposed(by: viewModel.disposeBag)
+        showMoreChildGardenButton.rx.tap.subscribe { [weak self] _ in
+            let categoryViewController = SchoolsViewController(centerId: "353c2229-17c7-4f01-bd16-dabcdc6473b3", title: "ChildGargen".localizede)
+            
+            self?.navigationController?.pushViewController(categoryViewController, animated: true)
+        }.disposed(by: viewModel.disposeBag)
+        showMoreUniversityButton.rx.tap.subscribe { [weak self] _ in
+            let categoryViewController = SchoolsViewController(centerId: "71f65e07-e816-4296-9dd5-8c48e3d785ea", title: "University".localizede)
+            
+            self?.navigationController?.pushViewController(categoryViewController, animated: true)
+        }.disposed(by: viewModel.disposeBag)
+
+        
+        
+        
+
+    }
   
     
     func setupObservers(){
@@ -222,13 +257,24 @@ var allCenters  = [CenterModelPayload]()
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch collectionView.tag {
         case 1 :
-print("Hello World")
+            guard let categoryId = categories[indexPath.row].id else {return}
+            if LocalizationManager.shared.getLanguage() == .Arabic{
+                guard let title = categories[indexPath.row].arName else {return}
+                        let centerViewController  =  SchoolsViewController(centerId: categoryId,title: title)
+                        navigationController?.pushViewController(centerViewController, animated: true)
+            }else{
+                guard let title = categories[indexPath.row].enName else {return}
+                        let centerViewController  =  SchoolsViewController(centerId: categoryId,title: title)
+                        navigationController?.pushViewController(centerViewController, animated: true)
+            }
+            
+           
         case 2 :
             guard let centerId = childGarden[indexPath.row].id else {return}
             let centerViewController  =  SchoolDetailsViewController(centerId: centerId)
             navigationController?.pushViewController(centerViewController, animated: true)
         case 3:
-            guard let centerId = schools[indexPath.row].id else {return}
+            guard let centerId =  schools[indexPath.row].id else {return}
             let centerViewController  =  SchoolDetailsViewController(centerId: centerId)
             navigationController?.pushViewController(centerViewController, animated: true)
 

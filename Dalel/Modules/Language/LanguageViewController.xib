@@ -16,6 +16,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LanguageViewController" customModule="Dalel" customModuleProvider="target">
             <connections>
+                <outlet property="ArabicButton" destination="sGH-ez-UKI" id="pi6-sC-gFR"/>
+                <outlet property="EnglishButton" destination="E8a-v6-qGK" id="ZKp-Jr-fNJ"/>
+                <outlet property="arab" destination="ZLy-bP-Kwh" id="R8A-B9-1ov"/>
+                <outlet property="eng" destination="kWo-3O-GHr" id="NMu-Oh-aex"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -104,7 +108,7 @@
                 <constraint firstItem="dAs-jn-gT3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xiA-2u-m9H"/>
                 <constraint firstItem="dAs-jn-gT3" firstAttribute="top" secondItem="Adb-VN-gf2" secondAttribute="bottom" constant="60" id="xtZ-JV-lKQ"/>
             </constraints>
-            <point key="canvasLocation" x="131.8840579710145" y="87.723214285714278"/>
+            <point key="canvasLocation" x="100" y="94"/>
         </view>
     </objects>
     <resources>

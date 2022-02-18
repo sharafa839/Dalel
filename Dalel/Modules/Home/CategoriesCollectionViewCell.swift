@@ -39,6 +39,17 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
         categoryImage.downlodImage(str:"https://Dalil-taelim.com" + image)
         
     }
+    func configureCellSearch(payload:SearchModelPayload){
+        if LocalizationManager.shared.getLanguage() == .Arabic{
+        categoryName.text = payload.arName
+        }else{
+            categoryName.text = payload.enName
+        }
+        guard let image = payload.mediaLinks?.first?.link else {return}
+        categoryImage.downlodImage(str:"https://Dalil-taelim.com" + image)
+        
+    }
+
 
 }
 

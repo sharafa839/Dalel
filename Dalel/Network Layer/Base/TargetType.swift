@@ -29,7 +29,7 @@ protocol TargetType {
 }
 extension TargetType {
     var baseURL:String{
-        return ""
+        return "https://Dalil-taelim.com/api"
     }
     var headers : [String:String]?{
         return ["Authorization":"Bearer\(HelperK.getUserToken())"]
