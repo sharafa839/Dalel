@@ -69,6 +69,9 @@
                                                             </constraints>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="Vector-2"/>
+                                                            <connections>
+                                                                <segue destination="iwy-er-xBi" kind="show" id="zdV-2K-KXv"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXU-0i-0Wg">
                                                             <rect key="frame" x="66" y="0.0" width="144" height="31"/>
@@ -497,7 +500,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="e5H-Fa-eq6">
-                                <rect key="frame" x="172" y="108" width="117" height="98"/>
+                                <rect key="frame" x="172" y="108" width="117" height="127.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم المستخدم" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXK-kX-Q2z">
                                         <rect key="frame" x="0.0" y="0.0" width="117" height="20.5"/>
@@ -505,14 +508,14 @@
                                         <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="احمد شرف الدين " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXV-6f-oHU">
-                                        <rect key="frame" x="0.0" y="33.5" width="117" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXV-6f-oHU">
+                                        <rect key="frame" x="0.0" y="33.5" width="117" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uZ-7c-amX">
-                                        <rect key="frame" x="0.0" y="67" width="117" height="31"/>
+                                        <rect key="frame" x="0.0" y="96.5" width="117" height="31"/>
                                         <color key="tintColor" systemColor="systemOrangeColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="تعديل الصورة"/>
@@ -622,6 +625,41 @@
             </objects>
             <point key="canvasLocation" x="63.768115942028992" y="988.39285714285711"/>
         </scene>
+        <!--Side Menue View Controller-->
+        <scene sceneID="5VP-AD-obk">
+            <objects>
+                <viewController id="TZA-8f-pmX" customClass="SideMenueViewController" customModule="Dalel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FaQ-hT-Nft">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nHx-tH-1WX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" name="MainColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="TZA-8f-pmX" id="YvT-Po-0Ej"/>
+                                    <outlet property="delegate" destination="TZA-8f-pmX" id="w5B-MD-KF3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T9l-jj-ftV"/>
+                        <color key="backgroundColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstItem="nHx-tH-1WX" firstAttribute="leading" secondItem="T9l-jj-ftV" secondAttribute="leading" id="Dzh-z2-FzX"/>
+                            <constraint firstItem="nHx-tH-1WX" firstAttribute="trailing" secondItem="T9l-jj-ftV" secondAttribute="trailing" id="ICu-9Y-EzE"/>
+                            <constraint firstItem="nHx-tH-1WX" firstAttribute="bottom" secondItem="T9l-jj-ftV" secondAttribute="bottom" id="RoU-O5-nmu"/>
+                            <constraint firstItem="nHx-tH-1WX" firstAttribute="top" secondItem="T9l-jj-ftV" secondAttribute="top" id="XXg-nJ-u3g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aXf-sS-HNs"/>
+                    <connections>
+                        <outlet property="tableView" destination="nHx-tH-1WX" id="98H-93-Q72"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0QD-nu-qLs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900.0000000000002" y="1194.6428571428571"/>
+        </scene>
         <!--Item-->
         <scene sceneID="bi4-eS-sri">
             <objects>
@@ -693,6 +731,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FcU-Zy-eA2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-601" y="696"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="QdH-wh-K6D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iwy-er-xBi" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="pkW-le-eUM"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a02-hM-I2v">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TZA-8f-pmX" kind="relationship" relationship="rootViewController" id="gEz-3F-0tb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0HF-Vf-lZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="1194.6428571428571"/>
         </scene>
     </scenes>
     <resources>

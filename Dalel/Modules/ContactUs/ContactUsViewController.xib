@@ -16,6 +16,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactUsViewController" customModule="Dalel" customModuleProvider="target">
             <connections>
+                <outlet property="addCommentButton" destination="97q-RP-e6r" id="Dry-Th-hGO"/>
+                <outlet property="emailTextField" destination="bce-GP-4FH" id="MUf-FW-7PY"/>
+                <outlet property="nameTextField" destination="k1F-R6-hlQ" id="5pg-BC-Hba"/>
+                <outlet property="opinionsTextField" destination="qnz-uw-Tb0" id="PNv-en-EzC"/>
+                <outlet property="phoneTextField" destination="TkK-uA-JxR" id="U1k-Jp-GoQ"/>
                 <outlet property="view" destination="o15-ey-bi7" id="9WF-E3-ynK"/>
             </connections>
         </placeholder>
@@ -60,7 +65,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97q-RP-e6r">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97q-RP-e6r">
                     <rect key="frame" x="40" y="577" width="334" height="50"/>
                     <color key="backgroundColor" name="MainColor"/>
                     <constraints>
@@ -69,6 +74,9 @@
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="اضافة "/>
+                    <connections>
+                        <action selector="addRevieww:" destination="-1" eventType="touchUpInside" id="IxA-ua-yy0"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qnz-uw-Tb0">
                     <rect key="frame" x="40" y="427" width="334" height="110"/>
@@ -93,8 +101,10 @@
                 <constraint firstItem="qnz-uw-Tb0" firstAttribute="leading" secondItem="TkK-uA-JxR" secondAttribute="leading" id="PuZ-SO-Thw"/>
                 <constraint firstItem="97q-RP-e6r" firstAttribute="top" secondItem="qnz-uw-Tb0" secondAttribute="bottom" constant="40" id="QDN-wx-EWU"/>
                 <constraint firstItem="he1-sQ-XO0" firstAttribute="trailing" secondItem="k1F-R6-hlQ" secondAttribute="trailing" constant="40" id="SRu-Yq-0iR"/>
+                <constraint firstItem="97q-RP-e6r" firstAttribute="leading" secondItem="qnz-uw-Tb0" secondAttribute="leading" id="SZo-oc-8gO"/>
                 <constraint firstItem="bv4-2Z-zMQ" firstAttribute="top" secondItem="PMS-pK-aDY" secondAttribute="bottom" constant="20" id="ZZZ-Jt-7fC"/>
                 <constraint firstItem="TkK-uA-JxR" firstAttribute="top" secondItem="bce-GP-4FH" secondAttribute="bottom" constant="38" id="aGs-7N-6iX"/>
+                <constraint firstItem="97q-RP-e6r" firstAttribute="trailing" secondItem="qnz-uw-Tb0" secondAttribute="trailing" id="fOW-gU-YBf"/>
                 <constraint firstItem="bce-GP-4FH" firstAttribute="top" secondItem="k1F-R6-hlQ" secondAttribute="bottom" constant="33" id="ggh-uw-fzq"/>
                 <constraint firstItem="qnz-uw-Tb0" firstAttribute="top" secondItem="TkK-uA-JxR" secondAttribute="bottom" constant="34" id="oeu-8b-CEA"/>
                 <constraint firstItem="k1F-R6-hlQ" firstAttribute="leading" secondItem="he1-sQ-XO0" secondAttribute="leading" constant="40" id="sVx-Mj-012"/>

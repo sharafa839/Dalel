@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54844C3FD69E01E615CFF16B /* Pods_Dalel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A0A0FEC18C33B733889F49 /* Pods_Dalel.framework */; };
+		67104B6BC0C85DA3A504D2A7 /* Pods_Dalel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F8500A67BCA7544D42C24E /* Pods_Dalel.framework */; };
 		FF5115E527BE72A600B9FAA0 /* AddComentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115E427BE72A600B9FAA0 /* AddComentViewModel.swift */; };
 		FF5115E727BE8C4500B9FAA0 /* SubmitReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115E627BE8C4500B9FAA0 /* SubmitReview.swift */; };
 		FF5115E927BE923B00B9FAA0 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115E827BE923B00B9FAA0 /* SearchModel.swift */; };
@@ -15,6 +15,25 @@
 		FF5115ED27BEBD1000B9FAA0 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115EC27BEBD1000B9FAA0 /* ProfileModel.swift */; };
 		FF5115F027BEBDA600B9FAA0 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115EF27BEBDA500B9FAA0 /* FavoriteModel.swift */; };
 		FF5115F227BECA2500B9FAA0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115F127BECA2500B9FAA0 /* ProfileViewModel.swift */; };
+		FF5115F427BFF47100B9FAA0 /* SideMenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115F327BFF47100B9FAA0 /* SideMenueViewController.swift */; };
+		FF5115FA27C00BE800B9FAA0 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115F927C00BE700B9FAA0 /* SideMenuViewModel.swift */; };
+		FF5115FD27C00E0100B9FAA0 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5115FB27C00E0100B9FAA0 /* SideMenuTableViewCell.swift */; };
+		FF5115FE27C00E0100B9FAA0 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5115FC27C00E0100B9FAA0 /* SideMenuTableViewCell.xib */; };
+		FF51160927C063C300B9FAA0 /* WorkTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51160727C063C300B9FAA0 /* WorkTimeTableViewCell.swift */; };
+		FF51160A27C063C300B9FAA0 /* WorkTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF51160827C063C300B9FAA0 /* WorkTimeTableViewCell.xib */; };
+		FF51160D27C064D900B9FAA0 /* WorkTimeHeadrCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51160B27C064D900B9FAA0 /* WorkTimeHeadrCell.swift */; };
+		FF51160E27C064D900B9FAA0 /* WorkTimeHeadrCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF51160C27C064D900B9FAA0 /* WorkTimeHeadrCell.xib */; };
+		FF51161127C0659000B9FAA0 /* WorkTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51160F27C0659000B9FAA0 /* WorkTimeTableViewController.swift */; };
+		FF51161227C0659000B9FAA0 /* WorkTimeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF51161027C0659000B9FAA0 /* WorkTimeTableViewController.xib */; };
+		FF51161427C0724400B9FAA0 /* FaqsTermsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51161327C0724400B9FAA0 /* FaqsTermsViewModel.swift */; };
+		FF51161627C0731D00B9FAA0 /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51161527C0731D00B9FAA0 /* GeneralModel.swift */; };
+		FF51161827C0733200B9FAA0 /* GeneralNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51161727C0733200B9FAA0 /* GeneralNetwork.swift */; };
+		FF51161A27C0733B00B9FAA0 /* GeneralApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51161927C0733A00B9FAA0 /* GeneralApi.swift */; };
+		FF51161D27C07BBB00B9FAA0 /* ContactUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51161C27C07BBB00B9FAA0 /* ContactUsModel.swift */; };
+		FF51161F27C07BFD00B9FAA0 /* ContactNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51161E27C07BFD00B9FAA0 /* ContactNetworking.swift */; };
+		FF51162127C07CDD00B9FAA0 /* ContactUSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51162027C07CDD00B9FAA0 /* ContactUSApi.swift */; };
+		FF51162327C07FBC00B9FAA0 /* ContactUsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51162227C07FBC00B9FAA0 /* ContactUsViewModel.swift */; };
+		FF51162927C089C300B9FAA0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51162827C089C300B9FAA0 /* Coordinator.swift */; };
 		FF6100A227BC40CE001A7F31 /* CategoryCentersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100A127BC40CE001A7F31 /* CategoryCentersModel.swift */; };
 		FF6100A527BC5420001A7F31 /* SingleCenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100A427BC5420001A7F31 /* SingleCenterModel.swift */; };
 		FF6100A827BC5AE1001A7F31 /* SchoolDetailesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100A727BC5AE1001A7F31 /* SchoolDetailesViewModel.swift */; };
@@ -28,7 +47,6 @@
 		FF78AA4C27A579EF0099F90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4B27A579EF0099F90F /* Assets.xcassets */; };
 		FF78AA4F27A579EF0099F90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4D27A579EF0099F90F /* LaunchScreen.storyboard */; };
 		FF7AC0E927B853830068D1DE /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AC0E827B853830068D1DE /* BaseApi.swift */; };
-		FF7AC0EB27B8538F0068D1DE /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AC0EA27B8538F0068D1DE /* BaseApi.swift */; };
 		FF7AC0ED27B853C50068D1DE /* BannerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AC0EC27B853C50068D1DE /* BannerApi.swift */; };
 		FF7AC0EF27B853CF0068D1DE /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AC0EE27B853CF0068D1DE /* BannerModel.swift */; };
 		FF7AC0F127B853E00068D1DE /* BannerNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AC0F027B853E00068D1DE /* BannerNetworking.swift */; };
@@ -37,7 +55,6 @@
 		FF7F21AB27ADFD5B007606DB /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21A927ADFD5B007606DB /* ErrorResponse.swift */; };
 		FF7F21AC27ADFD5B007606DB /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21AA27ADFD5B007606DB /* BaseResponse.swift */; };
 		FF7F21AD27ADFD5B007606DB /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21A827ADFD5B007606DB /* TargetType.swift */; };
-		FF7F21B427ADFD89007606DB /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B327ADFD89007606DB /* BaseApi.swift */; };
 		FF7F21B727AE05C4007606DB /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21B627AE05C4007606DB /* EndPoints.swift */; };
 		FF7F21BB27AECB30007606DB /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21BA27AECB30007606DB /* Logout.swift */; };
 		FF7F21BE27AED210007606DB /* ProfileApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F21BD27AED210007606DB /* ProfileApi.swift */; };
@@ -125,9 +142,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D39720B9AF372EB3449E031F /* Pods-Dalel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dalel.release.xcconfig"; path = "Target Support Files/Pods-Dalel/Pods-Dalel.release.xcconfig"; sourceTree = "<group>"; };
-		D6A0A0FEC18C33B733889F49 /* Pods_Dalel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dalel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDAE285294AE5A146EF7BAFC /* Pods-Dalel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dalel.debug.xcconfig"; path = "Target Support Files/Pods-Dalel/Pods-Dalel.debug.xcconfig"; sourceTree = "<group>"; };
+		489E0BE96B1CEB39AD63B603 /* Pods-Dalel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dalel.debug.xcconfig"; path = "Target Support Files/Pods-Dalel/Pods-Dalel.debug.xcconfig"; sourceTree = "<group>"; };
+		84F8500A67BCA7544D42C24E /* Pods_Dalel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dalel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B143A2B4B777CB972679E08B /* Pods-Dalel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dalel.release.xcconfig"; path = "Target Support Files/Pods-Dalel/Pods-Dalel.release.xcconfig"; sourceTree = "<group>"; };
 		FF5115E427BE72A600B9FAA0 /* AddComentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddComentViewModel.swift; sourceTree = "<group>"; };
 		FF5115E627BE8C4500B9FAA0 /* SubmitReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitReview.swift; sourceTree = "<group>"; };
 		FF5115E827BE923B00B9FAA0 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
@@ -135,6 +152,25 @@
 		FF5115EC27BEBD1000B9FAA0 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		FF5115EF27BEBDA500B9FAA0 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
 		FF5115F127BECA2500B9FAA0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		FF5115F327BFF47100B9FAA0 /* SideMenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenueViewController.swift; sourceTree = "<group>"; };
+		FF5115F927C00BE700B9FAA0 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		FF5115FB27C00E0100B9FAA0 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		FF5115FC27C00E0100B9FAA0 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		FF51160727C063C300B9FAA0 /* WorkTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTimeTableViewCell.swift; sourceTree = "<group>"; };
+		FF51160827C063C300B9FAA0 /* WorkTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkTimeTableViewCell.xib; sourceTree = "<group>"; };
+		FF51160B27C064D900B9FAA0 /* WorkTimeHeadrCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTimeHeadrCell.swift; sourceTree = "<group>"; };
+		FF51160C27C064D900B9FAA0 /* WorkTimeHeadrCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkTimeHeadrCell.xib; sourceTree = "<group>"; };
+		FF51160F27C0659000B9FAA0 /* WorkTimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTimeTableViewController.swift; sourceTree = "<group>"; };
+		FF51161027C0659000B9FAA0 /* WorkTimeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkTimeTableViewController.xib; sourceTree = "<group>"; };
+		FF51161327C0724400B9FAA0 /* FaqsTermsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqsTermsViewModel.swift; sourceTree = "<group>"; };
+		FF51161527C0731D00B9FAA0 /* GeneralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
+		FF51161727C0733200B9FAA0 /* GeneralNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNetwork.swift; sourceTree = "<group>"; };
+		FF51161927C0733A00B9FAA0 /* GeneralApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralApi.swift; sourceTree = "<group>"; };
+		FF51161C27C07BBB00B9FAA0 /* ContactUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsModel.swift; sourceTree = "<group>"; };
+		FF51161E27C07BFD00B9FAA0 /* ContactNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNetworking.swift; sourceTree = "<group>"; };
+		FF51162027C07CDD00B9FAA0 /* ContactUSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUSApi.swift; sourceTree = "<group>"; };
+		FF51162227C07FBC00B9FAA0 /* ContactUsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewModel.swift; sourceTree = "<group>"; };
+		FF51162827C089C300B9FAA0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		FF6100A127BC40CE001A7F31 /* CategoryCentersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCentersModel.swift; sourceTree = "<group>"; };
 		FF6100A427BC5420001A7F31 /* SingleCenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCenterModel.swift; sourceTree = "<group>"; };
 		FF6100A727BC5AE1001A7F31 /* SchoolDetailesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailesViewModel.swift; sourceTree = "<group>"; };
@@ -264,7 +300,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54844C3FD69E01E615CFF16B /* Pods_Dalel.framework in Frameworks */,
+				67104B6BC0C85DA3A504D2A7 /* Pods_Dalel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,16 +310,16 @@
 		52DBDF8C59EB2AD6A88C3CDD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DDAE285294AE5A146EF7BAFC /* Pods-Dalel.debug.xcconfig */,
-				D39720B9AF372EB3449E031F /* Pods-Dalel.release.xcconfig */,
+				489E0BE96B1CEB39AD63B603 /* Pods-Dalel.debug.xcconfig */,
+				B143A2B4B777CB972679E08B /* Pods-Dalel.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		AECFC88EB188C34B1F4E99D5 /* Frameworks */ = {
+		57BFE212C2230364BB386A35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D6A0A0FEC18C33B733889F49 /* Pods_Dalel.framework */,
+				84F8500A67BCA7544D42C24E /* Pods_Dalel.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -323,6 +359,118 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		FF5115FF27C0103300B9FAA0 /* SideMenueViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF5115F927C00BE700B9FAA0 /* SideMenuViewModel.swift */,
+			);
+			path = SideMenueViewModel;
+			sourceTree = "<group>";
+		};
+		FF51160027C0115400B9FAA0 /* SideMenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF5115FB27C00E0100B9FAA0 /* SideMenuTableViewCell.swift */,
+				FF5115FC27C00E0100B9FAA0 /* SideMenuTableViewCell.xib */,
+			);
+			path = SideMenuCell;
+			sourceTree = "<group>";
+		};
+		FF51160127C0119900B9FAA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF5115F327BFF47100B9FAA0 /* SideMenueViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF51160227C011A900B9FAA0 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FF51160127C0119900B9FAA0 /* View */,
+				FF51160027C0115400B9FAA0 /* SideMenuCell */,
+				FF5115FF27C0103300B9FAA0 /* SideMenueViewModel */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		FF51160327C011C900B9FAA0 /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF7AC0F227B85B900068D1DE /* CategoriesCollectionViewCell.swift */,
+				FF7AC0F327B85B900068D1DE /* CategoriesCollectionViewCell.xib */,
+			);
+			path = CategoryCell;
+			sourceTree = "<group>";
+		};
+		FF51160427C011D200B9FAA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC38327A582050088C717 /* HomeTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF51160527C011DE00B9FAA0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF7F621027B5CB31004D334E /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF51160627C011EE00B9FAA0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF51160427C011D200B9FAA0 /* View */,
+				FF51160327C011C900B9FAA0 /* CategoryCell */,
+				FF51160527C011DE00B9FAA0 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF51161B27C07B8E00B9FAA0 /* GeneralNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				FF51161727C0733200B9FAA0 /* GeneralNetwork.swift */,
+				FF51161527C0731D00B9FAA0 /* GeneralModel.swift */,
+				FF51161927C0733A00B9FAA0 /* GeneralApi.swift */,
+			);
+			path = GeneralNetworking;
+			sourceTree = "<group>";
+		};
+		FF51162427C0888700B9FAA0 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC3A127A585AF0088C717 /* FavoriteViewController.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		FF51162527C088A800B9FAA0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FF51162627C088B000B9FAA0 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FF51162627C088B000B9FAA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFC3A527A586290088C717 /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF51162727C088B600B9FAA0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF5115F127BECA2500B9FAA0 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FF6100A327BC4C43001A7F31 /* BannerNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +487,12 @@
 				FFBFC38D27A584A00088C717 /* SchoolDetailsViewController.swift */,
 				FFBFC38E27A584A00088C717 /* SchoolDetailsViewController.xib */,
 				FF5115E127BE719C00B9FAA0 /* CommentTableViewCell */,
+				FF51160727C063C300B9FAA0 /* WorkTimeTableViewCell.swift */,
+				FF51160827C063C300B9FAA0 /* WorkTimeTableViewCell.xib */,
+				FF51160B27C064D900B9FAA0 /* WorkTimeHeadrCell.swift */,
+				FF51160F27C0659000B9FAA0 /* WorkTimeTableViewController.swift */,
+				FF51161027C0659000B9FAA0 /* WorkTimeTableViewController.xib */,
+				FF51160C27C064D900B9FAA0 /* WorkTimeHeadrCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,7 +511,7 @@
 				FF78AA4127A579ED0099F90F /* Dalel */,
 				FF78AA4027A579ED0099F90F /* Products */,
 				52DBDF8C59EB2AD6A88C3CDD /* Pods */,
-				AECFC88EB188C34B1F4E99D5 /* Frameworks */,
+				57BFE212C2230364BB386A35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -555,6 +709,11 @@
 				FF7F621627B5CFCE004D334E /* CategoryNetworking */,
 				FF7AC0E527B853440068D1DE /* CenterNetworking */,
 				FF6100A327BC4C43001A7F31 /* BannerNetworking */,
+				FF51161B27C07B8E00B9FAA0 /* GeneralNetworking */,
+				FF51161C27C07BBB00B9FAA0 /* ContactUsModel.swift */,
+				FF51161E27C07BFD00B9FAA0 /* ContactNetworking.swift */,
+				FF51162027C07CDD00B9FAA0 /* ContactUSApi.swift */,
+				FF51162827C089C300B9FAA0 /* Coordinator.swift */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -645,14 +804,12 @@
 			children = (
 				FF78AA4827A579ED0099F90F /* Main.storyboard */,
 				FF78AA4627A579ED0099F90F /* MainTabBar.swift */,
-				FFBFC38327A582050088C717 /* HomeTableViewController.swift */,
-				FF7AC0F227B85B900068D1DE /* CategoriesCollectionViewCell.swift */,
-				FF7AC0F327B85B900068D1DE /* CategoriesCollectionViewCell.xib */,
-				FF7F621027B5CB31004D334E /* HomeViewModel.swift */,
-				FFBFC3A127A585AF0088C717 /* FavoriteViewController.swift */,
-				FFBFC3A527A586290088C717 /* ProfileViewController.swift */,
-				FF5115F127BECA2500B9FAA0 /* ProfileViewModel.swift */,
+				FF51160627C011EE00B9FAA0 /* Home */,
+				FF51162427C0888700B9FAA0 /* Favorite */,
+				FF51162527C088A800B9FAA0 /* Profile */,
+				FF51162727C088B600B9FAA0 /* ViewModel */,
 				FFBFC3A327A585E30088C717 /* NotificationViewController.swift */,
+				FF51160227C011A900B9FAA0 /* SideMenu */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -736,6 +893,7 @@
 			children = (
 				FFBFC3B127A586A50088C717 /* OurVisionViewController.swift */,
 				FFBFC3B227A586A50088C717 /* OurVisionViewController.xib */,
+				FF51161327C0724400B9FAA0 /* FaqsTermsViewModel.swift */,
 			);
 			path = OurVision;
 			sourceTree = "<group>";
@@ -744,6 +902,7 @@
 			isa = PBXGroup;
 			children = (
 				FFBFC3BB27A5870E0088C717 /* ContactUsViewController.swift */,
+				FF51162227C07FBC00B9FAA0 /* ContactUsViewModel.swift */,
 				FFBFC3BC27A5870E0088C717 /* ContactUsViewController.xib */,
 			);
 			path = ContactUs;
@@ -784,12 +943,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF78AA5327A579EF0099F90F /* Build configuration list for PBXNativeTarget "Dalel" */;
 			buildPhases = (
-				CF92F9B5AA54A3A0AF7AFC59 /* [CP] Check Pods Manifest.lock */,
+				0F277C2DA75CD3C944D9D84F /* [CP] Check Pods Manifest.lock */,
 				FF78AA3B27A579ED0099F90F /* Sources */,
 				FF78AA3C27A579ED0099F90F /* Frameworks */,
 				FF78AA3D27A579ED0099F90F /* Resources */,
-				8D9EDECA9F4BAF4FBFA08E1C /* [CP] Embed Pods Frameworks */,
-				2A30102F656C70CBC57FD8AC /* [CP] Copy Pods Resources */,
+				9F6CB16D5C52197D623DE380 /* [CP] Embed Pods Frameworks */,
+				AE50491DE1713BB7B2674B8A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -847,7 +1006,9 @@
 				FFBFC36C27A580020088C717 /* RegisterViewController.xib in Resources */,
 				FFBFC3AA27A586480088C717 /* AddPlaceViewController.xib in Resources */,
 				FFBFC37027A580360088C717 /* LanguageViewController.xib in Resources */,
+				FF5115FE27C00E0100B9FAA0 /* SideMenuTableViewCell.xib in Resources */,
 				FFBFC3BE27A5870E0088C717 /* ContactUsViewController.xib in Resources */,
+				FF51160E27C064D900B9FAA0 /* WorkTimeHeadrCell.xib in Resources */,
 				FFBFC38B27A5844B0088C717 /* SchoolsViewController.xib in Resources */,
 				FF7AC0F527B85B900068D1DE /* CategoriesCollectionViewCell.xib in Resources */,
 				FFBFC39F27A585490088C717 /* SpecificSearchViewController.xib in Resources */,
@@ -859,48 +1020,16 @@
 				FF78AA4A27A579ED0099F90F /* Main.storyboard in Resources */,
 				FF6100AF27BC63E7001A7F31 /* CommentTableViewCell.xib in Resources */,
 				FFBFC37C27A580B00088C717 /* VerificationViewController.xib in Resources */,
+				FF51161227C0659000B9FAA0 /* WorkTimeTableViewController.xib in Resources */,
 				FFBFC39A27A585280088C717 /* SearchViewController.xib in Resources */,
+				FF51160A27C063C300B9FAA0 /* WorkTimeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A30102F656C70CBC57FD8AC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D9EDECA9F4BAF4FBFA08E1C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CF92F9B5AA54A3A0AF7AFC59 /* [CP] Check Pods Manifest.lock */ = {
+		0F277C2DA75CD3C944D9D84F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -922,6 +1051,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9F6CB16D5C52197D623DE380 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE50491DE1713BB7B2674B8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dalel/Pods-Dalel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -931,18 +1094,24 @@
 			files = (
 				FF7F21FF27AF0574007606DB /* AuthApi.swift in Sources */,
 				FFBFC36527A57FD00088C717 /* LoginViewController.swift in Sources */,
+				FF51161427C0724400B9FAA0 /* FaqsTermsViewModel.swift in Sources */,
 				FF6100A227BC40CE001A7F31 /* CategoryCentersModel.swift in Sources */,
+				FF51161627C0731D00B9FAA0 /* GeneralModel.swift in Sources */,
 				FFBFC36B27A580020088C717 /* RegisterViewController.swift in Sources */,
+				FF5115FA27C00BE800B9FAA0 /* SideMenuViewModel.swift in Sources */,
 				FF7F21F627AEFC23007606DB /* CheckLanguage.swift in Sources */,
 				FFBFC37327A5804A0088C717 /* OnBoardingViewController.swift in Sources */,
 				FF7F21EE27AEFBF9007606DB /* TableView + Extesnions.swift in Sources */,
 				FF7F220127AF05F9007606DB /* UsersNetworking.swift in Sources */,
+				FF51161A27C0733B00B9FAA0 /* GeneralApi.swift in Sources */,
 				FFBFC37727A5808F0088C717 /* ResetPasswordViewController.swift in Sources */,
 				FF7AC0F427B85B900068D1DE /* CategoriesCollectionViewCell.swift in Sources */,
 				FF5115F027BEBDA600B9FAA0 /* FavoriteModel.swift in Sources */,
+				FF51162127C07CDD00B9FAA0 /* ContactUSApi.swift in Sources */,
 				FF5115E527BE72A600B9FAA0 /* AddComentViewModel.swift in Sources */,
 				FF7F621127B5CB31004D334E /* HomeViewModel.swift in Sources */,
 				FF7AC0EF27B853CF0068D1DE /* BannerModel.swift in Sources */,
+				FF5115FD27C00E0100B9FAA0 /* SideMenuTableViewCell.swift in Sources */,
 				FF7F220027AF0597007606DB /* RegisterModel.swift in Sources */,
 				FF7F21EA27AEFBF9007606DB /* LottieHelper.swift in Sources */,
 				FF7F621527B5CB7A004D334E /* CategoriesNetworking.swift in Sources */,
@@ -950,6 +1119,7 @@
 				FF7F21E627AEFBF9007606DB /* TimeHelper.swift in Sources */,
 				FF7F21AB27ADFD5B007606DB /* ErrorResponse.swift in Sources */,
 				FFBFC3B727A586BC0088C717 /* OurGoalViewController.swift in Sources */,
+				FF51162327C07FBC00B9FAA0 /* ContactUsViewModel.swift in Sources */,
 				FF7F621A27B5D7D5004D334E /* CenterModel.swift in Sources */,
 				FFBFC38527A582050088C717 /* HomeTableViewController.swift in Sources */,
 				FFBFC36F27A580360088C717 /* LanguageViewController.swift in Sources */,
@@ -970,20 +1140,26 @@
 				FF5115F227BECA2500B9FAA0 /* ProfileViewModel.swift in Sources */,
 				FF7F21AD27ADFD5B007606DB /* TargetType.swift in Sources */,
 				FF7F21E927AEFBF9007606DB /* CardView.swift in Sources */,
+				FF51160927C063C300B9FAA0 /* WorkTimeTableViewCell.swift in Sources */,
 				FFBFC3A927A586480088C717 /* AddPlaceViewController.swift in Sources */,
 				FF7F21F027AEFBFA007606DB /* UITextField + extension.swift in Sources */,
 				FFBFC39E27A585490088C717 /* SpecificSearchViewController.swift in Sources */,
 				FFBFC3BD27A5870E0088C717 /* ContactUsViewController.swift in Sources */,
+				FF51161827C0733200B9FAA0 /* GeneralNetwork.swift in Sources */,
 				FFBFC38F27A584A00088C717 /* SchoolDetailsViewController.swift in Sources */,
 				FF7F21E527AEFBF9007606DB /* DesignView.swift in Sources */,
+				FF51161D27C07BBB00B9FAA0 /* ContactUsModel.swift in Sources */,
 				FF5115ED27BEBD1000B9FAA0 /* ProfileModel.swift in Sources */,
 				FF7F621C27B5DAA4004D334E /* CenterNetworking.swift in Sources */,
 				FF7F621E27B5DAAE004D334E /* CenterApi.swift in Sources */,
 				FFBFC39927A585280088C717 /* SearchViewController.swift in Sources */,
 				FF6100AB27BC5E3D001A7F31 /* ReviewModel.swift in Sources */,
+				FF51162927C089C300B9FAA0 /* Coordinator.swift in Sources */,
 				FF7F21F727AEFC23007606DB /* ActivityIndicatorManager.swift in Sources */,
 				FF7F620F27B5799B004D334E /* OnBoardingViewModel.swift in Sources */,
+				FF51161F27C07BFD00B9FAA0 /* ContactNetworking.swift in Sources */,
 				FF7F21B727AE05C4007606DB /* EndPoints.swift in Sources */,
+				FF5115F427BFF47100B9FAA0 /* SideMenueViewController.swift in Sources */,
 				FFBFC37B27A580B00088C717 /* VerificationViewController.swift in Sources */,
 				FF83A05527BDD601008C2DB2 /* SchoolsViewModel.swift in Sources */,
 				FF7F21DF27AEFBF9007606DB /* UIView + extension.swift in Sources */,
@@ -1005,10 +1181,10 @@
 				FF7F21C027AED222007606DB /* ProfileNetworking.swift in Sources */,
 				FF7F21BE27AED210007606DB /* ProfileApi.swift in Sources */,
 				FF7F621327B5CB5E004D334E /* Categories Api.swift in Sources */,
-				FF7F21B427ADFD89007606DB /* BaseApi.swift in Sources */,
 				FF7AC0F127B853E00068D1DE /* BannerNetworking.swift in Sources */,
 				FF7F21EB27AEFBF9007606DB /* LocalizationManager.swift in Sources */,
 				FFBFC39427A584DD0088C717 /* AddCommentViewController.swift in Sources */,
+				FF51160D27C064D900B9FAA0 /* WorkTimeHeadrCell.swift in Sources */,
 				FF7F21FA27AEFC29007606DB /* Colors.swift in Sources */,
 				FFBFC3B327A586A50088C717 /* OurVisionViewController.swift in Sources */,
 				FF6100A527BC5420001A7F31 /* SingleCenterModel.swift in Sources */,
@@ -1018,9 +1194,9 @@
 				FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */,
 				FF5115E927BE923B00B9FAA0 /* SearchModel.swift in Sources */,
 				FFBFC38A27A5844B0088C717 /* SchoolsViewController.swift in Sources */,
-				FF7AC0EB27B8538F0068D1DE /* BaseApi.swift in Sources */,
 				FF7F21AC27ADFD5B007606DB /* BaseResponse.swift in Sources */,
 				FF7F620727B54014004D334E /* LoginViewModel.swift in Sources */,
+				FF51161127C0659000B9FAA0 /* WorkTimeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1164,7 +1340,7 @@
 		};
 		FF78AA5427A579EF0099F90F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDAE285294AE5A146EF7BAFC /* Pods-Dalel.debug.xcconfig */;
+			baseConfigurationReference = 489E0BE96B1CEB39AD63B603 /* Pods-Dalel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1195,7 +1371,7 @@
 		};
 		FF78AA5527A579EF0099F90F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D39720B9AF372EB3449E031F /* Pods-Dalel.release.xcconfig */;
+			baseConfigurationReference = B143A2B4B777CB972679E08B /* Pods-Dalel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

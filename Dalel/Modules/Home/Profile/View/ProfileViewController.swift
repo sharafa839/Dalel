@@ -159,6 +159,7 @@ title = "Profile"
     
     
     func setupView(profile:ProfileModelPayload){
+        nameLabel.text = profile.fullName
         nameTextField.text = profile.fullName
         phoneTextField.text = profile.phone
         phoneTextField.selectedCountry?.phoneCode = profile.phoneCode ?? ""

@@ -9,9 +9,14 @@ import UIKit
 import CoreLocation
 import GoogleMaps
 
-class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,GMSMapViewDelegate {
 
 
+    @IBOutlet weak var googleMap: GMSMapView!{
+        didSet{
+            googleMap.settings.zoomGestures = true
+        }
+    }
     @IBOutlet weak var schoolNameLabel: UILabel!
     @IBOutlet weak var _1stButton: UIButton!
     @IBOutlet weak var _2stButton: UIButton!
@@ -41,6 +46,12 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         }
     }
     
+    @IBOutlet weak var showTimesButton: UIButton!{
+        didSet{
+            showTimesButton.setTitle("showTime", for: .normal)
+            showTimesButton.floatView(raduis: 15, color: .clear)
+        }
+    }
     
     var centerId:String?
     var centersInCategory = [CagtegoryCenterModelPayload]()
@@ -62,6 +73,7 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         attachViewModel()
         subscribeViewModel()
         setupViews()
+        setupViewModel()
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -77,12 +89,30 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         viewModel.getCenterReviews(id: centerId ?? "")
     }
     
+    func setupViewModel(){
+        viewModel.onError.subscribe {  error in
+            
+            HelperK.showError(title: error.element ?? "", subtitle: "")
+        }.disposed(by: viewModel.disposeBag)
+        viewModel.onLoading.subscribe { isLoading in
+            if isLoading.element ?? false {
+                ActivityIndicatorManager.shared.showProgressView()
+            }else {
+                ActivityIndicatorManager.shared.hideProgressView()
+            }
+        }.disposed(by: viewModel.disposeBag)
+
+    
+    }
+    
+    
     func subscribeViewModel(){
         viewModel.singleCenter.subscribe {[weak self] center in
             guard let singleCenter = center.element else {
                 return
             }
             self?.setupUI(singleCenter: singleCenter)
+            self?.singleCenter = singleCenter
             self?.homeViewModel.getCategory(id: singleCenter.category?.id ?? "")
 
         }.disposed(by: viewModel.disposeBag)
@@ -114,7 +144,13 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
     func setupUI(singleCenter:SingleCenterPayload?){
         guard let center = singleCenter else {return}
    
-        
+        let position = CLLocationCoordinate2D(latitude: Double(center.latitude ?? "10") ?? 0.0, longitude: Double(center.longitude ?? "10") ?? 0.0)
+        let marker = GMSMarker(position: position)
+        marker.title = center.nameByLang
+        marker.map = googleMap
+    
+        googleMap.camera = GMSCameraPosition(target: position, zoom: 16)
+
         if LocalizationManager.shared.getLanguage() == .Arabic {
         schoolNameLabel.text = singleCenter?.arName
             detailDescriptionLabel.text = singleCenter?.arDescription
@@ -226,6 +262,11 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
     @IBAction func addCommentAction(_ sender: Any) {
         let AddCommentVc = AddCommentViewController(id: centerId ?? "")
         navigationController?.pushViewController(AddCommentVc, animated: true)
+        
+    }
+    @IBAction func showButton(_ sender: Any) {
+        let Work = WorkTimeTableViewController(workTime: singleCenter?.workTimes ?? [WorkTime]())
+        navigationController?.pushViewController(Work, animated: true)
         
     }
     

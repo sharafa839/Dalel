@@ -9,21 +9,40 @@ import UIKit
 
 class TermsAndConditionViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var TermsTextView: UITextView!{
+        didSet{
+            TermsTextView.isEditable = false
+        }
     }
+    
+    let viewModel = SettingViewModel()
+override func viewDidLoad() {
+    super.viewDidLoad()
+    attachViewModel()
+    subscribeViewModel()
+    setupViewModel()
+}
 
+func attachViewModel(){
+    viewModel.getData()
+}
+    func setupViewModel(){
 
-    /*
-    // MARK: - Navigation
+        viewModel.onLoading.subscribe { isLoading in
+            if isLoading.element ?? false {
+                ActivityIndicatorManager.shared.showProgressView()
+            }else {
+                ActivityIndicatorManager.shared.hideProgressView()
+            }
+        }.disposed(by: viewModel.disposeBag)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
     }
-    */
+func subscribeViewModel(){
+    viewModel.ConfigureRespsone.subscribe {[weak self] data in
+        guard let about = data.element else {return}
+        self?.TermsTextView.text = about?.about?.termsAndConditions?.html2String
+    }.disposed(by: viewModel.disposeBag)
 
+}
 }

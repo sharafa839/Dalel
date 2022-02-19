@@ -7,6 +7,7 @@
 
 import UIKit
 import  ImageSlideshow
+import SideMenu
 class HomeTableViewController: UITableViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var CategoryCollectionView: UICollectionView!
     @IBOutlet weak var rodaCollectionView: UICollectionView!
@@ -54,7 +55,7 @@ var allCenters  = [CenterModelPayload]()
         setupUI()
         attachViewMode()
         setupViewModel()
-       setupObservers()
+        setupObservers()
         setupObserversUI()
     }
     
@@ -250,10 +251,19 @@ var allCenters  = [CenterModelPayload]()
 
     }
     
+
+//    @IBAction func sideMenue(_ sender: UIButton) {
+//        let menu = SideMenuNavigationController(rootViewController: SideMenueViewController())
+//       
+//        present(menu, animated: true, completion: nil)
+//
+//    }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
                 return CGSize(width: 120 , height: 160)
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch collectionView.tag {
         case 1 :

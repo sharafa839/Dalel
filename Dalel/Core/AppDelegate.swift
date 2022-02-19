@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate , CLLocationManagerDelegat
 
     var window: UIWindow?
     let locationManager = CLLocationManager()
-
+    static let shared = AppDelegate()
+    private(set) lazy var coordinator = AppCoordinator()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

@@ -193,43 +193,43 @@ extension UIView {
            }, completion: completion)
        }
       
-      func showView(objView:UIView){
-
-          objView.alpha = 0.0
-          UIView.animate(withDuration: 0.5, animations: {
-              objView.alpha = 0.0
-          }, completion: { (completeFadein: Bool) -> Void in
-              objView.alpha = 1.0
-              let transition = CATransition()
-              transition.duration = 0.5
-            transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-            transition.type = CATransitionType.fade
-              objView.layer.add(transition, forKey: nil)
-          })
-      }
-
-      func HideView(objView:UIView){
-
-          UIView.animate(withDuration: 0.5, animations: {
-              objView.alpha = 1.0
-          }, completion: { (completeFadein: Bool) -> Void in
-              objView.alpha = 0.0
-              let transition = CATransition()
-              transition.duration = 0.5
-            transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-            transition.type = CATransitionType.fade
-              objView.layer.add(transition, forKey: nil)
-          })
-      }
-    
-    func shakeF() {
-               let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
-               animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
-               animation.duration = 0.6
-               animation.values = [-20.0, 20.0, -20.0, 20.0, -10.0, 10.0, -5.0, 5.0, 0.0 ]
-               layer.add(animation, forKey: "shake")
-           }
-    
+//      func showView(objView:UIView){
+//
+//          objView.alpha = 0.0
+//          UIView.animate(withDuration: 0.5, animations: {
+//              objView.alpha = 0.0
+//          }, completion: { (completeFadein: Bool) -> Void in
+//              objView.alpha = 1.0
+//              let transition = CATransition()
+//              transition.duration = 0.5
+//            transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+//            transition.type = CATransitionType.fade
+//              objView.layer.add(transition, forKey: nil)
+//          })
+//      }
+//
+//      func HideView(objView:UIView){
+//
+//          UIView.animate(withDuration: 0.5, animations: {
+//              objView.alpha = 1.0
+//          }, completion: { (completeFadein: Bool) -> Void in
+//              objView.alpha = 0.0
+//              let transition = CATransition()
+//              transition.duration = 0.5
+//            transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+//            transition.type = CATransitionType.fade
+//              objView.layer.add(transition, forKey: nil)
+//          })
+//      }
+//    
+//    func shakeF() {
+//               let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+//               animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+//               animation.duration = 0.6
+//               animation.values = [-20.0, 20.0, -20.0, 20.0, -10.0, 10.0, -5.0, 5.0, 0.0 ]
+//               layer.add(animation, forKey: "shake")
+//           }
+//    
     // MARK:- Colors
     static var nib : UINib {
         return UINib(nibName : "\(self)",bundle : nil)

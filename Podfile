@@ -28,13 +28,14 @@ pod 'MaterialComponents/TextControls+OutlinedTextAreas'
 pod 'MaterialComponents/TextControls+OutlinedTextFields'
 pod 'MDatePickerView'
 pod 'MOLH'
- pod 'Kingfisher', '~> 7.0'
 pod 'CountryPickerSwift'
- pod 'RxSwift', '6.2.0'
-    pod 'RxCocoa', '6.2.0'
+pod 'RxSwift', '6.2.0'
+pod 'RxCocoa', '6.2.0'
 pod 'RxDataSources'
 pod 'SSCustomTabbar'
- pod 'Moya'
- pod 'GoogleMaps'
-
+pod 'Moya'
+pod 'GoogleMaps'
+pod 'SideMenu'
 end
+
+
