@@ -13,19 +13,20 @@ class AddCommentViewModel:CenterProtocol {
 
     
     func addComment(id:String,review:String,rate:Int){
-        submitReview(id: id, review: review, rate: rate) { result, fail in
-            switch result {
-            case .failure(let error):
-                print(error.localizedDescription)
-            case.success(let response):
-                guard let response = response?.payload else {
-                    return
-                }
-
-                HelperK.showSuccess(title: "Thanks for your review".localizede, subtitle: "")
-            case .none:
-                return
-            }
-        }
+//        submitReview(id: id, review: review, rate: rate) { result, fail in
+//            switch result {
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            case.success(let response):
+//                guard let response = response?.payload else {
+//                    return
+//                }
+//
+//                HelperK.showSuccess(title: "Thanks for your review".localizede, subtitle: "")
+//            case .none:
+//                return
+//            }
+//        }
+      //  APIs.genericApiWithPagination(pageNo: 0, url: <#T##String#>, method: <#T##HTTPMethod#>, paameters: <#T##Parameters?#>, headers: <#T##HTTPHeaders?#>, completion: <#T##(Decodable?, Error?, Int?) -> ()#>)
     }
 }

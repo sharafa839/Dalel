@@ -23,6 +23,7 @@ class Router {
         let nav = UINavigationController(rootViewController: LoginVc)
         AppDelegate.shared.window?.rootViewController = nav
     }
+    
     class func setLaunch(window:UIWindow?){
         guard HelperK.checkUserToken() == true else {
             if HelperK.checkFirstTime() {

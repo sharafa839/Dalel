@@ -88,6 +88,7 @@ title = "Profile"
         setupUI()
         subscribeToViewModel()
         setupViewModel()
+        print(HelperK.getUserToken())
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -132,6 +133,7 @@ title = "Profile"
         
 
     }
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         let passwordVc = ResetPasswordViewController()
         navigationController?.pushViewController(passwordVc, animated: true)

@@ -15,6 +15,7 @@ protocol ProfileProtocol {
 
     func getFavorites(compeletion:@escaping(_:Result<BaseResponse<[FavoriteModelPayload]>?,NSError>?,ErrorResponse?)->Void)
 
+    func getPlaces(compeletion:@escaping(_:Result<BaseResponse<[PlacesModelPayload]>?,NSError>?,ErrorResponse?)->Void)
 }
 
 extension ProfileProtocol {
@@ -30,7 +31,7 @@ extension ProfileProtocol {
 
     }
     func updateProfileLogo(logo:UIImage,compeletion:@escaping(_:Result<BaseResponse<ProfileModelPayload>?,NSError>?,ErrorResponse?)->Void){
-        profile.uploadMultipart(image: logo, target: .updateProfileLogo(logo: logo), responseClass: BaseResponse<ProfileModelPayload>.self, compeletion: compeletion)
+        profile.uploadMultipart(parmss: [:], name: "logo", image: logo, target: .updateProfileLogo(logo: logo), responseClass: BaseResponse<ProfileModelPayload>.self, compeletion: compeletion)
     }
     
     func updateProfilepassword(password:String,confirmPassword:String,compeletion:@escaping(_:Result<BaseResponse<ProfileModelPayload>?,NSError>?,ErrorResponse?)->Void){
@@ -40,6 +41,11 @@ extension ProfileProtocol {
     func getFavorites(compeletion:@escaping(_:Result<BaseResponse<[FavoriteModelPayload]>?,NSError>?,ErrorResponse?)->Void){
         profile.fetchData(target: .myFavorite, responseClass: BaseResponse<[FavoriteModelPayload]>.self, compeletion: compeletion)
     }
+    
+    func getPlaces(compeletion:@escaping(_:Result<BaseResponse<[PlacesModelPayload]>?,NSError>?,ErrorResponse?)->Void){
+        profile.fetchData(target: .myCenters, responseClass: BaseResponse<[PlacesModelPayload]>.self, compeletion: compeletion)
+    }
+
     
 }
 

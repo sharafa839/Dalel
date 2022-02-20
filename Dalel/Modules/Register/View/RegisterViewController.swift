@@ -12,7 +12,9 @@ import iOSDropDown
 import RxSwift
 import RxRelay
 import RxCocoa
-class RegisterViewController: UIViewController {
+import MobileCoreServices
+
+class RegisterViewController: UIViewController,UIDocumentPickerDelegate {
 //MARK: - IBoutlets
     @IBOutlet weak var createNewAccountLabel: UILabel!
     @IBOutlet weak var helloLabel: UILabel!
@@ -27,14 +29,12 @@ class RegisterViewController: UIViewController {
     }
     @IBOutlet weak var phoneCode: FPNTextField!
    
-    @IBOutlet weak var phoneNumberTextField: MDCFilledTextField!{
+    @IBOutlet weak var uploadFile: UIButton!{
         didSet{
-            phoneNumberTextField.label.text = "phoneNumber"
-            phoneNumberTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .normal)
-            phoneNumberTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .editing)
-            phoneNumberTextField.setFilledBackgroundColor(.white, for: .normal)
+            uploadFile.setTitle("uploadFile", for: .normal)
         }
     }
+    
     @IBOutlet weak var emailTextField: MDCFilledTextField!{
         didSet{
             emailTextField.label.text = "email"
@@ -127,6 +127,12 @@ class RegisterViewController: UIViewController {
 
     }
     
+    @IBAction func uploadFilePdf(_ sender: UIButton) {
+        let documentPicker = UIDocumentPickerViewController(documentTypes: [String(kUTTypeText),String(kUTTypeContent),String(kUTTypeItem),String(kUTTypeData)], in: .import)
+        documentPicker.delegate = self
+        self.present(documentPicker, animated: true)
+        
+    }
     func setupViewModel(){
         viewModel.onError.subscribe {  error in
             

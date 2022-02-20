@@ -41,6 +41,25 @@
 		FF6100AE27BC63E7001A7F31 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100AC27BC63E7001A7F31 /* CommentTableViewCell.swift */; };
 		FF6100AF27BC63E7001A7F31 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6100AD27BC63E7001A7F31 /* CommentTableViewCell.xib */; };
 		FF6100B127BC7686001A7F31 /* MakeFavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6100B027BC7686001A7F31 /* MakeFavoriteModel.swift */; };
+		FF6E506727C14EFD00D44DFC /* AddPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E506627C14EFD00D44DFC /* AddPlaceViewModel.swift */; };
+		FF6E506927C1529A00D44DFC /* AddCenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E506827C1529A00D44DFC /* AddCenterModel.swift */; };
+		FF6E506C27C1739100D44DFC /* AddServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E506A27C1739100D44DFC /* AddServiceViewController.swift */; };
+		FF6E506D27C1739100D44DFC /* AddServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6E506B27C1739100D44DFC /* AddServiceViewController.xib */; };
+		FF6E506F27C1778C00D44DFC /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E506E27C1778C00D44DFC /* ServiceModel.swift */; };
+		FF6E507127C1893E00D44DFC /* CustomInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E507027C1893E00D44DFC /* CustomInterceptor.swift */; };
+		FF6E507327C18A2200D44DFC /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E507227C18A2200D44DFC /* Headers.swift */; };
+		FF6E507627C19CBB00D44DFC /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E507427C19CBB00D44DFC /* PlacesTableViewCell.swift */; };
+		FF6E507727C19CBB00D44DFC /* PlacesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6E507527C19CBB00D44DFC /* PlacesTableViewCell.xib */; };
+		FF6E507927C19FF000D44DFC /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E507827C19FF000D44DFC /* PlacesModel.swift */; };
+		FF6E507B27C1A11C00D44DFC /* PlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E507A27C1A11C00D44DFC /* PlacesViewModel.swift */; };
+		FF6E507E27C1AC3C00D44DFC /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E507C27C1AC3C00D44DFC /* PlacesViewController.swift */; };
+		FF6E507F27C1AC3C00D44DFC /* PlacesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6E507D27C1AC3C00D44DFC /* PlacesViewController.xib */; };
+		FF6E508127C1B60100D44DFC /* ModeOfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E508027C1B60100D44DFC /* ModeOfModel.swift */; };
+		FF6E508427C1C36A00D44DFC /* CommonQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E508227C1C36A00D44DFC /* CommonQuestionViewController.swift */; };
+		FF6E508527C1C36A00D44DFC /* CommonQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6E508327C1C36A00D44DFC /* CommonQuestionViewController.xib */; };
+		FF6E508727C1C37A00D44DFC /* CommonQuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E508627C1C37A00D44DFC /* CommonQuestionsViewModel.swift */; };
+		FF6E508A27C1C3E700D44DFC /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E508827C1C3E700D44DFC /* SocialViewController.swift */; };
+		FF6E508B27C1C3E700D44DFC /* SocialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6E508927C1C3E700D44DFC /* SocialViewController.xib */; };
 		FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4227A579ED0099F90F /* AppDelegate.swift */; };
 		FF78AA4727A579ED0099F90F /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78AA4627A579ED0099F90F /* MainTabBar.swift */; };
 		FF78AA4A27A579ED0099F90F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF78AA4827A579ED0099F90F /* Main.storyboard */; };
@@ -137,8 +156,6 @@
 		FFBFC3BE27A5870E0088C717 /* ContactUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC3BC27A5870E0088C717 /* ContactUsViewController.xib */; };
 		FFBFC3C227A587320088C717 /* TermsAndConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC3C027A587320088C717 /* TermsAndConditionViewController.swift */; };
 		FFBFC3C327A587320088C717 /* TermsAndConditionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC3C127A587320088C717 /* TermsAndConditionViewController.xib */; };
-		FFBFC3D427A5AFBA0088C717 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC3D227A5AFBA0088C717 /* PlacesTableViewController.swift */; };
-		FFBFC3D527A5AFBA0088C717 /* PlacesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBFC3D327A5AFBA0088C717 /* PlacesTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +195,25 @@
 		FF6100AC27BC63E7001A7F31 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		FF6100AD27BC63E7001A7F31 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		FF6100B027BC7686001A7F31 /* MakeFavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeFavoriteModel.swift; sourceTree = "<group>"; };
+		FF6E506627C14EFD00D44DFC /* AddPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewModel.swift; sourceTree = "<group>"; };
+		FF6E506827C1529A00D44DFC /* AddCenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCenterModel.swift; sourceTree = "<group>"; };
+		FF6E506A27C1739100D44DFC /* AddServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServiceViewController.swift; sourceTree = "<group>"; };
+		FF6E506B27C1739100D44DFC /* AddServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddServiceViewController.xib; sourceTree = "<group>"; };
+		FF6E506E27C1778C00D44DFC /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		FF6E507027C1893E00D44DFC /* CustomInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInterceptor.swift; sourceTree = "<group>"; };
+		FF6E507227C18A2200D44DFC /* Headers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
+		FF6E507427C19CBB00D44DFC /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		FF6E507527C19CBB00D44DFC /* PlacesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesTableViewCell.xib; sourceTree = "<group>"; };
+		FF6E507827C19FF000D44DFC /* PlacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
+		FF6E507A27C1A11C00D44DFC /* PlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewModel.swift; sourceTree = "<group>"; };
+		FF6E507C27C1AC3C00D44DFC /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		FF6E507D27C1AC3C00D44DFC /* PlacesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesViewController.xib; sourceTree = "<group>"; };
+		FF6E508027C1B60100D44DFC /* ModeOfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeOfModel.swift; sourceTree = "<group>"; };
+		FF6E508227C1C36A00D44DFC /* CommonQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonQuestionViewController.swift; sourceTree = "<group>"; };
+		FF6E508327C1C36A00D44DFC /* CommonQuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonQuestionViewController.xib; sourceTree = "<group>"; };
+		FF6E508627C1C37A00D44DFC /* CommonQuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonQuestionsViewModel.swift; sourceTree = "<group>"; };
+		FF6E508827C1C3E700D44DFC /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		FF6E508927C1C3E700D44DFC /* SocialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialViewController.xib; sourceTree = "<group>"; };
 		FF78AA3F27A579ED0099F90F /* Dalel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dalel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF78AA4227A579ED0099F90F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF78AA4627A579ED0099F90F /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
@@ -291,8 +327,6 @@
 		FFBFC3CE27A587A30088C717 /* Amazon-Ember-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amazon-Ember-Medium.ttf"; sourceTree = "<group>"; };
 		FFBFC3CF27A587A40088C717 /* AmazonEmber_LtIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazonEmber_LtIt.ttf; sourceTree = "<group>"; };
 		FFBFC3D027A587A50088C717 /* Amazon-Ember-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amazon-Ember-MediumItalic.ttf"; sourceTree = "<group>"; };
-		FFBFC3D227A5AFBA0088C717 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
-		FFBFC3D327A5AFBA0088C717 /* PlacesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -532,6 +566,7 @@
 				FFBFC35E27A57EAC0088C717 /* Core */,
 				FF7F21F227AEFC01007606DB /* CustomizeComponents */,
 				FF7F21F927AEFC28007606DB /* Colors.swift */,
+				FF6E507027C1893E00D44DFC /* CustomInterceptor.swift */,
 				FFBFC36027A57F5A0088C717 /* Configuration */,
 			);
 			path = Dalel;
@@ -541,11 +576,15 @@
 			isa = PBXGroup;
 			children = (
 				FF7F621927B5D7D5004D334E /* CenterModel.swift */,
+				FF6E506E27C1778C00D44DFC /* ServiceModel.swift */,
 				FF5115E827BE923B00B9FAA0 /* SearchModel.swift */,
 				FF5115E627BE8C4500B9FAA0 /* SubmitReview.swift */,
 				FF6100B027BC7686001A7F31 /* MakeFavoriteModel.swift */,
 				FF6100AA27BC5E3D001A7F31 /* ReviewModel.swift */,
 				FF6100A427BC5420001A7F31 /* SingleCenterModel.swift */,
+				FF6E506827C1529A00D44DFC /* AddCenterModel.swift */,
+				FF6E507827C19FF000D44DFC /* PlacesModel.swift */,
+				FF6E508027C1B60100D44DFC /* ModeOfModel.swift */,
 			);
 			path = CentersModel;
 			sourceTree = "<group>";
@@ -556,6 +595,7 @@
 				FF7F621B27B5DAA4004D334E /* CenterNetworking.swift */,
 				FF7F621D27B5DAAE004D334E /* CenterApi.swift */,
 				FF7AC0E427B850D80068D1DE /* CentersModel */,
+				FF6E507227C18A2200D44DFC /* Headers.swift */,
 			);
 			path = CenterNetworking;
 			sourceTree = "<group>";
@@ -739,6 +779,11 @@
 				FFBFC3B927A586E40088C717 /* OurGoal */,
 				FFBFC3BF27A587120088C717 /* ContactUs */,
 				FFBFC3C427A587370088C717 /* Terms&Condition */,
+				FF6E508227C1C36A00D44DFC /* CommonQuestionViewController.swift */,
+				FF6E508627C1C37A00D44DFC /* CommonQuestionsViewModel.swift */,
+				FF6E508327C1C36A00D44DFC /* CommonQuestionViewController.xib */,
+				FF6E508827C1C3E700D44DFC /* SocialViewController.swift */,
+				FF6E508927C1C3E700D44DFC /* SocialViewController.xib */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -865,7 +910,10 @@
 			isa = PBXGroup;
 			children = (
 				FFBFC3A727A586480088C717 /* AddPlaceViewController.swift */,
+				FF6E506627C14EFD00D44DFC /* AddPlaceViewModel.swift */,
 				FFBFC3A827A586480088C717 /* AddPlaceViewController.xib */,
+				FF6E506A27C1739100D44DFC /* AddServiceViewController.swift */,
+				FF6E506B27C1739100D44DFC /* AddServiceViewController.xib */,
 			);
 			path = AddPlace;
 			sourceTree = "<group>";
@@ -873,8 +921,11 @@
 		FFBFC3B027A586830088C717 /* Places */ = {
 			isa = PBXGroup;
 			children = (
-				FFBFC3D227A5AFBA0088C717 /* PlacesTableViewController.swift */,
-				FFBFC3D327A5AFBA0088C717 /* PlacesTableViewController.xib */,
+				FF6E507A27C1A11C00D44DFC /* PlacesViewModel.swift */,
+				FF6E507427C19CBB00D44DFC /* PlacesTableViewCell.swift */,
+				FF6E507527C19CBB00D44DFC /* PlacesTableViewCell.xib */,
+				FF6E507C27C1AC3C00D44DFC /* PlacesViewController.swift */,
+				FF6E507D27C1AC3C00D44DFC /* PlacesViewController.xib */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -1002,7 +1053,6 @@
 				FFBFC37427A5804A0088C717 /* OnBoardingViewController.xib in Resources */,
 				FFBFC36627A57FD00088C717 /* LoginViewController.xib in Resources */,
 				FFBFC3B827A586BC0088C717 /* OurGoalViewController.xib in Resources */,
-				FFBFC3D527A5AFBA0088C717 /* PlacesTableViewController.xib in Resources */,
 				FFBFC36C27A580020088C717 /* RegisterViewController.xib in Resources */,
 				FFBFC3AA27A586480088C717 /* AddPlaceViewController.xib in Resources */,
 				FFBFC37027A580360088C717 /* LanguageViewController.xib in Resources */,
@@ -1012,16 +1062,21 @@
 				FFBFC38B27A5844B0088C717 /* SchoolsViewController.xib in Resources */,
 				FF7AC0F527B85B900068D1DE /* CategoriesCollectionViewCell.xib in Resources */,
 				FFBFC39F27A585490088C717 /* SpecificSearchViewController.xib in Resources */,
+				FF6E506D27C1739100D44DFC /* AddServiceViewController.xib in Resources */,
 				FF78AA4F27A579EF0099F90F /* LaunchScreen.storyboard in Resources */,
 				FFBFC37827A5808F0088C717 /* ResetPasswordViewController.xib in Resources */,
 				FFBFC39027A584A00088C717 /* SchoolDetailsViewController.xib in Resources */,
+				FF6E507727C19CBB00D44DFC /* PlacesTableViewCell.xib in Resources */,
 				FF78AA4C27A579EF0099F90F /* Assets.xcassets in Resources */,
 				FFBFC3B427A586A50088C717 /* OurVisionViewController.xib in Resources */,
+				FF6E508B27C1C3E700D44DFC /* SocialViewController.xib in Resources */,
+				FF6E507F27C1AC3C00D44DFC /* PlacesViewController.xib in Resources */,
 				FF78AA4A27A579ED0099F90F /* Main.storyboard in Resources */,
 				FF6100AF27BC63E7001A7F31 /* CommentTableViewCell.xib in Resources */,
 				FFBFC37C27A580B00088C717 /* VerificationViewController.xib in Resources */,
 				FF51161227C0659000B9FAA0 /* WorkTimeTableViewController.xib in Resources */,
 				FFBFC39A27A585280088C717 /* SearchViewController.xib in Resources */,
+				FF6E508527C1C36A00D44DFC /* CommonQuestionViewController.xib in Resources */,
 				FF51160A27C063C300B9FAA0 /* WorkTimeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1100,9 +1155,11 @@
 				FFBFC36B27A580020088C717 /* RegisterViewController.swift in Sources */,
 				FF5115FA27C00BE800B9FAA0 /* SideMenuViewModel.swift in Sources */,
 				FF7F21F627AEFC23007606DB /* CheckLanguage.swift in Sources */,
+				FF6E506927C1529A00D44DFC /* AddCenterModel.swift in Sources */,
 				FFBFC37327A5804A0088C717 /* OnBoardingViewController.swift in Sources */,
 				FF7F21EE27AEFBF9007606DB /* TableView + Extesnions.swift in Sources */,
 				FF7F220127AF05F9007606DB /* UsersNetworking.swift in Sources */,
+				FF6E507E27C1AC3C00D44DFC /* PlacesViewController.swift in Sources */,
 				FF51161A27C0733B00B9FAA0 /* GeneralApi.swift in Sources */,
 				FFBFC37727A5808F0088C717 /* ResetPasswordViewController.swift in Sources */,
 				FF7AC0F427B85B900068D1DE /* CategoriesCollectionViewCell.swift in Sources */,
@@ -1117,6 +1174,7 @@
 				FF7F621527B5CB7A004D334E /* CategoriesNetworking.swift in Sources */,
 				FFBFC3C227A587320088C717 /* TermsAndConditionViewController.swift in Sources */,
 				FF7F21E627AEFBF9007606DB /* TimeHelper.swift in Sources */,
+				FF6E507327C18A2200D44DFC /* Headers.swift in Sources */,
 				FF7F21AB27ADFD5B007606DB /* ErrorResponse.swift in Sources */,
 				FFBFC3B727A586BC0088C717 /* OurGoalViewController.swift in Sources */,
 				FF51162327C07FBC00B9FAA0 /* ContactUsViewModel.swift in Sources */,
@@ -1142,8 +1200,10 @@
 				FF7F21E927AEFBF9007606DB /* CardView.swift in Sources */,
 				FF51160927C063C300B9FAA0 /* WorkTimeTableViewCell.swift in Sources */,
 				FFBFC3A927A586480088C717 /* AddPlaceViewController.swift in Sources */,
+				FF6E508427C1C36A00D44DFC /* CommonQuestionViewController.swift in Sources */,
 				FF7F21F027AEFBFA007606DB /* UITextField + extension.swift in Sources */,
 				FFBFC39E27A585490088C717 /* SpecificSearchViewController.swift in Sources */,
+				FF6E506727C14EFD00D44DFC /* AddPlaceViewModel.swift in Sources */,
 				FFBFC3BD27A5870E0088C717 /* ContactUsViewController.swift in Sources */,
 				FF51161827C0733200B9FAA0 /* GeneralNetwork.swift in Sources */,
 				FFBFC38F27A584A00088C717 /* SchoolDetailsViewController.swift in Sources */,
@@ -1160,14 +1220,18 @@
 				FF51161F27C07BFD00B9FAA0 /* ContactNetworking.swift in Sources */,
 				FF7F21B727AE05C4007606DB /* EndPoints.swift in Sources */,
 				FF5115F427BFF47100B9FAA0 /* SideMenueViewController.swift in Sources */,
+				FF6E507927C19FF000D44DFC /* PlacesModel.swift in Sources */,
+				FF6E506F27C1778C00D44DFC /* ServiceModel.swift in Sources */,
 				FFBFC37B27A580B00088C717 /* VerificationViewController.swift in Sources */,
 				FF83A05527BDD601008C2DB2 /* SchoolsViewModel.swift in Sources */,
+				FF6E508727C1C37A00D44DFC /* CommonQuestionsViewModel.swift in Sources */,
 				FF7F21DF27AEFBF9007606DB /* UIView + extension.swift in Sources */,
 				FF7F21EF27AEFBFA007606DB /* TableViewController + extension.swift in Sources */,
 				FF7F21DD27AEFBF9007606DB /* Alert.swift in Sources */,
+				FF6E507B27C1A11C00D44DFC /* PlacesViewModel.swift in Sources */,
 				FF7F21E027AEFBF9007606DB /* CollectionCell + extension.swift in Sources */,
 				FFBFC3A427A585E30088C717 /* NotificationViewController.swift in Sources */,
-				FFBFC3D427A5AFBA0088C717 /* PlacesTableViewController.swift in Sources */,
+				FF6E507627C19CBB00D44DFC /* PlacesTableViewCell.swift in Sources */,
 				FF7F21E827AEFBF9007606DB /* HelperFunc.swift in Sources */,
 				FF6100B127BC7686001A7F31 /* MakeFavoriteModel.swift in Sources */,
 				FF83A05327BDD070008C2DB2 /* LanguageViewModel.swift in Sources */,
@@ -1176,6 +1240,8 @@
 				FF7F21C227AED458007606DB /* Router.swift in Sources */,
 				FF7AC0E927B853830068D1DE /* BaseApi.swift in Sources */,
 				FF7F21E127AEFBF9007606DB /* DispatchQueue + Extensions.swift in Sources */,
+				FF6E506C27C1739100D44DFC /* AddServiceViewController.swift in Sources */,
+				FF6E507127C1893E00D44DFC /* CustomInterceptor.swift in Sources */,
 				FF7F21DE27AEFBF9007606DB /* UIButton + extension.swift in Sources */,
 				FF7F21FD27AEFE54007606DB /* RegisterViewModel.swift in Sources */,
 				FF7F21C027AED222007606DB /* ProfileNetworking.swift in Sources */,
@@ -1185,12 +1251,14 @@
 				FF7F21EB27AEFBF9007606DB /* LocalizationManager.swift in Sources */,
 				FFBFC39427A584DD0088C717 /* AddCommentViewController.swift in Sources */,
 				FF51160D27C064D900B9FAA0 /* WorkTimeHeadrCell.swift in Sources */,
+				FF6E508127C1B60100D44DFC /* ModeOfModel.swift in Sources */,
 				FF7F21FA27AEFC29007606DB /* Colors.swift in Sources */,
 				FFBFC3B327A586A50088C717 /* OurVisionViewController.swift in Sources */,
 				FF6100A527BC5420001A7F31 /* SingleCenterModel.swift in Sources */,
 				FF7F21ED27AEFBF9007606DB /* General.swift in Sources */,
 				FF7F21F827AEFC23007606DB /* Str + Extension.swift in Sources */,
 				FF7F21BB27AECB30007606DB /* Logout.swift in Sources */,
+				FF6E508A27C1C3E700D44DFC /* SocialViewController.swift in Sources */,
 				FF78AA4327A579ED0099F90F /* AppDelegate.swift in Sources */,
 				FF5115E927BE923B00B9FAA0 /* SearchModel.swift in Sources */,
 				FFBFC38A27A5844B0088C717 /* SchoolsViewController.swift in Sources */,

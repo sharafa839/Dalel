@@ -7,6 +7,7 @@
 
 import Foundation
 import Alamofire
+import Moya
 enum Centers{
     case center
     case singleCenter(id:String)
@@ -15,6 +16,8 @@ enum Centers{
     case listAllReviews(id:String)
     case makeFavorite(id:String)
     case unFavorite(id:String)
+    case addCenter(arName:String,enName:String,desccriptionen:String,arDescription:String,phone:String,address:String,lat:String,lon:String)
+    case addService(id:String,title:String)
     
 }
 extension Centers:TargetType{
@@ -41,6 +44,11 @@ extension Centers:TargetType{
             return "/centers/\(id)/mark-as-favorite"
         case .unFavorite(let id):
             return "/centers/\(id)/mark-as-unfavorite"
+        case .addCenter(arName: let arName, enName: let enName, desccriptionen: let desccriptionen, arDescription: let arDescription, phone: let phone, address: let address, lat: let lat, lon: let lon):
+            return "/centers"
+        case .addService(id: let id):
+            return "/centers/\(id)/services"
+
         }
     }
     
@@ -56,6 +64,10 @@ extension Centers:TargetType{
             return .post
         case .listAllReviews:
             return .get
+        case .addCenter(arName: let arName, enName: let enName, desccriptionen: let desccriptionen, arDescription: let arDescription, phone: let phone, address: let address, lat: let lat, lon: let lon):
+            return .post
+        case .addService(id: let id):
+            return .post
         }
     }
     
@@ -75,26 +87,36 @@ extension Centers:TargetType{
             return.requestPlain
         case .unFavorite:
             return .requestPlain
+        case .addCenter(arName: let arName, enName: let enName, desccriptionen: let desccriptionen, arDescription: let arDescription, phone: let phone, address: let address, lat: let lat, lon: let lon):
+            return .requestPlain
+        case .addService(id: let id,title:let title):
+            return .requestParmters(parms: ["title":title], encoding: JSONEncoding.default)
         }
     }
     
     var headers: [String : String]? {
         switch self {
         case .center:
-            return ["Authorization":"Bearer\(HelperK.getUserToken())","":""]
+            return ["Authorization":HelperK.getUserToken(),"":""]
         case .singleCenter(let id):
-            return ["Authorization":"Bearer\(HelperK.getUserToken())"]
+            return ["Authorization":HelperK.getUserToken()]
         case .searchInCenters(let key):
-            return ["Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODZhNGU3ZjZlYjg4YWQyYmI1MmI4Zjk1NzI2NGRhMDU3NGQyN2I3ZjU1MmE3YTMzYTY0NmU5ZDNmZGMyOWQ2ZTJmZGE5NDQ1YWZlY2ZiNmYiLCJpYXQiOjE2NDUwNjMzMTQuNjk3OTg1ODg3NTI3NDY1ODIwMzEyNSwibmJmIjoxNjQ1MDYzMzE0LjY5Nzk4OTk0MDY0MzMxMDU0Njg3NSwiZXhwIjoxNjc2NTk5MzE0LjY4NDk3NzA1NDU5NTk0NzI2NTYyNSwic3ViIjoiMTUyNjMwM2UtOTBlMy00MGYyLThjMDktY2RkZDVlZjFhYzhlIiwic2NvcGVzIjpbXX0.ejYP2gwVcViXCIxhWxO-Oc0J2Jt1vb9J04v8cG_E2STNAgeUIUluEiG0o9APiCnId1zOrS2leBt9rsRfDB3ciyVv6yZev_VE5sLN6RlVzhh7IkhJvyMf2kCj3babVxod5m2FE2LvSYVvtsrDV6Txo11KKxiKctHqs1hbxNnG4Bw717VUH3xx1OcvAcQFKAvWajrDF6uypzEATlvy6HMsNWLARMR1NC0wR_tGqlHbb0nsu_6OsD9AHsA_Hnlles3M2FF9XorXPPeVfYZ73sjyC-3vU-4LNWGbcjJtO5B_A0P2FI0zl5d8Ie8RDdFmild_u6vvIUzLjlxxwB8dUvsZTK74H8ohT_7nh8W0ySDOl4j3itOM-3Md0VEh-wjtIRVugIxFHYTGBP4EZeY8r1YELSqqSy_7-uAMe0yYcNTB6GjKcQwaNewXjxUVFPcOheuO17CcgVdIEJXTtg6Aj6JBsQ0SgyiYLDYR2di_l6TyMIyiSqHJAdkZT5ZZnSnESmVUsP9rakwmk4qLgy8W2BeXsxtAJpsXtMh3I26tPnkW9wMwH9GbB7Qw187RKpiBR8C2BpG47bX3D4nQUp7eW34ZQByE7AWlAv4PE7TvJDsZIVC_p3Hrf5V32flI1FvpKIIVr5R_c6SgTPbBvCTyXlRLSSjRI48L2lnjftowtw3Kg44","Accept": "application/json"]
+            return ["Authorization":HelperK.getUserToken(),"Accept": "application/json"]
         case .submitReview:
-            return ["Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODZhNGU3ZjZlYjg4YWQyYmI1MmI4Zjk1NzI2NGRhMDU3NGQyN2I3ZjU1MmE3YTMzYTY0NmU5ZDNmZGMyOWQ2ZTJmZGE5NDQ1YWZlY2ZiNmYiLCJpYXQiOjE2NDUwNjMzMTQuNjk3OTg1ODg3NTI3NDY1ODIwMzEyNSwibmJmIjoxNjQ1MDYzMzE0LjY5Nzk4OTk0MDY0MzMxMDU0Njg3NSwiZXhwIjoxNjc2NTk5MzE0LjY4NDk3NzA1NDU5NTk0NzI2NTYyNSwic3ViIjoiMTUyNjMwM2UtOTBlMy00MGYyLThjMDktY2RkZDVlZjFhYzhlIiwic2NvcGVzIjpbXX0.ejYP2gwVcViXCIxhWxO-Oc0J2Jt1vb9J04v8cG_E2STNAgeUIUluEiG0o9APiCnId1zOrS2leBt9rsRfDB3ciyVv6yZev_VE5sLN6RlVzhh7IkhJvyMf2kCj3babVxod5m2FE2LvSYVvtsrDV6Txo11KKxiKctHqs1hbxNnG4Bw717VUH3xx1OcvAcQFKAvWajrDF6uypzEATlvy6HMsNWLARMR1NC0wR_tGqlHbb0nsu_6OsD9AHsA_Hnlles3M2FF9XorXPPeVfYZ73sjyC-3vU-4LNWGbcjJtO5B_A0P2FI0zl5d8Ie8RDdFmild_u6vvIUzLjlxxwB8dUvsZTK74H8ohT_7nh8W0ySDOl4j3itOM-3Md0VEh-wjtIRVugIxFHYTGBP4EZeY8r1YELSqqSy_7-uAMe0yYcNTB6GjKcQwaNewXjxUVFPcOheuO17CcgVdIEJXTtg6Aj6JBsQ0SgyiYLDYR2di_l6TyMIyiSqHJAdkZT5ZZnSnESmVUsP9rakwmk4qLgy8W2BeXsxtAJpsXtMh3I26tPnkW9wMwH9GbB7Qw187RKpiBR8C2BpG47bX3D4nQUp7eW34ZQByE7AWlAv4PE7TvJDsZIVC_p3Hrf5V32","Accept": "application/json","Content-Type": "application/json"]
+            return ["Authorization":HelperK.getUserToken(),"Accept": "application/json","Content-Type": "application/json"]
                     case .listAllReviews:
-            return ["Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODZhNGU3ZjZlYjg4YWQyYmI1MmI4Zjk1NzI2NGRhMDU3NGQyN2I3ZjU1MmE3YTMzYTY0NmU5ZDNmZGMyOWQ2ZTJmZGE5NDQ1YWZlY2ZiNmYiLCJpYXQiOjE2NDUwNjMzMTQuNjk3OTg1ODg3NTI3NDY1ODIwMzEyNSwibmJmIjoxNjQ1MDYzMzE0LjY5Nzk4OTk0MDY0MzMxMDU0Njg3NSwiZXhwIjoxNjc2NTk5MzE0LjY4NDk3NzA1NDU5NTk0NzI2NTYyNSwic3ViIjoiMTUyNjMwM2UtOTBlMy00MGYyLThjMDktY2RkZDVlZjFhYzhlIiwic2NvcGVzIjpbXX0.ejYP2gwVcViXCIxhWxO-Oc0J2Jt1vb9J04v8cG_E2STNAgeUIUluEiG0o9APiCnId1zOrS2leBt9rsRfDB3ciyVv6yZev_VE5sLN6RlVzhh7IkhJvyMf2kCj3babVxod5m2FE2LvSYVvtsrDV6Txo11KKxiKctHqs1hbxNnG4Bw717VUH3xx1OcvAcQFKAvWajrDF6uypzEATlvy6HMsNWLARMR1NC0wR_tGqlHbb0nsu_6OsD9AHsA_Hnlles3M2FF9XorXPPeVfYZ73sjyC-3vU-4LNWGbcjJtO5B_A0P2FI0zl5d8Ie8RDdFmild_u6vvIUzLjlxxwB8dUvsZTK74H8ohT_7nh8W0ySDOl4j3itOM-3Md0VEh-wjtIRVugIxFHYTGBP4EZeY8r1YELSqqSy_7-uAMe0yYcNTB6GjKcQwaNewXjxUVFPcOheuO17CcgVdIEJXTtg6Aj6JBsQ0SgyiYLDYR2di_l6TyMIyiSqHJAdkZT5ZZnSnESmVUsP9rakwmk4qLgy8W2BeXsxtAJpsXtMh3I26tPnkW9wMwH9GbB7Qw187RKpiBR8C2BpG47bX3D4nQUp7eW34ZQByE7AWlAv4PE7TvJDsZIVC_p3Hrf5V32flI1FvpKIIVr5R_c6SgTPbBvCTyXlRLSSjRI48L2lnjftowtw3Kg44","Accept": "application/json"]
+            return ["Authorization":HelperK.getUserToken(),"Accept": "application/json"]
         case .makeFavorite(id: let id):
-            return ["Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODZhNGU3ZjZlYjg4YWQyYmI1MmI4Zjk1NzI2NGRhMDU3NGQyN2I3ZjU1MmE3YTMzYTY0NmU5ZDNmZGMyOWQ2ZTJmZGE5NDQ1YWZlY2ZiNmYiLCJpYXQiOjE2NDUwNjMzMTQuNjk3OTg1ODg3NTI3NDY1ODIwMzEyNSwibmJmIjoxNjQ1MDYzMzE0LjY5Nzk4OTk0MDY0MzMxMDU0Njg3NSwiZXhwIjoxNjc2NTk5MzE0LjY4NDk3NzA1NDU5NTk0NzI2NTYyNSwic3ViIjoiMTUyNjMwM2UtOTBlMy00MGYyLThjMDktY2RkZDVlZjFhYzhlIiwic2NvcGVzIjpbXX0.ejYP2gwVcViXCIxhWxO-Oc0J2Jt1vb9J04v8cG_E2STNAgeUIUluEiG0o9APiCnId1zOrS2leBt9rsRfDB3ciyVv6yZev_VE5sLN6RlVzhh7IkhJvyMf2kCj3babVxod5m2FE2LvSYVvtsrDV6Txo11KKxiKctHqs1hbxNnG4Bw717VUH3xx1OcvAcQFKAvWajrDF6uypzEATlvy6HMsNWLARMR1NC0wR_tGqlHbb0nsu_6OsD9AHsA_Hnlles3M2FF9XorXPPeVfYZ73sjyC-3vU-4LNWGbcjJtO5B_A0P2FI0zl5d8Ie8RDdFmild_u6vvIUzLjlxxwB8dUvsZTK74H8ohT_7nh8W0ySDOl4j3itOM-3Md0VEh-wjtIRVugIxFHYTGBP4EZeY8r1YELSqqSy_7-uAMe0yYcNTB6GjKcQwaNewXjxUVFPcOheuO17CcgVdIEJXTtg6Aj6JBsQ0SgyiYLDYR2di_l6TyMIyiSqHJAdkZT5ZZnSnESmVUsP9rakwmk4qLgy8W2BeXsxtAJpsXtMh3I26tPnkW9wMwH9GbB7Qw187RKpiBR8C2BpG47bX3D4nQUp7eW34ZQByE7AWlAv4PE7TvJDsZIVC_p3Hrf5V32flI1FvpKIIVr5R_c6SgTPbBvCTyXlRLSSjRI48L2lnjftowtw3Kg44","Accept": "application/json"]
+            return ["Authorization":HelperK.getUserToken(),"Accept": "application/json"]
         case .unFavorite(id: let id):
-            return ["Authorization":"Bearer\(HelperK.getUserToken())"]
+            return ["Authorization":HelperK.getUserToken()]
             
+        case .addCenter(arName: let arName, enName: let enName, desccriptionen: let desccriptionen, arDescription: let arDescription, phone: let phone, address: let address, lat: let lat, lon: let lon):
+            return ["Authorization":HelperK.getUserToken()]
+
+        case .addService(id: let id, title: let title):
+            return ["Authorization":HelperK.getUserToken(),"Content-Type": "application/json","accept": "application/json"]
+
         }
     }
     

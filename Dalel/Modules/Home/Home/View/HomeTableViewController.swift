@@ -57,7 +57,9 @@ var allCenters  = [CenterModelPayload]()
         setupViewModel()
         setupObservers()
         setupObserversUI()
+        signOut()
     }
+
     
 
     
@@ -251,13 +253,23 @@ var allCenters  = [CenterModelPayload]()
 
     }
     
+    func signOut(){
+        let sideMenue = SideMenueViewController()
+        
+        sideMenue.didSignOut = { [weak self] in
+            let login = LoginViewController()
+let nav = UINavigationController(rootViewController: login)
+            self?.present(nav, animated: true, completion: nil)
+            
+        }
+    }
+    
+    @IBAction func sideMenue(_ sender: UIButton) {
+        let side = storyboard?.instantiateViewController(withIdentifier: "nav")
 
-//    @IBAction func sideMenue(_ sender: UIButton) {
-//        let menu = SideMenuNavigationController(rootViewController: SideMenueViewController())
-//       
-//        present(menu, animated: true, completion: nil)
-//
-//    }
+present(side!, animated: true, completion: nil)
+     
+    }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -12,7 +12,7 @@ class LoginViewModel:AuthenticationProtocol{
     let password = BehaviorRelay<String>(value: "")
     let phoneNumber = BehaviorRelay<String>(value: "")
     let onError = PublishSubject<String>()
-    let onSuccess = PublishSubject<LoginModel>()
+    let onSuccess = PublishSubject<LoginPayload>()
     let onLoading = BehaviorRelay<Bool>(value: false)
     let disposeBag = DisposeBag()
     var isPhoneEmpty:Observable<Bool>{
@@ -47,7 +47,11 @@ class LoginViewModel:AuthenticationProtocol{
                 guard let response = response?.payload else {
                     return
                 }
-                HelperK.saveToken(token: response.payload?.token ?? "")
+                guard let tokenType = response.tokenType else {return}
+                guard let token = response.token else {return}
+                guard let kind = response.userType else {return}
+                HelperK.saveKind(token: kind)
+                HelperK.saveToken(token: tokenType + "  " + token)
                 self.onSuccess.onNext(response)
                 
             }

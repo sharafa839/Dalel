@@ -11,8 +11,7 @@ class SideMenueViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     let viewModel = SideMuneViewModel()
-  
-
+    var didSignOut : (()->Void)?
     override public func viewDidLoad() {
         super.viewDidLoad()
         addTableViewCell()
@@ -44,11 +43,11 @@ extension SideMenueViewController:UITableViewDelegate,UITableViewDataSource{
             present(vc, animated: true, completion: nil)
         case 2 :
             let vc = AddPlaceViewController()
-            vc.modalPresentationStyle = .automatic
+            vc.modalPresentationStyle = .overFullScreen
             present(vc, animated: true, completion: nil)
         case 3:
-            let vc = PlacesTableViewController()
-            vc.modalPresentationStyle = .automatic
+            let vc = PlacesViewController()
+            vc.modalPresentationStyle = .overFullScreen
             present(vc, animated: true, completion: nil)
         case 4:
             let vc = ContactUsViewController()
@@ -72,9 +71,16 @@ extension SideMenueViewController:UITableViewDelegate,UITableViewDataSource{
             present(social, animated: true, completion: nil)
         case 9:
             HelperK.deletUserDefaults()
-            let login = LoginViewController.loadFromNib()
-            let vc = UINavigationController(rootViewController: login)
-            AppUtilities.changeRoot(root: vc, animated: true, completion: nil)
+         
+                let login = LoginViewController()
+                            login.modalPresentationStyle = .overFullScreen
+                            present(login, animated: true, completion: nil)
+
+            
+
+            
+        
+            
         default:
             let vc = OurVisionViewController()
             vc.modalPresentationStyle = .automatic

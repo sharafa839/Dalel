@@ -35,7 +35,7 @@ class OnBoardingViewController: UIViewController {
     }
 
     @IBAction func skipButton(_ sender: Any) {
-        let login = UINavigationController(rootViewController: LoginViewController.loadFromNib())
+        let login = UINavigationController(rootViewController: LanguageViewController.loadFromNib())
         login.modalPresentationStyle = .overFullScreen
         HelperK.saveFristTime(token: true)
         present(login, animated: true)

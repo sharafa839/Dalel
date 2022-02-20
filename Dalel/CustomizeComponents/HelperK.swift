@@ -30,16 +30,11 @@ class HelperK: NSObject {
         
         if self.checkFirstTime() == true {
                 if self.checkUserToken() == true {
-                    if self.getType() == "customer" {
-                        let sb = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "main")
-                        window?.rootViewController = sb
-                    }else if self.getType() == "driver" {
-                        let sb = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "driver")
-                        window?.rootViewController = sb
-                    }
-                }else {
-                    let sb = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "login")
+                    let sb = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "content")
                     window?.rootViewController = sb
+                }else {
+                    let sb = LoginViewController()
+                    window?.rootViewController = UINavigationController(rootViewController: sb)
             }}
         
 //        if checkUserId() == false {
