@@ -2,7 +2,7 @@
 //  SchoolDetailesViewModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 16/02/2022.
+//  Created by  on 16/02/2022.
 //
 
 import Foundation
@@ -25,8 +25,7 @@ class SchoolDetailsViewModel:CenterProtocol{
             self?.onLoading.accept(false)
             switch result {
             case .failure(let error):
-                self?.onError.onNext(error.localizedDescription)
-
+return
             case .success(let response):
                 guard let response = response?.payload else {return}
                 self?.singleCenter.onNext(response)

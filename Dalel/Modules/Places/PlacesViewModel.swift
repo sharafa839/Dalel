@@ -2,7 +2,7 @@
 //  PlacesViewModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 20/02/2022.
+//  Created by  on 20/02/2022.
 //
 
 import Foundation

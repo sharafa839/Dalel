@@ -2,7 +2,7 @@
 //  SchoolDetailsViewController.swift
 //  Dalel
 //
-//  Created by Shgardi on 29/01/2022.
+//  Created by  on 29/01/2022.
 //
 
 import UIKit
@@ -24,21 +24,53 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var _4stButton: UIButton!
     @IBOutlet weak var _5stButton: UIButton!
     @IBOutlet weak var rateInTextLabel: UILabel!
-    @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!{
+        didSet{
+            detailsLabel.text = "Details".localizede
+        }
+    }
     @IBOutlet weak var detailDescriptionLabel: UILabel!
-    @IBOutlet weak var ourServicesLabel: UILabel!
+    @IBOutlet weak var ourServicesLabel: UILabel!{
+        didSet{
+            ourServicesLabel.text = "Our Services".localizede
+        }
+    }
     
     @IBOutlet weak var ourServicesDescriptionLabel: UILabel!
-    @IBOutlet weak var kindLabel: UILabel!
+    @IBOutlet weak var kindLabel: UILabel!{
+        didSet{
+            kindLabel.text = "Kind".localizede
+        }
+    }
     @IBOutlet weak var kindDescriptionLabel: UILabel!
-    @IBOutlet weak var loactionLabel: UILabel!
+    @IBOutlet weak var loactionLabel: UILabel!{
+        didSet{
+            loactionLabel.text = "Location".localizede
+        }
+    }
     @IBOutlet weak var locationDescriptionLabel: UILabel!
-    @IBOutlet weak var callUsLabel: UILabel!
+    @IBOutlet weak var callUsLabel: UILabel!{
+        didSet{
+            callUsLabel.text = "Call us".localizede
+        }
+    }
     @IBOutlet weak var phoneNumberButton: UIButton!
-    @IBOutlet weak var commentLabel: UILabel!
-    @IBOutlet weak var addCommentButton: UIButton!
+    @IBOutlet weak var commentLabel: UILabel!{
+        didSet{
+            commentLabel.text = "Comments".localizede
+        }
+    }
+    @IBOutlet weak var addCommentButton: UIButton!{
+        didSet{
+            addCommentButton.setTitle("Add Comment".localizede, for: .normal)
+        }
+    }
     @IBOutlet weak var commentTableView: UITableView!
-    @IBOutlet weak var categoriesLabel: UILabel!
+    @IBOutlet weak var categoriesLabel: UILabel!{
+        didSet{
+            categoriesLabel.text = "show also".localizede
+        }
+    }
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var favoriteButton: UIButton!{
         didSet{
@@ -48,8 +80,13 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
     
     @IBOutlet weak var showTimesButton: UIButton!{
         didSet{
-            showTimesButton.setTitle("showTime", for: .normal)
+            showTimesButton.setTitle("showTime".localizede , for: .normal)
             showTimesButton.floatView(raduis: 15, color: .clear)
+        }
+    }
+    @IBOutlet weak var customView: UIView!{
+        didSet{
+            customView.floating(raduis: 15)
         }
     }
     
@@ -153,13 +190,13 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
 
         if LocalizationManager.shared.getLanguage() == .Arabic {
         schoolNameLabel.text = singleCenter?.arName
-            detailDescriptionLabel.text = singleCenter?.arDescription
+            detailDescriptionLabel.text = singleCenter?.arDescription?.html2String
             kindDescriptionLabel.text = singleCenter?.category?.arName?.html2String
          
         } else {
             schoolNameLabel.text = singleCenter?.enName
             detailDescriptionLabel.text = singleCenter?.enDescription?.html2String
-            kindDescriptionLabel.text = singleCenter?.category?.enName
+            kindDescriptionLabel.text = singleCenter?.category?.enName?.html2String
 
         }
         phoneNumberButton.setTitle(singleCenter?.phone, for: .normal)

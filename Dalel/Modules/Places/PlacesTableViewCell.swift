@@ -2,7 +2,7 @@
 //  PlacesTableViewCell.swift
 //  Dalel
 //
-//  Created by Shgardi on 19/02/2022.
+//  Created by  on 19/02/2022.
 //
 
 import UIKit

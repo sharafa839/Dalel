@@ -389,6 +389,15 @@ class HelperK: NSObject {
             application.open(webURL)
     }}
     
+    class func openyotube(instgram:String) {
+        var youtubeUrl = NSURL(string:"youtube://\(instgram)")!
+        if UIApplication.shared.canOpenURL(youtubeUrl as URL){
+            UIApplication.shared.openURL(youtubeUrl as URL)
+           } else{
+                   youtubeUrl = NSURL(string:"https://www.youtube.com/watch?v=\(instgram)")!
+               UIApplication.shared.openURL(youtubeUrl as URL)
+           }}
+    
     class func openCalling(phone:String) {
         if let url = URL(string: "tel://\(phone)"), UIApplication.shared.canOpenURL(url) {
              UIApplication.shared.open(url)

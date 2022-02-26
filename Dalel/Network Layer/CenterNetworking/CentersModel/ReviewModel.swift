@@ -2,7 +2,7 @@
 //  ReviewModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 16/02/2022.
+//  Created by  on 16/02/2022.
 //
 
 import Foundation

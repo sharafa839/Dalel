@@ -2,7 +2,7 @@
 //  BannerModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 12/02/2022.
+//  Created by  on 12/02/2022.
 //
 
 import Foundation

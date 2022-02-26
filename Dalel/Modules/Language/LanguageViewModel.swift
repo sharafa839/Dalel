@@ -2,7 +2,7 @@
 //  LanguageViewModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 17/02/2022.
+//  Created by  on 17/02/2022.
 //
 
 import Foundation

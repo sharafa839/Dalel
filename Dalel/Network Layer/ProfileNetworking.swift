@@ -2,7 +2,7 @@
 //  ProfileNetworking.swift
 //  Dalel
 //
-//  Created by Shgardi on 05/02/2022.
+//  Created by  on 05/02/2022.
 //
 
 import Foundation
@@ -54,7 +54,7 @@ extension Profile : TargetType {
             return .patch
 
         case .myFavorite:
-            return .patch
+            return .get
 
         case .myCenters:
             return .get
@@ -92,7 +92,7 @@ extension Profile : TargetType {
         case .updatePassword(let password, let confirmPassword):
             return ["Authorization":HelperK.getUserToken(),"Accept": "application/json","Content-Type": "application/json"]
         case .myFavorite:
-            return [:]
+            return ["Authorization": HelperK.getUserToken(),"Accept": "application/json","Content-Type": "application/json"]
         case .myCenters:
               return ["Authorization":HelperK.getUserToken(),"Accept": "application/json","Content-Type": "application/json"]
         }

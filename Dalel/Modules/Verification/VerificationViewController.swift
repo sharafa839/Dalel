@@ -2,7 +2,7 @@
 //  VerificationViewController.swift
 //  Dalel
 //
-//  Created by Shgardi on 29/01/2022.
+//  Created by  on 29/01/2022.
 //
 
 import UIKit
@@ -14,10 +14,15 @@ class VerificationViewController: UIViewController {
             enterActivationCode.text = "enterActivationCode".localizede
         }
     }
-    @IBOutlet weak var makeSureButton: UIButton!
+    @IBOutlet weak var makeSureButton: UIButton!{
+        didSet{
+            makeSureButton.setTitle("makeSure".localizede, for: .normal)
+            makeSureButton.addTarget(self, action: #selector(enteraCode), for: .touchUpInside)
+        }
+    }
     @IBOutlet weak var messageIsSent: UILabel!{
         didSet{
-        messageIsSent.text = "messageIsSent"
+            messageIsSent.text = "messageIsSent".localizede
         }}
     @IBOutlet weak var codeNumberLabel: UILabel!
     @IBOutlet weak var _tf1: UITextField!
@@ -26,10 +31,11 @@ class VerificationViewController: UIViewController {
     @IBOutlet weak var _tf4: UITextField!
     @IBOutlet weak var _tf5: UITextField!
     @IBOutlet weak var _tf6: UITextField!
-
+    var verificationCode:String?
+    var enterCode : String?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupUI()
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -62,8 +68,23 @@ class VerificationViewController: UIViewController {
             default:
                 break
                 
-            }} else{ }}
+            }} }
     
-    
+    @objc func enteraCode(){
+        makeSureButton.secAnimation()
+        guard let  firstChar = _tf1.text , !firstChar.isEmpty else{return}
+        guard let  secondChar = _tf2.text , !secondChar.isEmpty else{return}
+        guard let  thirdChar = _tf3.text , !thirdChar.isEmpty else{return}
+        guard let  fourthChar = _tf4.text , !fourthChar.isEmpty else{return}
+        guard let  fifthChar = _tf5.text , !fifthChar.isEmpty else{return}
+        guard let  sixthChar = _tf6.text , !sixthChar.isEmpty else{return}
+enterCode = firstChar + secondChar + thirdChar + fourthChar + fifthChar + sixthChar
+        
+        if enterCode == verificationCode {
+            let vc = ResetPasswordViewController()
+            vc.isLogin = false
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 
 }

@@ -2,7 +2,7 @@
 //  RegisterViewModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 05/02/2022.
+//  Created by  on 05/02/2022.
 //
 
 import Foundation
@@ -55,15 +55,15 @@ class RegisterViewModel : AuthenticationProtocol{
             return (email && phone && pass && name&&isValid)
         }
     }
-    func registerNewUser(){
+    func registerNewUser(data:Data?){
         onLoading.accept(true)
-        register(name: name.value, email: email.value, password: password.value, phone: phoneNumber.value, phoneCode: phoneCode.value, type: type.value) {[weak self] result,failResult  in
+        register(data: data ?? Data(), name: name.value, email: email.value, password: password.value, phone: phoneNumber.value, phoneCode: "0" + phoneCode.value, type: type.value) {[weak self] result,failResult  in
             guard let self = self else {return}
             self.onLoading.accept(false)
             switch result {
             case .failure(let error):
                 
-                self.onError.onNext(failResult?.messages?.phone?.first ?? "nii")
+                self.onError.onNext(failResult?.messages?.phone?.first ?? "err".localizede)
             case .success(let response):
                 guard let response = response?.payload else {
                     return

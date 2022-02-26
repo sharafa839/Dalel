@@ -2,7 +2,7 @@
 //  EndPoints.swift
 //  Dalel
 //
-//  Created by Shgardi on 05/02/2022.
+//  Created by  on 05/02/2022.
 //
 
 import Foundation
@@ -43,5 +43,9 @@ enum EndPoints {
     
     enum Contact : String {
         case contact  = "/contacts"
+    }
+    
+    enum Notifications : String {
+        case notification = "/notifications"
     }
 }

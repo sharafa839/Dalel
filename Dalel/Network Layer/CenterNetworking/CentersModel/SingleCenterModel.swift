@@ -2,7 +2,7 @@
 //  singleCenterModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 15/02/2022.
+//  Created by  on 15/02/2022.
 //
 
 import Foundation

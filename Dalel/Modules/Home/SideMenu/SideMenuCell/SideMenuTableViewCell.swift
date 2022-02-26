@@ -2,7 +2,7 @@
 //  SideMenuTableViewCell.swift
 //  Dalel
 //
-//  Created by Shgardi on 18/02/2022.
+//  Created by  on 18/02/2022.
 //
 
 import UIKit

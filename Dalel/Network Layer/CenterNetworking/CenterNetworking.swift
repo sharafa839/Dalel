@@ -2,7 +2,7 @@
 //  CenterApi.swift
 //  Dalel
 //
-//  Created by Shgardi on 11/02/2022.
+//  Created by  on 11/02/2022.
 //
 
 import Foundation
@@ -97,7 +97,7 @@ extension Centers:TargetType{
     var headers: [String : String]? {
         switch self {
         case .center:
-            return ["Authorization":HelperK.getUserToken(),"":""]
+            return ["Authorization":HelperK.getUserToken()]
         case .singleCenter(let id):
             return ["Authorization":HelperK.getUserToken()]
         case .searchInCenters(let key):

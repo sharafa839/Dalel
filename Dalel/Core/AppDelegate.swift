@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Dalel
 //
-//  Created by Shgardi on 29/01/2022.
+//  Created by  on 29/01/2022.
 //
 
 import UIKit
@@ -10,7 +10,8 @@ import IQKeyboardManagerSwift
 import CoreLocation
 import GoogleMaps
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate , CLLocationManagerDelegate{
+class AppDelegate: UIResponder, UIApplicationDelegate , CLLocationManagerDelegate, LocalizationManagerDelegate{
+    
 
     var window: UIWindow?
     let locationManager = CLLocationManager()
@@ -21,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate , CLLocationManagerDelegat
         IQKeyboardManager.shared.enable = true
         Router.setLaunch(window: window)
         GMSServices.provideAPIKey("AIzaSyD1fbW1OdbVEOd-vnP3VcaTeaooVrjmsSs")
-
-        
+        LocalizationManager.shared.setAppInnitLanguage()
+        LocalizationManager.shared.delegate = self
         return true
     }
 
@@ -42,6 +43,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate , CLLocationManagerDelegat
             
          
         }}
+    
+    func resetApp() {
+        guard let window = window  else {return}
+        print("local")
+        if HelperK.checkFirstTime() == true{
+            
+            if HelperK.checkUserToken() == true{
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "main")
+        window.rootViewController = vc
+        let option : UIView.AnimationOptions = .transitionCrossDissolve
+        let duration : TimeInterval = 0.3
+                UIView.transition(with: window, duration: duration, options: option, animations: nil, completion: nil)
+                
+                }else{
+                    let login = LoginViewController()
+                    let rootVc = UINavigationController(rootViewController: login)
+                    window.rootViewController = rootVc
+                    let option : UIView.AnimationOptions = .transitionCrossDissolve
+                    let duration : TimeInterval = 0.3
+                            UIView.transition(with: window, duration: duration, options: option, animations: nil, completion: nil)
+                }}else{
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+let onBoarding = OnBoardingViewController()
+                    let rootViewController = UINavigationController(rootViewController: onBoarding)
+                    window.rootViewController = rootViewController
+                let option : UIView.AnimationOptions = .transitionCrossDissolve
+                let duration : TimeInterval = 0.3
+                        UIView.transition(with: window, duration: duration, options: option, animations: nil, completion: nil)
+            }
+        
+    }
+    
+    
 }
 
 extension UIApplication {

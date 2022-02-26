@@ -2,7 +2,7 @@
 //  FavoriteModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 17/02/2022.
+//  Created by  on 17/02/2022.
 //
 
 import Foundation
@@ -20,14 +20,14 @@ struct FavoriteModel: Codable {
 struct FavoriteModelPayload: Codable {
     let id, enName, arName, enDescription: String?
     let arDescription, phone, address: String?
-    let viewsCount, averageRate: Int?
+    let viewsCount, averageRate: String?
     let categoryID, creatorID: String?
     let deletedAt: String?
     let createdAt, updatedAt: String?
     let facebook, twitter, linkedin, instagram: String?
     let snapchat, youtube: String?
     let longitude, latitude, zoom: String?
-    let favoritesCount: Int?
+    let favoritesCount: String?
     let nameByLang, descriptionByLang, mainMediaURL: String?
     let mediaLinks: [MediaLink]?
     let isFavorited: Bool?

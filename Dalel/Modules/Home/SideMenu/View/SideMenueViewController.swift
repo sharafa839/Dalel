@@ -2,7 +2,7 @@
 //  SideMenueViewController.swift
 //  Dalel
 //
-//  Created by Shgardi on 18/02/2022.
+//  Created by  on 18/02/2022.
 //
 
 import UIKit
@@ -66,10 +66,24 @@ extension SideMenueViewController:UITableViewDelegate,UITableViewDataSource{
             vc.modalPresentationStyle = .automatic
             present(vc, animated: true, completion: nil)
         case 8:
-            let social = TermsAndConditionViewController()
+            let social = SocialViewController()
             social.modalPresentationStyle = .automatic
             present(social, animated: true, completion: nil)
+            
+            
+            
         case 9:
+            
+       let faqs = CommonQuestionViewController()
+            faqs.modalPresentationStyle = .overFullScreen
+            present(faqs, animated: true, completion: nil)
+            
+        case 10 :
+            let maps = MapPlacesViewController()
+            maps.modalPresentationStyle = .fullScreen
+            present(maps, animated: true, completion: nil)
+            
+        case 11:
             HelperK.deletUserDefaults()
          
                 let login = LoginViewController()

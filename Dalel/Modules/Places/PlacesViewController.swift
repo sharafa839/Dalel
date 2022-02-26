@@ -2,10 +2,11 @@
 //  PlacesViewController.swift
 //  Dalel
 //
-//  Created by Shgardi on 20/02/2022.
+//  Created by  on 20/02/2022.
 //
 
 import UIKit
+import Alamofire
 
 class PlacesViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
 
@@ -15,7 +16,7 @@ class PlacesViewController: UIViewController ,UITableViewDelegate,UITableViewDat
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var placesLabel: UILabel!{
         didSet{
-            placesLabel.text = "My Places"
+            placesLabel.text = "My Places".localizede
         }
     }
     
@@ -103,12 +104,12 @@ class PlacesViewController: UIViewController ,UITableViewDelegate,UITableViewDat
 
 extension PlacesViewController {
     func removeItem(id:String){
-        APIs.genericApiWithPagination(pageNo: 0, url: "https://Dalil-taelim.com/api/centers/\(id)", method: .delete, paameters: nil, headers: Headers.getHeader()) { [weak self](mode:ModeModel?, err:Error?, code:Int?) in
+        APIs.genericApiWithPagination(pageNo: 0, url: "https://Dalil-taelim.com/api/centers/\(id)", method: .delete, paameters: nil, encoding: URLEncoding.default, headers: Headers.getHeader()) { [weak self](mode:ModeModel?, err:Error?, code:Int?) in
             if  [200,201].contains(mode?.code){
                 self?.tableView.reloadData()
                 HelperK.showSuccess(title: "delted".localizede, subtitle: "")
             }else{
-                HelperK.showError(title: "error".localizede, subtitle: "")
+                HelperK.showError(title: "err".localizede, subtitle: "")
             }
         }
     }

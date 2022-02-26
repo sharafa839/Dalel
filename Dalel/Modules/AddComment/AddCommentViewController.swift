@@ -2,7 +2,7 @@
 //  AddCommentViewController.swift
 //  Dalel
 //
-//  Created by Shgardi on 29/01/2022.
+//  Created by  on 29/01/2022.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  LoginViewModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 10/02/2022.
+//  Created by  on 10/02/2022.
 //
 
 import Foundation
@@ -42,7 +42,7 @@ class LoginViewModel:AuthenticationProtocol{
             switch result {
             case .failure(let _):
                 
-                self.onError.onNext(failResult?.messages?.phone?.first ?? "nii")
+                self.onError.onNext(failResult?.messages?.phone?.first ?? "err".localizede)
             case .success(let response):
                 guard let response = response?.payload else {
                     return

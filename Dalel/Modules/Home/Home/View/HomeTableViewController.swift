@@ -2,7 +2,7 @@
 //  HomeTableViewController.swift
 //  Dalel
 //
-//  Created by Shgardi on 29/01/2022.
+//  Created by  on 29/01/2022.
 //
 
 import UIKit
@@ -13,21 +13,68 @@ class HomeTableViewController: UITableViewController,UICollectionViewDelegate,UI
     @IBOutlet weak var rodaCollectionView: UICollectionView!
     @IBOutlet weak var schoolsCollectionView: UICollectionView!
     @IBOutlet weak var universityCollectionView: UICollectionView!
-    @IBOutlet weak var newUniversityLabel: UILabel!
-    @IBOutlet weak var showMoreUniversityButton: UIButton!
-    @IBOutlet weak var newSchoolsLabel: UILabel!
-    @IBOutlet weak var showMoreSchools: UIButton!
-    @IBOutlet weak var yourChanceLabel: UILabel!
-    @IBOutlet weak var toAddYourCenterLabel: UILabel!
-    @IBOutlet weak var addYourCenterButton: UIButton!
-    @IBOutlet weak var childGardenLabel: UILabel!
-    @IBOutlet weak var showMoreChildGardenButton: UIButton!
-    @IBOutlet weak var categoriesLabel: UILabel!
+    @IBOutlet weak var newUniversityLabel: UILabel!{
+        didSet{
+        newUniversityLabel.text = "New university".localizede
+    }
+    }
+    @IBOutlet weak var showMoreUniversityButton: UIButton!{
+        didSet{
+            showMoreUniversityButton.setTitle("Show more".localizede, for: .normal)
+        }
+    }
+    @IBOutlet weak var newSchoolsLabel: UILabel!{
+        didSet{
+            newSchoolsLabel.text = "New School".localizede
+        }
+    }
+    @IBOutlet weak var showMoreSchools: UIButton!{
+        didSet{
+            showMoreSchools.setTitle("Show more".localizede, for: .normal)
+        }
+    }
+    @IBOutlet weak var yourChanceLabel: UILabel!{
+        didSet{
+            yourChanceLabel.text = "get your chance".localizede
+        }
+    }
+    @IBOutlet weak var toAddYourCenterLabel: UILabel!{
+        didSet{
+                toAddYourCenterLabel.text = "to add your center".localizede
+            }
+        }
+    
+    @IBOutlet weak var addYourCenterButton: UIButton!{
+        didSet{
+            addYourCenterButton.setTitle("Add your center".localizede, for: .normal)
+            addYourCenterButton.floatButton(raduis: 15)
+        }
+    }
+    @IBOutlet weak var childGardenLabel: UILabel!{
+        didSet{
+            childGardenLabel.text = "Child garden".localizede
+        }
+    }
+    @IBOutlet weak var showMoreChildGardenButton: UIButton!{
+        didSet{
+            showMoreChildGardenButton.setTitle("Show more".localizede, for: .normal)
+        }
+    }
+    @IBOutlet weak var categoriesLabel: UILabel!{
+        didSet{
+            categoriesLabel.text = "categories".localizede
+        }
+    }
     @IBOutlet weak var searchButton: UIButton!{
         didSet{
-            searchButton.setTitle("search", for: .normal)
+            searchButton.setTitle("search".localizede, for: .normal)
             searchButton.floatView(raduis: 10, color: .black)
             
+        }
+    }
+    @IBOutlet weak var containViewOfImage: UIView!{
+        didSet{
+            containViewOfImage.floatView(raduis: 15, color: .clear)
         }
     }
     @IBOutlet weak var imageSlider: ImageSlideshow!{
@@ -49,7 +96,6 @@ class HomeTableViewController: UITableViewController,UICollectionViewDelegate,UI
 var allCenters  = [CenterModelPayload]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Home"
         CategoryCollectionView.delegate = self
         CategoryCollectionView.dataSource = self
         setupUI()
@@ -88,6 +134,7 @@ var allCenters  = [CenterModelPayload]()
                                 forCellWithReuseIdentifier: CategoriesCollectionViewCell.identifier)
         CategoryCollectionView.register(CategoriesCollectionViewCell.nib,
                                 forCellWithReuseIdentifier: CategoriesCollectionViewCell.identifier)
+        tableView.contentInset.top = 0
     }
     
     func setupViewModel(){
@@ -134,6 +181,10 @@ var allCenters  = [CenterModelPayload]()
 
     }
   
+    @IBAction func addYourCenterButton(_ sender: UIButton) {
+        let vc = AddPlaceViewController()
+        present(vc, animated: true, completion: nil)
+    }
     
     func setupObservers(){
         viewModel.onSuccess.subscribe {[weak self] category in

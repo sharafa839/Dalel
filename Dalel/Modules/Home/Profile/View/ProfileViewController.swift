@@ -2,7 +2,7 @@
 //  ProfileViewController.swift
 //  Dalel
 //
-//  Created by Shgardi on 29/01/2022.
+//  Created by  on 29/01/2022.
 //
 
 import UIKit
@@ -41,6 +41,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate, GalleryContr
     @IBOutlet weak var genderTextField: DropDown!{
         didSet{
             genderTextField.optionArray = ["male".localizede,"female".localizede]
+            genderTextField.text = "choose your gender".localizede
         }
     }
     @IBOutlet weak var passwordTextField: MDCFilledTextField!{
@@ -83,7 +84,6 @@ class ProfileViewController: UIViewController, UITextFieldDelegate, GalleryContr
     var availability : Availability = .disable
     override func viewDidLoad() {
         super.viewDidLoad()
-title = "Profile"
         attachViewModel()
         setupUI()
         subscribeToViewModel()

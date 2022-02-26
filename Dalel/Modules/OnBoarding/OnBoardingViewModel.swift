@@ -2,7 +2,7 @@
 //  OnBoardingViewModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 10/02/2022.
+//  Created by  on 10/02/2022.
 //
 
 import Foundation

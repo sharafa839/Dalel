@@ -1,0 +1,90 @@
+
+/* Class = "UILabel"; text = "your chance now"; ObjectID = "0ki-ff-UYh"; */
+"0ki-ff-UYh.text" = "your chance now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1NQ-IL-rWK"; */
+"1NQ-IL-rWK.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "favorite"; ObjectID = "5TX-4r-jC3"; */
+"5TX-4r-jC3.title" = "favorite";
+
+/* Class = "UILabel"; text = "new universities"; ObjectID = "5hA-0r-lio"; */
+"5hA-0r-lio.text" = "new universities";
+
+/* Class = "UIButton"; configuration.title = "تعديل الصورة"; ObjectID = "6uZ-7c-amX"; */
+"6uZ-7c-amX.configuration.title" = "تعديل الصورة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6uZ-7c-amX"; */
+"6uZ-7c-amX.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "notification"; ObjectID = "Dtz-DP-RVS"; */
+"Dtz-DP-RVS.title" = "notification";
+
+/* Class = "UIButton"; configuration.title = "show more"; ObjectID = "EvK-Nt-rnq"; */
+"EvK-Nt-rnq.configuration.title" = "show more";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "EvK-Nt-rnq"; */
+"EvK-Nt-rnq.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Favorite"; ObjectID = "KRW-tF-rNe"; */
+"KRW-tF-rNe.title" = "Favorite";
+
+/* Class = "UITabBarItem"; title = "profile"; ObjectID = "UnE-vW-v8V"; */
+"UnE-vW-v8V.title" = "profile";
+
+/* Class = "UIButton"; configuration.title = "show more"; ObjectID = "VSv-Yq-6fN"; */
+"VSv-Yq-6fN.configuration.title" = "show more";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VSv-Yq-6fN"; */
+"VSv-Yq-6fN.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "new garden"; ObjectID = "VqB-eb-Itd"; */
+"VqB-eb-Itd.text" = "new garden";
+
+/* Class = "UILabel"; text = "categories"; ObjectID = "ZrM-jq-K3r"; */
+"ZrM-jq-K3r.text" = "categories";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "cXU-0i-0Wg"; */
+"cXU-0i-0Wg.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cXU-0i-0Wg"; */
+"cXU-0i-0Wg.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "notification"; ObjectID = "ejI-FE-dI0"; */
+"ejI-FE-dI0.title" = "notification";
+
+/* Class = "UITabBarItem"; title = "profile"; ObjectID = "k24-lu-3fF"; */
+"k24-lu-3fF.title" = "profile";
+
+/* Class = "UIButton"; configuration.title = "show more"; ObjectID = "kv3-EC-abJ"; */
+"kv3-EC-abJ.configuration.title" = "show more";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kv3-EC-abJ"; */
+"kv3-EC-abJ.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "lnu-9y-n4E"; */
+"lnu-9y-n4E.title" = "Home";
+
+/* Class = "UILabel"; text = "to add center or school in the biggest educational app over middle east"; ObjectID = "oNA-PF-nDx"; */
+"oNA-PF-nDx.text" = "to add center or school in the biggest educational app over middle east";
+
+/* Class = "UIButton"; configuration.title = "add your center"; ObjectID = "qd4-BN-mfW"; */
+"qd4-BN-mfW.configuration.title" = "add your center";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qd4-BN-mfW"; */
+"qd4-BN-mfW.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "qxK-G8-gcR"; */
+"qxK-G8-gcR.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qxK-G8-gcR"; */
+"qxK-G8-gcR.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "rYf-r7-TaI"; */
+"rYf-r7-TaI.title" = "Home";
+
+/* Class = "UILabel"; text = "new schools"; ObjectID = "uge-h3-Afb"; */
+"uge-h3-Afb.text" = "new schools";
+
+/* Class = "UILabel"; text = "اسم المستخدم"; ObjectID = "yXK-kX-Q2z"; */
+"yXK-kX-Q2z.text" = "اسم المستخدم";

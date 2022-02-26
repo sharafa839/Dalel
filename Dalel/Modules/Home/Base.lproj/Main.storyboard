@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Xt-D6-Sv3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Xt-D6-Sv3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -34,7 +33,7 @@
             </objects>
             <point key="canvasLocation" x="-2928" y="214"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="avN-Yr-35h">
             <objects>
                 <tableViewController id="KY5-7e-Ll0" customClass="HomeTableViewController" customModule="Dalel" customModuleProvider="target" sceneMemberID="viewController">
@@ -118,8 +117,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاقسام" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrM-jq-K3r">
-                                                    <rect key="frame" x="8" y="10" width="47" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrM-jq-K3r">
+                                                    <rect key="frame" x="8" y="10" width="80.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.99607843139999996" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -154,17 +153,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جديد الروضات" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqB-eb-Itd">
-                                                    <rect key="frame" x="8" y="10" width="97" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="new garden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqB-eb-Itd">
+                                                    <rect key="frame" x="8" y="10" width="89.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.99607843139999996" green="0.77647058820000003" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kv3-EC-abJ">
-                                                    <rect key="frame" x="312" y="4" width="94" height="31"/>
+                                                    <rect key="frame" x="311" y="4" width="95" height="31"/>
                                                     <color key="tintColor" name="MainColor"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="اعرض المزيد"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="show more"/>
                                                 </button>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dbM-IS-lE6">
                                                     <rect key="frame" x="36" y="50" width="342" height="176"/>
@@ -211,13 +210,13 @@
                                                                 <constraint firstAttribute="width" constant="128" id="Xb6-PA-qAg"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فرصتك الان" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ki-ff-UYh">
-                                                            <rect key="frame" x="275" y="26" width="80.5" height="22"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your chance now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ki-ff-UYh">
+                                                            <rect key="frame" x="213" y="26" width="142.5" height="22"/>
                                                             <fontDescription key="fontDescription" name="AmazonEmber-Bold" family="Amazon Ember" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لاضافه مركز او مدرسه او معهد في اكبر تطبيق تعليمي في المملكة" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNA-PF-nDx">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to add center or school in the biggest educational app over middle east" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNA-PF-nDx">
                                                             <rect key="frame" x="152" y="66" width="203.5" height="61"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -231,7 +230,10 @@
                                                             </constraints>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="plain" title="اضف مكانك "/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="add your center"/>
+                                                            <connections>
+                                                                <action selector="addYourCenterButton:" destination="KY5-7e-Ll0" eventType="touchUpInside" id="eUT-nF-5sl"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" name="MainColor"/>
@@ -264,21 +266,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جديد المدارس" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uge-h3-Afb">
-                                                    <rect key="frame" x="28" y="21" width="96.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="new schools" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uge-h3-Afb">
+                                                    <rect key="frame" x="28" y="21" width="95" height="20.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" systemColor="systemRedColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.99607843139999996" green="0.77647058820000003" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSv-Yq-6fN">
-                                                    <rect key="frame" x="292" y="15" width="94" height="31"/>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSv-Yq-6fN">
+                                                    <rect key="frame" x="291" y="15" width="95" height="31"/>
                                                     <color key="tintColor" name="MainColor"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="اعرض المزيد"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="show more"/>
                                                 </button>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JPe-eE-dns">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JPe-eE-dns">
                                                     <rect key="frame" x="40" y="56.5" width="334" height="163"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jLZ-uK-H3H">
@@ -313,18 +315,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="جديد المعاهد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hA-0r-lio">
-                                                    <rect key="frame" x="28" y="21" width="92.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="new universities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hA-0r-lio">
+                                                    <rect key="frame" x="28" y="21" width="122" height="20.5"/>
                                                     <color key="tintColor" red="0.99607843139999996" green="0.77647058820000003" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.99607843139999996" green="0.77647058820000003" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvK-Nt-rnq">
-                                                    <rect key="frame" x="292" y="15" width="94" height="31"/>
+                                                    <rect key="frame" x="291" y="15" width="95" height="31"/>
                                                     <color key="tintColor" name="MainColor"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="اعرض المزيد"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="show more"/>
                                                 </button>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="4" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uxh-zL-Obi">
                                                     <rect key="frame" x="32" y="50" width="350" height="213"/>
@@ -362,7 +364,7 @@
                             <outlet property="delegate" destination="KY5-7e-Ll0" id="g87-oD-9U9"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="home" id="rYf-r7-TaI">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home" id="rYf-r7-TaI">
                         <color key="badgeColor" name="AccentColor"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="VAQ-L4-VHD">
@@ -377,6 +379,7 @@
                         <outlet property="addYourCenterButton" destination="qd4-BN-mfW" id="x81-q3-TX7"/>
                         <outlet property="categoriesLabel" destination="ZrM-jq-K3r" id="LHB-FF-gsS"/>
                         <outlet property="childGardenLabel" destination="VqB-eb-Itd" id="FUj-4g-qlo"/>
+                        <outlet property="containViewOfImage" destination="QuM-3v-m1W" id="j7t-w1-3Ha"/>
                         <outlet property="imageSlider" destination="GX8-JB-vYm" id="Lb9-BO-v05"/>
                         <outlet property="newSchoolsLabel" destination="uge-h3-Afb" id="v4l-SG-gIc"/>
                         <outlet property="newUniversityLabel" destination="5hA-0r-lio" id="Awx-Yi-41o"/>
@@ -406,22 +409,13 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sRO-bV-dD3">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fae-1t-3nT">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fae-1t-3nT">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="myL-JM-6eK">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vj7-9d-Iwy">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7sB-Lu-M65"/>
@@ -433,14 +427,17 @@
                             <constraint firstItem="7sB-Lu-M65" firstAttribute="bottom" secondItem="sRO-bV-dD3" secondAttribute="bottom" id="jol-I3-X32"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favorite" selectedImage="favorite" id="KRW-tF-rNe"/>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="heart" selectedImage="heart" id="KRW-tF-rNe"/>
                     <navigationItem key="navigationItem" id="Lbf-wt-aSq"/>
+                    <connections>
+                        <outlet property="favoriteCollectionView" destination="sRO-bV-dD3" id="HUb-n8-sxw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="klr-W0-P5X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1607" y="1469"/>
         </scene>
-        <!--Item-->
+        <!--notification-->
         <scene sceneID="raH-BT-f24">
             <objects>
                 <viewController id="rOs-6m-zoK" customClass="NotificationViewController" customModule="Dalel" customModuleProvider="target" sceneMemberID="viewController">
@@ -448,37 +445,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاشعارات" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHw-RC-nkG">
-                                <rect key="frame" x="175" y="96" width="84.5" height="22"/>
-                                <fontDescription key="fontDescription" name="AmazonEmber-Bold" family="Amazon Ember" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="c5L-6E-X2f">
-                                <rect key="frame" x="0.0" y="138" width="414" height="675"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Ah-x0-0hT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AHw-RC-nkG" firstAttribute="leading" secondItem="7Ah-x0-0hT" secondAttribute="leading" constant="175" id="6mq-WL-rz6"/>
                             <constraint firstItem="c5L-6E-X2f" firstAttribute="leading" secondItem="7Ah-x0-0hT" secondAttribute="leading" id="941-Xh-6lk"/>
                             <constraint firstItem="7Ah-x0-0hT" firstAttribute="bottom" secondItem="c5L-6E-X2f" secondAttribute="bottom" id="W0x-oc-Ixh"/>
                             <constraint firstItem="7Ah-x0-0hT" firstAttribute="trailing" secondItem="c5L-6E-X2f" secondAttribute="trailing" id="be3-fu-KLG"/>
-                            <constraint firstItem="7Ah-x0-0hT" firstAttribute="trailing" secondItem="AHw-RC-nkG" secondAttribute="trailing" constant="154.5" id="oN7-B5-nwa"/>
-                            <constraint firstItem="AHw-RC-nkG" firstAttribute="top" secondItem="7Ah-x0-0hT" secondAttribute="top" constant="8" id="piZ-qt-ZfJ"/>
-                            <constraint firstItem="c5L-6E-X2f" firstAttribute="top" secondItem="AHw-RC-nkG" secondAttribute="bottom" constant="20" id="uOI-nG-Hvc"/>
+                            <constraint firstItem="c5L-6E-X2f" firstAttribute="top" secondItem="7Ah-x0-0hT" secondAttribute="top" id="cPh-Eb-bWk"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Dtz-DP-RVS"/>
+                    <tabBarItem key="tabBarItem" title="notification" selectedImage="bell" id="Dtz-DP-RVS"/>
                     <navigationItem key="navigationItem" id="YJ2-db-fSd"/>
+                    <connections>
+                        <outlet property="tableView" destination="c5L-6E-X2f" id="eSf-bm-6iS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNh-zV-qXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-720" y="1387"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="RiB-Zj-4fK">
             <objects>
                 <viewController id="bc7-wA-Sde" customClass="ProfileViewController" customModule="Dalel" customModuleProvider="target" sceneMemberID="viewController">
@@ -611,7 +602,7 @@
                             <constraint firstItem="Rj0-pX-UIk" firstAttribute="top" secondItem="NJk-gM-Tmb" secondAttribute="bottom" constant="16" id="wKE-Zx-mAq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="UnE-vW-v8V"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" selectedImage="person.fill" id="UnE-vW-v8V"/>
                     <navigationItem key="navigationItem" id="Dom-qm-YW5"/>
                     <connections>
                         <outlet property="changePhoto" destination="6uZ-7c-amX" id="HYC-CS-pr2"/>
@@ -666,11 +657,11 @@
             </objects>
             <point key="canvasLocation" x="1900.0000000000002" y="1194.6428571428571"/>
         </scene>
-        <!--Item-->
+        <!--profile-->
         <scene sceneID="bi4-eS-sri">
             <objects>
                 <navigationController id="Lbl-9J-B7T" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="k24-lu-3fF"/>
+                    <tabBarItem key="tabBarItem" title="profile" id="k24-lu-3fF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mzt-fV-Ykc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -691,9 +682,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" name="AccentColor"/>
+                        <color key="selectedImageTintColor" name="MainColor"/>
                     </tabBar>
                     <connections>
+                        <outlet property="mainBar" destination="Vyn-th-ma2" id="ZdB-V4-dzw"/>
                         <segue destination="2OR-Bf-8i7" kind="relationship" relationship="viewControllers" id="76c-b1-xEP"/>
                         <segue destination="aBY-Cx-uUT" kind="relationship" relationship="viewControllers" id="EYS-Fw-T1I"/>
                         <segue destination="7Yn-jS-5Un" kind="relationship" relationship="viewControllers" id="UTn-h0-3cd"/>
@@ -708,7 +700,7 @@
         <scene sceneID="VPc-7r-bUP">
             <objects>
                 <navigationController id="aBY-Cx-uUT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="favorite" selectedImage="favorite" id="5TX-4r-jC3"/>
+                    <tabBarItem key="tabBarItem" title="favorite" selectedImage="heart" id="5TX-4r-jC3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iHf-w9-76K">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -721,11 +713,11 @@
             </objects>
             <point key="canvasLocation" x="-1655" y="739"/>
         </scene>
-        <!--Item-->
+        <!--notification-->
         <scene sceneID="VkL-ZY-BCB">
             <objects>
                 <navigationController id="7Yn-jS-5Un" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ejI-FE-dI0"/>
+                    <tabBarItem key="tabBarItem" title="notification" image="bell" selectedImage="bell" id="ejI-FE-dI0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5lO-7Z-Mjz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -766,9 +758,11 @@
     <resources>
         <image name="Daleel_logo" width="1000" height="1000"/>
         <image name="Vector-2" width="23" height="16"/>
-        <image name="favorite" width="20" height="20"/>
+        <image name="bell" width="15" height="15"/>
+        <image name="heart" width="15" height="15"/>
         <image name="home" width="15" height="15"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="splash vector" width="338" height="352"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

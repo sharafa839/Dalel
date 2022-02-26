@@ -2,7 +2,7 @@
 //  RegisterViewController.swift
 //  Dalel
 //
-//  Created by Shgardi on 29/01/2022.
+//  Created by  on 29/01/2022.
 //
 
 import UIKit
@@ -13,15 +13,29 @@ import RxSwift
 import RxRelay
 import RxCocoa
 import MobileCoreServices
+import SwiftUI
 
-class RegisterViewController: UIViewController,UIDocumentPickerDelegate {
+class RegisterViewController: UIViewController, UIDocumentPickerDelegate {
+    
 //MARK: - IBoutlets
-    @IBOutlet weak var createNewAccountLabel: UILabel!
-    @IBOutlet weak var helloLabel: UILabel!
-    @IBOutlet weak var pleaseFillTextLabel: UILabel!
+    @IBOutlet weak var createNewAccountLabel: UILabel!{
+        didSet{
+            createNewAccountLabel.text = "Create new account".localizede
+        }
+    }
+    @IBOutlet weak var helloLabel: UILabel!{
+        didSet{
+            helloLabel.text = "hello".localizede
+        }
+    }
+    @IBOutlet weak var pleaseFillTextLabel: UILabel!{
+        didSet{
+            pleaseFillTextLabel.text = "please fill all of fields".localizede
+        }
+    }
     @IBOutlet weak var fullNameTextField: MDCFilledTextField!{
         didSet{
-            fullNameTextField.label.text = "FullNAme"
+            fullNameTextField.label.text = "FullNAme".localizede
             fullNameTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .normal)
             fullNameTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .editing)
             fullNameTextField.setFilledBackgroundColor(.white, for: .normal)
@@ -31,13 +45,13 @@ class RegisterViewController: UIViewController,UIDocumentPickerDelegate {
    
     @IBOutlet weak var uploadFile: UIButton!{
         didSet{
-            uploadFile.setTitle("uploadFile", for: .normal)
+            uploadFile.setTitle("uploadFile".localizede, for: .normal)
         }
     }
     
     @IBOutlet weak var emailTextField: MDCFilledTextField!{
         didSet{
-            emailTextField.label.text = "email"
+            emailTextField.label.text = "email".localizede
             emailTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .normal)
             emailTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .editing)
             emailTextField.setFilledBackgroundColor(.white, for: .normal)
@@ -46,7 +60,7 @@ class RegisterViewController: UIViewController,UIDocumentPickerDelegate {
     
     @IBOutlet weak var passwordTextField: MDCFilledTextField!{
         didSet{
-            passwordTextField.label.text = "password"
+            passwordTextField.label.text = "password".localizede
             passwordTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .normal)
             passwordTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .editing)
             passwordTextField.setFilledBackgroundColor(.white, for: .normal)
@@ -54,31 +68,32 @@ class RegisterViewController: UIViewController,UIDocumentPickerDelegate {
     }
     @IBOutlet weak var youHaveAccountLabel: UILabel!{
         didSet{
-            youHaveAccountLabel.text = "you have account"
+            youHaveAccountLabel.text = "you have account".localizede
         }
     }
     @IBOutlet weak var registerButtonOutlet: UIButton!{
         didSet{
-            registerButtonOutlet.setTitle("signUp", for: .normal)
+            registerButtonOutlet.setTitle("signUp".localizede, for: .normal)
             registerButtonOutlet.drawBorder(raduis: 10, borderColor: UIColor(named: "MainColor") ?? UIColor.blue)
         }
     }
     @IBOutlet weak var signInOutlet: UIButton!{
         didSet{
-            signInOutlet.setTitle("signIn", for: .normal)
+            signInOutlet.setTitle("signIn".localizede, for: .normal)
         }
     }
     
     
     @IBOutlet weak var typeOfClient: DropDown!{
         didSet{
-            typeOfClient.optionArray = ["customer","center owner"]
+            typeOfClient.optionArray = ["customer","center_owner"]
             typeOfClient.text = "choose your major"
         }
     }
     
     //MARK: - Properties
     var viewModel = RegisterViewModel()
+    var pdfFileURL = String()
     //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,7 +124,13 @@ class RegisterViewController: UIViewController,UIDocumentPickerDelegate {
         registerButtonOutlet.rx.tap.subscribe { [weak self] _ in
             guard let self = self else {return}
             self.registerButtonOutlet.secAnimation()
-            self.viewModel.registerNewUser()
+            if self.typeOfClient.selectedIndex == 0 {
+                self.viewModel.registerNewUser(data: nil)
+            }
+            guard !(self.pdfFileURL.isEmpty) else {return}
+            guard let url = URL(string: self.pdfFileURL) else {return}
+            guard let data = try? Data(contentsOf: url) else {return}
+            self.viewModel.registerNewUser(data: data)
             print(self.viewModel.name.value)
             print(self.viewModel.phoneCode.value)
             print(self.viewModel.phoneNumber.value)
@@ -120,19 +141,51 @@ class RegisterViewController: UIViewController,UIDocumentPickerDelegate {
     }
     
     func setupUI(){
-        typeOfClient.didSelect { selectedText, index, id in
-            self.viewModel.type.accept(selectedText)
-        }
+        typeOfClient.didSelect { [weak self]selectedText, index, id in
+            self?.viewModel.type.accept(selectedText)
+            if index == 0 {
+                self?.uploadFile.isHidden = true
+            }else {
+                    self?.uploadFile.isHidden = false
+
+                }
+            }
+        
         phoneCode.delegate = self
 
     }
     
     @IBAction func uploadFilePdf(_ sender: UIButton) {
-        let documentPicker = UIDocumentPickerViewController(documentTypes: [String(kUTTypeText),String(kUTTypeContent),String(kUTTypeItem),String(kUTTypeData)], in: .import)
-        documentPicker.delegate = self
-        self.present(documentPicker, animated: true)
+        let importMenu = UIDocumentPickerViewController(documentTypes: [String(kUTTypePDF)], in: .import)
+        importMenu.delegate = self
+        importMenu.modalPresentationStyle = .formSheet
+        self.present(importMenu, animated: true, completion: nil)
+         
+    }
+    
+    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+        guard let myURL = urls.first else {
+                 return
+             }
+             print("import result : \(myURL)")
+             let data = NSData(contentsOf: myURL)
+             do{
+                
+                 
+                
+                 self.uploadFile.setTitle(myURL.lastPathComponent, for: .normal)
+                 
+             }catch{
+                 print(error)
+             }
+             
         
     }
+    
+    func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     func setupViewModel(){
         viewModel.onError.subscribe {  error in
             
@@ -148,11 +201,9 @@ class RegisterViewController: UIViewController,UIDocumentPickerDelegate {
 
         viewModel.onSuccess.subscribe { [weak self] register in
             guard let self = self else {return}
-//            let main = HomeTableViewController()
-//            let home = UINavigationController(rootViewController:main )
-//            home.modalPresentationStyle = .fullScreen
-//            self.present(home, animated: true, completion: nil)
-            //Alert.alertPopUp(title: "Great !", msg:"wait to approve" , btnTitle: "ok", vc: self)
+            let main = HomeTableViewController()
+          
+            Alert.alertPopUp(title: "Great !".localizede, msg:"wait to approve".localizede , btnTitle: "ok".localizede, vc: self)
             
         }.disposed(by: viewModel.disposeBag)
     }

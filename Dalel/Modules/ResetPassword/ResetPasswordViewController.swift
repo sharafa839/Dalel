@@ -2,7 +2,7 @@
 //  ResetPasswordViewController.swift
 //  Dalel
 //
-//  Created by Shgardi on 29/01/2022.
+//  Created by  on 29/01/2022.
 //
 
 import UIKit
@@ -10,30 +10,31 @@ import UIKit
 class ResetPasswordViewController: UIViewController {
     @IBOutlet weak var reassignPasswordLabel: UILabel!{
         didSet{
-            reassignPasswordLabel.text = "reassignPassword"
+            reassignPasswordLabel.text = "reassignPassword".localizede
         
         }
     }
     
     @IBOutlet weak var nextButton: UIButton!{
         didSet{
-            nextButton.setTitle("next", for: .normal)
+            nextButton.setTitle("next".localizede, for: .normal)
             nextButton.floatButton(raduis: 15)
         }
     }
     @IBOutlet weak var confirmPasswordTextField: UITextField!{
         didSet{
-            confirmPasswordTextField.placeholder = "confirmPass"
+            confirmPasswordTextField.placeholder = "confirmPass".localizede
             confirmPasswordTextField.floatView(raduis: 15, color: UIColor(named: "MainColor") ?? UIColor())
         }
     }
     @IBOutlet weak var passwordTextField: UITextField!{
         didSet{
-            passwordTextField.placeholder = "pass"
+            passwordTextField.placeholder = "password".localizede
             passwordTextField.floatView(raduis: 15, color: UIColor(named: "MainColor") ?? UIColor())
         }
     }
     let viewModel = ProfileViewModel()
+    var isLogin : Bool? = true
     override func viewDidLoad() {
         super.viewDidLoad()
 subscribeViewModel()
@@ -41,8 +42,16 @@ subscribeViewModel()
     }
     func subscribeViewModel(){
         viewModel.password.subscribe {[weak self] pass in
-            HelperK.showSuccess(title: "passwordChanged", subtitle: "")
-            self?.navigationController?.popViewController(animated: true)
+            guard let self = self else {return}
+
+            HelperK.showSuccess(title: "passwordChanged".localizede, subtitle: "")
+            if self.isLogin!{
+                self.navigationController?.popViewController(animated: true)
+                
+            }else{
+                Router.setRoot()
+            }
+            
         }.disposed(by: viewModel.disposeBag)
     }
     
@@ -63,7 +72,7 @@ subscribeViewModel()
         guard let password = passwordTextField.text , !password.isEmpty,password.count > 6 else {return}
         guard let passwordConfirm = confirmPasswordTextField.text , !passwordConfirm.isEmpty,passwordConfirm.count > 6 else {return}
         if passwordConfirm != password{
-            HelperK.showError(title: "notMatch", subtitle: "")
+            HelperK.showError(title: "notMatch".localizede, subtitle: "")
             
         }else{
             nextButton.secAnimation()

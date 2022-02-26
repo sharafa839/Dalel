@@ -139,8 +139,8 @@ class APIs: NSObject {
            return NetworkReachabilityManager()!.isReachable
        }
     
-    class func genericApiWithPagination<T:Decodable>( pageNo:Int,url:String,method:HTTPMethod,paameters:Parameters?,headers:HTTPHeaders?,completion:@escaping (T?,Error?,Int?) -> ()) {
-        AF.request(url, method: method,parameters:paameters, headers: headers, interceptor: CustomInterceptor()).validate(statusCode: 200..<502).responseJSON { (response) in
+    class func genericApiWithPagination<T:Decodable>( pageNo:Int,url:String,method:HTTPMethod,paameters:Parameters?,encoding:ParameterEncoding,headers:HTTPHeaders?,completion:@escaping (T?,Error?,Int?) -> ()) {
+        AF.request(url, method: method,parameters:paameters,encoding:encoding, headers: headers, interceptor: CustomInterceptor()).validate(statusCode: 200..<502).responseJSON { (response) in
             print (response)
 print(paameters)
          switch response.response?.statusCode {

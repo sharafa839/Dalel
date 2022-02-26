@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  Dalel
 //
-//  Created by Shgardi on 29/01/2022.
+//  Created by  on 29/01/2022.
 //
 
 import UIKit
@@ -13,39 +13,39 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var welcomeBackLabel: UILabel!{
         didSet{
-            welcomeBackLabel.text = "welcomeBack"
+            welcomeBackLabel.text = "welcomeBack".localizede
         }
     }
     @IBOutlet weak var signInToContinue: UILabel!{
         didSet{
-            signInToContinue.text  = "signInToContinue"
+            signInToContinue.text  = "signInToContinue".localizede
         }
     }
     @IBOutlet weak var forgetPasswordOutlet: UIButton!{
         didSet{
-            forgetPasswordOutlet.setTitle("did you forget your password", for: .normal)
+            forgetPasswordOutlet.setTitle("did you forget your password".localizede, for: .normal)
         }
     }
     
     @IBOutlet weak var signInButton: UIButton!{
         didSet{
-            signInButton.setTitle("signIn", for: .normal)
+            signInButton.setTitle("signIn".localizede, for: .normal)
             signInButton.drawBorder(raduis: 10, borderColor: (UIColor(named: "MainColor") ?? UIColor.blue))
         }
     }
     @IBOutlet weak var youHaveNotLabel: UILabel!{
         didSet{
-            youHaveNotLabel.text = "dontHaveaccount"
+            youHaveNotLabel.text = "dontHaveaccount".localizede
         }
     }
     @IBOutlet weak var signUpButton: UIButton!{
         didSet{
-            signUpButton.setTitle("signup", for: .normal)
+            signUpButton.setTitle("signup".localizede, for: .normal)
         }
     }
     @IBOutlet weak var passwordTextField: MDCFilledTextField!{
         didSet{
-            passwordTextField.label.text = "password"
+            passwordTextField.label.text = "password".localizede
             passwordTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .normal)
             passwordTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .editing)
             passwordTextField.setFilledBackgroundColor(.white, for: .normal)
@@ -54,7 +54,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var phoneTextField: MDCFilledTextField!{
         didSet{
-            phoneTextField.label.text = "phoneNumber"
+            phoneTextField.label.text = "phoneNumber".localizede
             phoneTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .normal)
             phoneTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .editing)
             phoneTextField.setFilledBackgroundColor(.white, for: .normal)
@@ -118,8 +118,8 @@ setupViewModel()
         }.disposed(by: viewModel.disposeBag)
         
         forgetPasswordOutlet.rx.tap.subscribe { [weak self] _ in
-            let forgetPassword = ResetPasswordViewController()
-            self?.present(forgetPassword, animated: true, completion: nil)
+            let forgetPassword = EmailViewController()
+            self?.navigationController?.pushViewController(forgetPassword, animated: true)
         }.disposed(by: viewModel.disposeBag)
     }
 

@@ -2,7 +2,7 @@
 //  CommentTableViewCell.swift
 //  Dalel
 //
-//  Created by Shgardi on 16/02/2022.
+//  Created by  on 16/02/2022.
 //
 
 import UIKit
@@ -34,20 +34,7 @@ class CommentTableViewCell: UITableViewCell {
         commentLabe.text = review.review
     }
     
-    func DateAndTimeInString(date: String,local:String) -> (String,String) {
-        let fromDateFormatter = DateFormatter()
-        let dateFormatter = DateFormatter()
-        let timeFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: local)
-        dateFormatter.dateStyle = .long
-        timeFormatter.locale = Locale(identifier: local)
-        timeFormatter.dateFormat = "HH:mm"
-        fromDateFormatter.timeZone = TimeZone(abbreviation: "GMT")
-        guard  let date = fromDateFormatter.dateFromMultipleFormats(fromString: date) else {return ("","")}
-        let createdDay = date.stringDate(withFormat: "dd-MM-yyyy")
-        return (createdDay,timeFormatter.string(from: date))
-    }
-    
+        
     private func averageRate(rate:String){
         switch rate {
         case "1":
@@ -145,4 +132,17 @@ extension Date {
         let seconds = -TimeInterval(timezone.secondsFromGMT(for: self))
         return Date(timeInterval: seconds, since: self)
     }
+}
+func DateAndTimeInString(date: String,local:String) -> (String,String) {
+    let fromDateFormatter = DateFormatter()
+    let dateFormatter = DateFormatter()
+    let timeFormatter = DateFormatter()
+    dateFormatter.locale = Locale(identifier: local)
+    dateFormatter.dateStyle = .long
+    timeFormatter.locale = Locale(identifier: local)
+    timeFormatter.dateFormat = "HH:mm"
+    fromDateFormatter.timeZone = TimeZone(abbreviation: "GMT")
+    guard  let date = fromDateFormatter.dateFromMultipleFormats(fromString: date) else {return ("","")}
+    let createdDay = date.stringDate(withFormat: "dd-MM-yyyy")
+    return (createdDay,timeFormatter.string(from: date))
 }

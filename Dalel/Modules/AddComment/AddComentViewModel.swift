@@ -2,12 +2,13 @@
 //  AddComentViewModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 17/02/2022.
+//  Created by  on 17/02/2022.
 //
 
 import Foundation
 import RxSwift
 import RxRelay
+import Alamofire
 class AddCommentViewModel:CenterProtocol {
     let disposeBag = DisposeBag()
 
@@ -27,6 +28,10 @@ class AddCommentViewModel:CenterProtocol {
 //                return
 //            }
 //        }
-      //  APIs.genericApiWithPagination(pageNo: 0, url: <#T##String#>, method: <#T##HTTPMethod#>, paameters: <#T##Parameters?#>, headers: <#T##HTTPHeaders?#>, completion: <#T##(Decodable?, Error?, Int?) -> ()#>)
+        APIs.genericApiWithPagination(pageNo: 0, url: "https://Dalil-taelim.com/api/centers/\(id)/reviews/submit", method: .post, paameters: ["review":review,"rate":rate], encoding: URLEncoding.default, headers: Headers.getHeader()) { (mode:ModeModel?, err:Error?, code:Int?) in
+            if [200,201].contains(mode?.code) {
+                HelperK.showSuccess(title: "thanks", subtitle: "")
+            }
+        }
     }
 }

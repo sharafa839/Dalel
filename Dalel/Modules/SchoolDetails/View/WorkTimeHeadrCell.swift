@@ -2,7 +2,7 @@
 //  WorkTimeHeadrCell.swift
 //  Dalel
 //
-//  Created by Shgardi on 19/02/2022.
+//  Created by  on 19/02/2022.
 //
 
 import UIKit
@@ -11,17 +11,17 @@ class WorkTimeHeadrCell: UITableViewCell {
 
     @IBOutlet weak var dayLabel: UILabel!{
         didSet{
-            dayLabel.text  = "day"
+            dayLabel.text  = "day".localizede
         }
     }
     @IBOutlet weak var fromLabel: UILabel!{
         didSet{
-            fromLabel.text = "from"
+            fromLabel.text = "from".localizede
         }
     }
     @IBOutlet weak var toLabel: UILabel!{
         didSet{
-            toLabel.text = "to"
+            toLabel.text = "to".localizede
         }
     }
     

@@ -2,13 +2,14 @@
 //  GeneralNetwork.swift
 //  Dalel
 //
-//  Created by Shgardi on 19/02/2022.
+//  Created by  on 19/02/2022.
 //
 
 import Foundation
 import Alamofire
 enum GeneralData{
     case GetGeneralData
+    case FAQS
 }
 
 extension GeneralData : TargetType {
@@ -16,6 +17,8 @@ extension GeneralData : TargetType {
         switch self {
         case .GetGeneralData:
             return EndPoints.General.general.rawValue
+        case .FAQS:
+            return EndPoints.FAQ.faqs.rawValue
         }
     }
     

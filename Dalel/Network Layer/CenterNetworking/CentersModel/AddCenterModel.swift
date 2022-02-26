@@ -2,7 +2,7 @@
 //  AddCenterModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 19/02/2022.
+//  Created by  on 19/02/2022.
 //
 
 // This file was generated from JSON Schema using quicktype, do not modify it directly.

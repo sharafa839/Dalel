@@ -2,80 +2,93 @@
 //  AddPlaceViewController.swift
 //  Dalel
 //
-//  Created by Shgardi on 29/01/2022.
+//  Created by  on 29/01/2022.
 //
 
 import UIKit
 import iOSDropDown
 import Gallery
 import CoreLocation
-class AddPlaceViewController: UIViewController, GalleryControllerDelegate, CLLocationManagerDelegate {
-    
+import GoogleMaps
+class AddPlaceViewController: UIViewController, GalleryControllerDelegate, CLLocationManagerDelegate, GMSMapViewDelegate {
+    func mapView(_ mapView: GMSMapView, didLongPressAt coordinate: CLLocationCoordinate2D) {
+        latitude = coordinate.latitude
+        longitude = coordinate.longitude
+        let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: latitude ?? 10, longitude: longitude ?? 10))
+        marker.map = mapView
+        
+    }
     @IBOutlet weak var welcomeToDalel: UILabel!{
         didSet{
-            welcomeToDalel.text = "welcomeToDelel"
+            welcomeToDalel.text = "welcomeToDelel".localizede
         }
     }
     @IBOutlet weak var addYourPlaceLabel: UILabel!{
         didSet{
-            addYourPlaceLabel.text = "add your place"
+            addYourPlaceLabel.text = "add your place".localizede
         }
     }
     @IBOutlet weak var nameEnTextField: UITextField!{
         didSet{
-            nameEnTextField.placeholder = "add your place name"
+            nameEnTextField.placeholder = "Add your place name".localizede
             nameEnTextField.floatView(raduis: 10, color: UIColor(named: "MainColor") ?? UIColor())
         }
     }
     @IBOutlet weak var nameArTextField: UITextField!{
         didSet{
-            nameArTextField.placeholder = "add your place nameAr"
+            nameArTextField.placeholder = "Add your place nameAr".localizede
             nameArTextField.floatView(raduis: 10, color: UIColor(named: "MainColor") ?? UIColor())
         }
     }
     @IBOutlet weak var descriptionEnTextField:UITextField!{
         didSet{
-            descriptionEnTextField.placeholder = "add your place description"
+            descriptionEnTextField.placeholder = "Add your place description".localizede
             descriptionEnTextField.floatView(raduis: 10, color: UIColor(named: "MainColor") ?? UIColor())
         }
     }
     @IBOutlet weak var descriptionArTextField: UITextField!{
         didSet{
-            descriptionArTextField.placeholder = "add your place descriptionAr"
+            descriptionArTextField.placeholder = "Add your place descriptionAr".localizede
             descriptionArTextField.floatView(raduis: 10, color: UIColor(named: "MainColor") ?? UIColor())
         }
     }
     
     @IBOutlet weak var CategoryTextField: DropDown!{
         didSet{
-            CategoryTextField.text = "add your category"
+            CategoryTextField.text = "Add your category".localizede
         }
     }
     @IBOutlet weak var phoneTextField: UITextField!{
         didSet{
-            phoneTextField.placeholder = "add your phone"
+            phoneTextField.placeholder = "Add your phone".localizede
             phoneTextField.floatView(raduis: 10, color: UIColor(named: "MainColor") ?? UIColor())
         }
     }
     @IBOutlet weak var addressTextField: UITextField!{
         didSet{
-            addressTextField.placeholder = "add your address"
+            addressTextField.placeholder = "Add your address".localizede
             addressTextField.floatView(raduis: 10, color: UIColor(named: "MainColor") ?? UIColor())
         }
     }
     
     @IBOutlet weak var addPhotos: UIButton!{
         didSet{
-            addPhotos.setTitle("addPhoto", for: .normal)
+            addPhotos.setTitle("Add photo".localizede, for: .normal)
             addPhotos.target(forAction: #selector(updateProfile), withSender: self)
         }
     }
     @IBOutlet weak var addPlace: UIButton!{
         didSet{
-            addPlace.setTitle("addPlace".localizede, for: .normal)
+            addPlace.setTitle("Add place".localizede, for: .normal)
             addPlace.floatButton(raduis: 15)
         }
     }
+    @IBOutlet weak var mapView: GMSMapView!{
+        didSet{
+            mapView.settings.myLocationButton = true
+        }
+    }
+    
     var pickedImg: UIImage?
     var arrayOfImage:[UIImage?] = []
     var gallary = GalleryController()
@@ -85,13 +98,15 @@ class AddPlaceViewController: UIViewController, GalleryControllerDelegate, CLLoc
     var categoryIds = [String]()
     var selectedCategory = String()
     let locationManager = CLLocationManager()
-    
+    var latitude:Double?
+    var longitude:Double?
     var place : PlacesModelPayload?
     override func viewDidLoad() {
         super.viewDidLoad()
         getCategories()
         subscribeViewModels()
         locationManager.delegate = self
+        mapView.delegate = self
         setupViewModel()
         print(locationManager.location?.coordinate)
         getSelectedCategory()
@@ -122,7 +137,7 @@ class AddPlaceViewController: UIViewController, GalleryControllerDelegate, CLLoc
                 ActivityIndicatorManager.shared.hideProgressView()
             }
         }.disposed(by: viewModel.disposeBag)
-        categoryViewModel.onLoading.subscribe { isLoading in
+        viewModel.onLoading.subscribe { isLoading in
             if isLoading.element ?? false {
                 ActivityIndicatorManager.shared.showProgressView()
             }else {
@@ -191,6 +206,10 @@ class AddPlaceViewController: UIViewController, GalleryControllerDelegate, CLLoc
         guard let phone = phoneTextField.text , !phone.isEmpty else {return}
         guard let address = addressTextField.text , !address.isEmpty else {return}
         guard !selectedCategory.isEmpty else {return}
+        guard latitude != nil else{
+            HelperK.showError(title: "point your place on the map".localizede, subtitle: "")
+            return}
+        guard longitude != nil else{return}
         if place == nil {
             addPlace.secAnimation()
 

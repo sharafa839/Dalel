@@ -43,9 +43,10 @@ extension UIView {
            self.layer.cornerRadius = raduis
         self.layer.shadowColor = UIColor(named: "MainColor")?.cgColor
            self.layer.shadowOffset = CGSize(width: 0, height: 5)
-           self.layer.shadowOpacity = 0.2
+           self.layer.shadowOpacity = 0.5
            self.layer.shadowRadius = 4
         self.layer.borderColor = color.cgColor
+        self.layer.borderWidth = 0.3
        }
     
     func pinEdges(to other: UIView) {
@@ -130,6 +131,15 @@ extension UIView {
               self.layer.shadowOpacity = 0.7
                self.layer.masksToBounds = false
       }
+    
+    func floating(raduis: CGFloat) {
+        self.layer.cornerRadius = raduis
+        self.layer.shadowColor = UIColor(named: "MainColor")?.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 5)
+        self.layer.shadowOpacity = 0.6
+        self.layer.shadowRadius = 4
+       // self.layer.masksToBounds = true
+    }
       
       func setBottomRoundedEdge(desiredCurve: CGFloat?) {
           let offset: CGFloat = self.frame.width / desiredCurve!

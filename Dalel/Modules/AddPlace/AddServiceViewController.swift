@@ -2,27 +2,28 @@
 //  AddServiceViewController.swift
 //  Dalel
 //
-//  Created by Shgardi on 19/02/2022.
+//  Created by  on 19/02/2022.
 //
 
 import UIKit
+import Alamofire
 
 class AddServiceViewController: UIViewController {
 
     @IBOutlet weak var addServiceForYourCenter: UILabel!{
         didSet{
-            addServiceForYourCenter.text = "addServiceForYourCenter"
+            addServiceForYourCenter.text = "addServiceForYourCenter".localizede
         }
     }
     @IBOutlet weak var addSerivce: UIButton!{
         didSet{
-            addSerivce.setTitle("addService", for: .normal)
+            addSerivce.setTitle("addService".localizede, for: .normal)
             addSerivce.floatButton(raduis: 15)
         }
     }
     @IBOutlet weak var serviceTextField: UITextField!{
         didSet{
-            serviceTextField.placeholder = "add service"
+            serviceTextField.placeholder = "addService".localizede
             serviceTextField.floatView(raduis: 15, color: UIColor(named: "MainColor") ?? UIColor())
         }
         
@@ -68,14 +69,14 @@ class AddServiceViewController: UIViewController {
 extension AddServiceViewController{
     func addService(id:String,title:String){
         ActivityIndicatorManager.shared.showProgressView()
-        APIs.genericApiWithPagination(pageNo: 0, url: "https://Dalil-taelim.com/api/centers/\(id)/services", method: .post, paameters: ["title":title], headers: Headers.getHeader()) { (service:ServiceModel?, err:Error?, code:Int?) in
+        APIs.genericApiWithPagination(pageNo: 0, url: "https://Dalil-taelim.com/api/centers/\(id)/services", method: .post, paameters: ["title":title], encoding: URLEncoding.default, headers: Headers.getHeader()) { (service:ServiceModel?, err:Error?, code:Int?) in
             ActivityIndicatorManager.shared.hideProgressView()
 
             if service?.code == 200 || service?.code == 201
             {
                 HelperK.restartApp()
             }else{
-                HelperK.showError(title: "error".localizede, subtitle: "")
+                HelperK.showError(title: "err".localizede, subtitle: "")
             }
         }
     

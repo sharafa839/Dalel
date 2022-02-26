@@ -2,32 +2,34 @@
 //  HomeViewModel.swift
 //  Dalel
 //
-//  Created by Shgardi on 11/02/2022.
+//  Created by  on 11/02/2022.
 //
 
 import Foundation
 import RxRelay
 import RxRelay
 import RxSwift
+import Alamofire
 class HomeViewModel:CategoriesProtocol,CenterProtocol,BannerProtocol {
     let onError = PublishSubject<String>()
     let onSuccess = PublishSubject<[CategoriesModelPayload]>()
+    let onLoading = BehaviorRelay<Bool>(value: false)
     let schoolResponse = PublishSubject<[CagtegoryCenterModelPayload]?>()
     let universityResponse = PublishSubject<[CagtegoryCenterModelPayload]?>()
     let kidsGardenResponse = PublishSubject<[CagtegoryCenterModelPayload]?>()
     let centersResponse = PublishSubject<[CenterModelPayload]>()
-    let onLoading = BehaviorRelay<Bool>(value: false)
     let disposeBag = DisposeBag()
     let banners = PublishSubject<[BannerPayload]>()
     
     func getCategory(){
+        guard ((NetworkReachabilityManager.default?.isReachable) != nil) else{return}
         onLoading.accept(true)
         categories {[weak self] result, failResult in
             guard let self = self else {return}
             self.onLoading.accept(false)
             switch result {
             case .failure(let error):
-                self.onError.onNext(error.localizedDescription)
+return
             case .success(let response):
                 guard let response = response?.payload else {return}
                 self.onSuccess.onNext(response ?? [CategoriesModelPayload]())
