@@ -58,6 +58,8 @@ extension EmailViewController{
                 HelperK.showSuccess(title: "go to your mail now".localizede, subtitle: "")
                 let vc = VerificationViewController()
                 vc.verificationCode = self?.randomNumber
+                guard let email = self?.emailTextField.text,email.isValidEmail else {return}
+                vc.email = email
                 self?.navigationController?.pushViewController(vc, animated: true)
             }else{
                 HelperK.showError(title: "try again".localizede, subtitle: "")

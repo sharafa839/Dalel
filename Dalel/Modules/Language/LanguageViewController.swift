@@ -16,23 +16,26 @@ class LanguageViewController: UIViewController {
     @IBOutlet weak var arab: UIStackView!{
         didSet{
             arab.floatView(raduis: 10, color: UIColor(named: "MainColor") ?? UIColor())
+            arab.floating(raduis: 15)
         }
     }
     @IBOutlet weak var eng: UIStackView!{
     didSet{
         eng.floatView(raduis: 10, color: UIColor(named: "MainColor") ?? UIColor())
+        eng.floating(raduis: 15)
     }
 }
 
     @IBOutlet weak var EnglishButton: UIButton!{
         didSet{
             EnglishButton.setTitle("english".localizede, for: .normal)
+            EnglishButton.floatButton(raduis: 15)
         }
     }
     @IBOutlet weak var ArabicButton: UIButton!{
         didSet{
             ArabicButton.setTitle("arabic".localizede, for: .normal)
-
+            ArabicButton.floatButton(raduis: 15)
         }
     }
     var viewModel = LanguageViewModel()
@@ -42,21 +45,24 @@ class LanguageViewController: UIViewController {
         setupObserver()
     }
 
+    @IBAction func ArabicLanguage(_ sender: UIButton) {
+        LocalizationManager.shared.setLanguage(language: .Arabic)
+        UserDefaults.standard.set(["ar"], forKey: "AppleLanguages")
+        UserDefaults.standard.synchronize()
+
+    }
     func setupObserver(){
         EnglishButton.rx.tap.subscribe {[weak self] _ in
             LocalizationManager.shared.setLanguage(language: .English)
             UserDefaults.standard.set(["en"], forKey: "AppleLanguages")
             UserDefaults.standard.synchronize()
-
-            self?.navigate()
+            HelperK.restartApp()
+            //self?.navigate()
         }.disposed(by:viewModel.disposeBag )
         
         ArabicButton.rx.tap.subscribe {[weak self] _ in
-            LocalizationManager.shared.setLanguage(language: .Arabic)
-            UserDefaults.standard.set(["ar"], forKey: "AppleLanguages")
-            UserDefaults.standard.synchronize()
-
-            self?.navigate()
+           
+            HelperK.restartApp()
 
         }.disposed(by:viewModel.disposeBag )
     }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Moya
 
 class ResetPasswordViewController: UIViewController {
     @IBOutlet weak var reassignPasswordLabel: UILabel!{
@@ -35,6 +36,7 @@ class ResetPasswordViewController: UIViewController {
     }
     let viewModel = ProfileViewModel()
     var isLogin : Bool? = true
+    var email :String?
     override func viewDidLoad() {
         super.viewDidLoad()
 subscribeViewModel()
@@ -69,6 +71,7 @@ subscribeViewModel()
     }
     
     @IBAction func assignPasswordButton(_ sender: UIButton) {
+        if isLogin == true {
         guard let password = passwordTextField.text , !password.isEmpty,password.count > 6 else {return}
         guard let passwordConfirm = confirmPasswordTextField.text , !passwordConfirm.isEmpty,passwordConfirm.count > 6 else {return}
         if passwordConfirm != password{
@@ -80,7 +83,31 @@ subscribeViewModel()
             
         }
     
-    }
+        }else{
+            resetPassword()
+        }
     
 
+}
+}
+extension ResetPasswordViewController {
+    func resetPassword(){
+        guard let password = passwordTextField.text , !password.isEmpty,password.count > 6 else {return}
+        guard let passwordConfirm = confirmPasswordTextField.text , !passwordConfirm.isEmpty,passwordConfirm.count > 6 else {return}
+        if passwordConfirm != password{
+            HelperK.showError(title: "notMatch".localizede, subtitle: "")
+            
+        }else{
+            APIs.genericApiWithPagination(pageNo: 0, url: "https://Dalil-taelim.com/api/password/reset-by-email", method: .patch, paameters: ["email":email ?? "","password":password,"password_confirmation":passwordConfirm], encoding: URLEncoding.default, headers: Headers.ContentTypeAccept()) { (mode:ModeModel?,error:Error?,code:Int?) in
+                if mode?.code == 200 || mode?.code == 201{
+                HelperK.showSuccess(title: "passwordChanged".localizede, subtitle: "")
+                }else{
+                    HelperK.showSuccess(title: "try again".localizede, subtitle: "")
+
+                }
+            }
+        }
+        
+       
+    }
 }

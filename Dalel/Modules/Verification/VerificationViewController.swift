@@ -25,14 +25,39 @@ class VerificationViewController: UIViewController {
             messageIsSent.text = "messageIsSent".localizede
         }}
     @IBOutlet weak var codeNumberLabel: UILabel!
-    @IBOutlet weak var _tf1: UITextField!
-    @IBOutlet weak var _tf2: UITextField!
-    @IBOutlet weak var _tf3: UITextField!
-    @IBOutlet weak var _tf4: UITextField!
-    @IBOutlet weak var _tf5: UITextField!
-    @IBOutlet weak var _tf6: UITextField!
+    @IBOutlet weak var _tf1: UITextField!{
+        didSet{
+            _tf1.keyboardType = .phonePad
+        }
+    }
+    @IBOutlet weak var _tf2: UITextField!{
+        didSet{
+            _tf2.keyboardType = .phonePad
+        }
+    }
+    @IBOutlet weak var _tf3: UITextField!{
+        didSet{
+            _tf3.keyboardType = .phonePad
+        }
+    }
+    @IBOutlet weak var _tf4: UITextField!{
+        didSet{
+            _tf4.keyboardType = .phonePad
+        }
+    }
+    @IBOutlet weak var _tf5: UITextField!{
+        didSet{
+            _tf5.keyboardType = .phonePad
+        }
+    }
+    @IBOutlet weak var _tf6: UITextField!{
+        didSet{
+            _tf6.keyboardType = .phonePad
+        }
+    }
     var verificationCode:String?
     var enterCode : String?
+    var email :String?
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -59,10 +84,10 @@ class VerificationViewController: UIViewController {
         let text=textField.text
         if text?.utf16.count == 1 {
             switch textField{
-            case _tf1:_tf1.becomeFirstResponder()
-            case _tf2:_tf2.becomeFirstResponder()
-            case _tf3:_tf3.becomeFirstResponder()
-            case _tf4:_tf4.becomeFirstResponder()
+            case _tf1:_tf2.becomeFirstResponder()
+            case _tf2:_tf3.becomeFirstResponder()
+            case _tf3:_tf4.becomeFirstResponder()
+            case _tf4:_tf5.becomeFirstResponder()
             case _tf5:_tf6.becomeFirstResponder()
             case _tf6:_tf6.resignFirstResponder()
             default:
@@ -83,6 +108,7 @@ enterCode = firstChar + secondChar + thirdChar + fourthChar + fifthChar + sixthC
         if enterCode == verificationCode {
             let vc = ResetPasswordViewController()
             vc.isLogin = false
+            vc.email = email
             navigationController?.pushViewController(vc, animated: true)
         }
     }

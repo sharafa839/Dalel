@@ -16,9 +16,9 @@ class OnBoardingViewController: UIViewController {
     
     //MARK: - Vars
     var onBoardingList:[OnBoarding] =
-    [OnBoarding(image: UIImage(named: "splash vector"), text: "we guide you to first step \n in your child carer ".localizede)
-     ,OnBoarding(image: UIImage(named: "login 1") , text: "sign up now \n and get your chances ".localizede),
-     OnBoarding(image:UIImage(named: "Untitled-1 2-1"), text: "on step to start your journey \n with Dalel for education".localizede)]
+    [OnBoarding(image: UIImage(named: "splash vector"), text: "weguideyou".localizede)
+     ,OnBoarding(image: UIImage(named: "login 1") , text: "sign up now".localizede),
+     OnBoarding(image:UIImage(named: "Untitled-1 2-1"), text: "on step to start your journey".localizede)]
     
     //MARK: - lifeCycle
     override func viewDidLoad() {
@@ -29,7 +29,7 @@ class OnBoardingViewController: UIViewController {
 
     func setupUI(){
         skipButton.setTitle("skip".localizede, for: .normal)
-        textLabel.text = onBoardingList[0].text ?? ""
+        textLabel.text = onBoardingList.first?.text ?? "ss"
         Image.image =  onBoardingList[0].image
         skipButton.setRoundCorners(10)
     }

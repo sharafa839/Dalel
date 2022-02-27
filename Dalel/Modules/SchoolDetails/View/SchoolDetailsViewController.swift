@@ -8,10 +8,22 @@
 import UIKit
 import CoreLocation
 import GoogleMaps
-
+import ImageSlideshow
 class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,GMSMapViewDelegate {
+    @IBOutlet weak var sliderView: ImageSlideshow!{
+        didSet{
+            self.sliderView.configSliderShow()
+            self.sliderView.setRoundCorners(15)
+            self.sliderView.addActionn(vc: self, action: #selector(didTab))
+        }
+    }
+    
 
-
+    @IBOutlet weak var noCommentLabel: UILabel!{
+        didSet{
+            noCommentLabel.text = "NoCommentHere".localizede
+        }
+    }
     @IBOutlet weak var googleMap: GMSMapView!{
         didSet{
             googleMap.settings.zoomGestures = true
@@ -96,6 +108,8 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
     let viewModel = SchoolDetailsViewModel()
     let homeViewModel = SubHomeViewModel()
     var reviews = [ReviewsModelPayload]()
+    var imageSourc = [InputSource]()
+
     init(centerId:String) {
         self.centerId = centerId
         super.init(nibName: nil, bundle: nil)
@@ -107,12 +121,17 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        attachViewModel()
+        attachViewModel(id: centerId ?? "")
         subscribeViewModel()
         setupViews()
         setupViewModel()
         // Do any additional setup after loading the view.
     }
+    
+    @objc func didTab()  {
+        sliderView.presentFullScreenController(from: self)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
@@ -121,9 +140,9 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         navigationController?.navigationBar.isHidden = false
     }
     
-    func attachViewModel(){
-        viewModel.getCenterData(id: centerId ?? "")
-        viewModel.getCenterReviews(id: centerId ?? "")
+    func attachViewModel(id:String){
+        viewModel.getCenterData(id: id )
+        viewModel.getCenterReviews(id: id)
     }
     
     func setupViewModel(){
@@ -141,13 +160,24 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
 
     
     }
-    
+    func loadSlider(banner:[MediaLink]){
+        for i in banner{
+            let urlStr = "https://Dalil-taelim.com" + ((i.link?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!)
+            print(urlStr)
+            ActivityIndicatorManager.shared.hideProgressView()
+            self.imageSourc.append(KingfisherSource(urlString: urlStr)!)
+            DispatchQueue.main.async {
+                self.sliderView.setImageInputs(self.imageSourc)
+            }
+        }
+    }
     
     func subscribeViewModel(){
         viewModel.singleCenter.subscribe {[weak self] center in
             guard let singleCenter = center.element else {
                 return
             }
+            self?.loadSlider(banner: singleCenter.mediaLinks ?? [MediaLink]())
             self?.setupUI(singleCenter: singleCenter)
             self?.singleCenter = singleCenter
             self?.homeViewModel.getCategory(id: singleCenter.category?.id ?? "")
@@ -156,8 +186,14 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         
         viewModel.reviews.subscribe { [weak self]review in
             guard let review = review.element else {return}
-            self?.reviews.append(contentsOf: review)
-            self?.commentTableView.reloadData()
+            guard let self = self else {return}
+
+            if self.reviews.isEmpty{
+                self.commentTableView.isHidden = true
+                
+            }
+            self.reviews.append(contentsOf: review)
+            self.commentTableView.reloadData()
         }.disposed(by: viewModel.disposeBag)
         
         viewModel.markAsFavorite.subscribe {[weak self] isFavorite in
@@ -326,7 +362,18 @@ class SchoolDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         cell.configureCell(payload: centersInCategory[indexPath.row])
         return cell
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = centersInCategory[indexPath.row]
+        viewModel.getCenterData(id: item.id ?? "")
+        viewModel.getCenterReviews(id: item.id  ?? "")
+        if LocalizationManager.shared.getLanguage() == .English{
+            schoolNameLabel.text = item.enName
+        }else{
+            schoolNameLabel.text = item.arName
+
+        }
+        subscribeViewModel()
+    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 120, height: 160)
     }

@@ -14,12 +14,13 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Home-->
+        <!--Navigation Controller-->
         <scene sceneID="Ip9-kg-0On">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rnf-FW-zOT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="2OR-Bf-8i7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" selectedImage="home" id="lnu-9y-n4E">
-                        <color key="badgeColor" systemColor="labelColor"/>
+                    <tabBarItem key="tabBarItem" title="" image="home" selectedImage="home" id="lnu-9y-n4E">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5tV-Hc-3GX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -29,16 +30,15 @@
                         <segue destination="KY5-7e-Ll0" kind="relationship" relationship="rootViewController" id="nXE-eb-PhE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rnf-FW-zOT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2928" y="214"/>
         </scene>
-        <!--Home-->
+        <!--Home Table View Controller-->
         <scene sceneID="avN-Yr-35h">
             <objects>
                 <tableViewController id="KY5-7e-Ll0" customClass="HomeTableViewController" customModule="Dalel" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="F49-Zw-hHc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -200,29 +200,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QuM-3v-m1W">
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QuM-3v-m1W">
                                                     <rect key="frame" x="20" y="11" width="374" height="254"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash vector" translatesAutoresizingMaskIntoConstraints="NO" id="gjw-b6-k1P">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="splash vector" translatesAutoresizingMaskIntoConstraints="NO" id="gjw-b6-k1P">
                                                             <rect key="frame" x="8" y="63" width="128" height="128"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="128" id="MGF-fx-SoC"/>
                                                                 <constraint firstAttribute="width" constant="128" id="Xb6-PA-qAg"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your chance now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ki-ff-UYh">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="your chance now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ki-ff-UYh">
                                                             <rect key="frame" x="213" y="26" width="142.5" height="22"/>
                                                             <fontDescription key="fontDescription" name="AmazonEmber-Bold" family="Amazon Ember" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to add center or school in the biggest educational app over middle east" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNA-PF-nDx">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="to add center or school in the biggest educational app over middle east" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNA-PF-nDx">
                                                             <rect key="frame" x="152" y="66" width="203.5" height="61"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qd4-BN-mfW">
+                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qd4-BN-mfW">
                                                             <rect key="frame" x="152" y="143" width="192" height="40"/>
                                                             <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                             <constraints>
@@ -364,7 +364,7 @@
                             <outlet property="delegate" destination="KY5-7e-Ll0" id="g87-oD-9U9"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home" id="rYf-r7-TaI">
+                    <tabBarItem key="tabBarItem" title="" image="home" selectedImage="home" id="rYf-r7-TaI">
                         <color key="badgeColor" name="AccentColor"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="VAQ-L4-VHD">
@@ -398,12 +398,12 @@
             </objects>
             <point key="canvasLocation" x="-2949.275362318841" y="941.51785714285711"/>
         </scene>
-        <!--Favorite-->
+        <!--Favorite View Controller-->
         <scene sceneID="2ng-PX-V4V">
             <objects>
                 <viewController id="M80-Fo-09O" customClass="FavoriteViewController" customModule="Dalel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="68K-QE-1m6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sRO-bV-dD3">
@@ -427,7 +427,7 @@
                             <constraint firstItem="7sB-Lu-M65" firstAttribute="bottom" secondItem="sRO-bV-dD3" secondAttribute="bottom" id="jol-I3-X32"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favorite" image="heart" selectedImage="heart" id="KRW-tF-rNe"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" selectedImage="heart" id="KRW-tF-rNe"/>
                     <navigationItem key="navigationItem" id="Lbf-wt-aSq"/>
                     <connections>
                         <outlet property="favoriteCollectionView" destination="sRO-bV-dD3" id="HUb-n8-sxw"/>
@@ -437,12 +437,12 @@
             </objects>
             <point key="canvasLocation" x="-1607" y="1469"/>
         </scene>
-        <!--notification-->
+        <!--Notification View Controller-->
         <scene sceneID="raH-BT-f24">
             <objects>
                 <viewController id="rOs-6m-zoK" customClass="NotificationViewController" customModule="Dalel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kpF-n2-PSw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="c5L-6E-X2f">
@@ -459,7 +459,7 @@
                             <constraint firstItem="c5L-6E-X2f" firstAttribute="top" secondItem="7Ah-x0-0hT" secondAttribute="top" id="cPh-Eb-bWk"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="notification" selectedImage="bell" id="Dtz-DP-RVS"/>
+                    <tabBarItem key="tabBarItem" title="" selectedImage="bell" id="Dtz-DP-RVS"/>
                     <navigationItem key="navigationItem" id="YJ2-db-fSd"/>
                     <connections>
                         <outlet property="tableView" destination="c5L-6E-X2f" id="eSf-bm-6iS"/>
@@ -469,12 +469,12 @@
             </objects>
             <point key="canvasLocation" x="-720" y="1387"/>
         </scene>
-        <!--Profile-->
+        <!--profile-->
         <scene sceneID="RiB-Zj-4fK">
             <objects>
                 <viewController id="bc7-wA-Sde" customClass="ProfileViewController" customModule="Dalel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="weZ-hd-Ttz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5De-xy-50J">
@@ -490,9 +490,11 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="x0h-41-8cU" firstAttribute="width" secondItem="5De-xy-50J" secondAttribute="width" multiplier="0.714286" id="0yR-YK-YLV"/>
                                     <constraint firstAttribute="width" constant="140" id="3Uj-0O-Ot8"/>
-                                    <constraint firstItem="x0h-41-8cU" firstAttribute="centerX" secondItem="5De-xy-50J" secondAttribute="centerX" id="F4a-r6-tN4"/>
-                                    <constraint firstItem="x0h-41-8cU" firstAttribute="centerY" secondItem="5De-xy-50J" secondAttribute="centerY" id="M2G-0g-dgD"/>
+                                    <constraint firstItem="x0h-41-8cU" firstAttribute="height" secondItem="5De-xy-50J" secondAttribute="height" multiplier="0.714286" id="N7a-1J-4e1"/>
+                                    <constraint firstItem="x0h-41-8cU" firstAttribute="leading" secondItem="5De-xy-50J" secondAttribute="leading" constant="20" symbolic="YES" id="T1R-7a-1Y2"/>
+                                    <constraint firstItem="x0h-41-8cU" firstAttribute="top" secondItem="5De-xy-50J" secondAttribute="top" constant="20" symbolic="YES" id="YAb-U1-C0T"/>
                                     <constraint firstAttribute="height" constant="140" id="gWE-ne-74m"/>
                                 </constraints>
                             </view>
@@ -515,7 +517,9 @@
                                         <rect key="frame" x="0.0" y="96.5" width="117" height="31"/>
                                         <color key="tintColor" systemColor="systemOrangeColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="تعديل الصورة"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="تعديل الصورة">
+                                            <color key="baseForegroundColor" red="0.99215686270000003" green="0.41600000860000003" blue="0.27500000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="changePhotoAction:" destination="bc7-wA-Sde" eventType="touchUpInside" id="wAU-Ow-BP6"/>
                                         </connections>
@@ -602,7 +606,7 @@
                             <constraint firstItem="Rj0-pX-UIk" firstAttribute="top" secondItem="NJk-gM-Tmb" secondAttribute="bottom" constant="16" id="wKE-Zx-mAq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" selectedImage="person.fill" id="UnE-vW-v8V"/>
+                    <tabBarItem key="tabBarItem" title="profile" image="person.fill" catalog="system" selectedImage="person.fill" id="UnE-vW-v8V"/>
                     <navigationItem key="navigationItem" id="Dom-qm-YW5"/>
                     <connections>
                         <outlet property="changePhoto" destination="6uZ-7c-amX" id="HYC-CS-pr2"/>
@@ -661,7 +665,7 @@
         <scene sceneID="bi4-eS-sri">
             <objects>
                 <navigationController id="Lbl-9J-B7T" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="profile" id="k24-lu-3fF"/>
+                    <tabBarItem key="tabBarItem" title="profile" image="person.fill" catalog="system" selectedImage="person.fill" id="k24-lu-3fF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mzt-fV-Ykc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -678,11 +682,17 @@
         <scene sceneID="xa8-ua-JxC">
             <objects>
                 <tabBarController storyboardIdentifier="main" id="6Xt-D6-Sv3" customClass="MainTabBar" customModule="Dalel" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="Vyn-th-ma2">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" itemPositioning="fill" id="Vyn-th-ma2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" name="MainColor"/>
+                        <tabBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="selectionIndicatorTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <outlet property="mainBar" destination="Vyn-th-ma2" id="ZdB-V4-dzw"/>
@@ -696,11 +706,11 @@
             </objects>
             <point key="canvasLocation" x="-1017" y="29"/>
         </scene>
-        <!--favorite-->
+        <!--Navigation Controller-->
         <scene sceneID="VPc-7r-bUP">
             <objects>
                 <navigationController id="aBY-Cx-uUT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="favorite" selectedImage="heart" id="5TX-4r-jC3"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" selectedImage="heart" id="5TX-4r-jC3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iHf-w9-76K">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -713,11 +723,11 @@
             </objects>
             <point key="canvasLocation" x="-1655" y="739"/>
         </scene>
-        <!--notification-->
+        <!--Navigation Controller-->
         <scene sceneID="VkL-ZY-BCB">
             <objects>
                 <navigationController id="7Yn-jS-5Un" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="notification" image="bell" selectedImage="bell" id="ejI-FE-dI0"/>
+                    <tabBarItem key="tabBarItem" title="" image="bell" selectedImage="bell" id="ejI-FE-dI0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5lO-7Z-Mjz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -770,9 +780,6 @@
         <namedColor name="MainColor">
             <color red="0.28235294117647058" green="0.792156862745098" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

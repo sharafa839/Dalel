@@ -8,6 +8,8 @@
 	<string>we need your permission to  detect your location to allow you use google maps in the app </string>
 	<key>NSLocationUsageDescription</key>
 	<string>we need your permission to  detect your location to allow you use google maps in the app </string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>we need your permission to  detect your location to allow you use google maps in the app </string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

@@ -30,7 +30,7 @@ class HelperK: NSObject {
         
         if self.checkFirstTime() == true {
                 if self.checkUserToken() == true {
-                    let sb = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "content")
+                    let sb = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "main")
                     window?.rootViewController = sb
                 }else {
                     let sb = LoginViewController()

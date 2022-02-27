@@ -16,7 +16,7 @@ class RegisterViewModel : AuthenticationProtocol{
     let type = BehaviorRelay<String>(value: "")
     let email = BehaviorRelay<String>(value: "")
     let onError = PublishSubject<String>()
-    let onSuccess = PublishSubject<LoginModel>()
+    let onSuccess = PublishSubject<LoginPayload>()
     let onLoading = BehaviorRelay<Bool>(value: false)
     let disposeBag = DisposeBag()
     var isEmailValid : Observable<Bool>{

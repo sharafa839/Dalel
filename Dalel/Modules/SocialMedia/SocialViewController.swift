@@ -12,21 +12,28 @@ class SocialViewController: UIViewController {
     @IBOutlet weak var twitter: UIButton!{
         didSet{
             twitter.floatButton(raduis: 15)
+            twitter.setTitle("twitter".localizede, for: .normal)
         }
     }
     @IBOutlet weak var youtube: UIButton!{
         didSet{
             youtube.floatButton(raduis: 15)
+            youtube.setTitle("youtube".localizede, for: .normal)
+
         }
     }
     @IBOutlet weak var instgram: UIButton!{
         didSet{
             instgram.floatButton(raduis: 15)
+            instgram.setTitle("instagram".localizede, for: .normal)
+
         }
     }
     @IBOutlet weak var facebook: UIButton!{
         didSet{
             facebook.floatButton(raduis: 15)
+            facebook.setTitle("facebook".localizede, for: .normal)
+
         }
     }
     

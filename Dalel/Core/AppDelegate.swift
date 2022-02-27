@@ -22,8 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate , CLLocationManagerDelegat
         IQKeyboardManager.shared.enable = true
         Router.setLaunch(window: window)
         GMSServices.provideAPIKey("AIzaSyD1fbW1OdbVEOd-vnP3VcaTeaooVrjmsSs")
-        LocalizationManager.shared.setAppInnitLanguage()
         LocalizationManager.shared.delegate = self
+
+        LocalizationManager.shared.setAppInnitLanguage()
         return true
     }
 

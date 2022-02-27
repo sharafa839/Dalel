@@ -176,7 +176,8 @@ class RegisterViewController: UIViewController, UIDocumentPickerDelegate {
                  self.uploadFile.setTitle(myURL.lastPathComponent, for: .normal)
                  
              }catch{
-                 print(error)
+                 HelperK.showError(title: "pdf file".localizede, subtitle: "")
+                 
              }
              
         
@@ -201,9 +202,14 @@ class RegisterViewController: UIViewController, UIDocumentPickerDelegate {
 
         viewModel.onSuccess.subscribe { [weak self] register in
             guard let self = self else {return}
-            let main = HomeTableViewController()
+            if register.element?.token == nil {
           
             Alert.alertPopUp(title: "Great !".localizede, msg:"wait to approve".localizede , btnTitle: "ok".localizede, vc: self)
+            }else{
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                let tabBar = storyBoard.instantiateViewController(withIdentifier: "main")
+                self.navigationController?.pushViewController(tabBar, animated: true)
+            }
             
         }.disposed(by: viewModel.disposeBag)
     }

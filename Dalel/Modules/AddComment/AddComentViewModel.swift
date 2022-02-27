@@ -28,9 +28,9 @@ class AddCommentViewModel:CenterProtocol {
 //                return
 //            }
 //        }
-        APIs.genericApiWithPagination(pageNo: 0, url: "https://Dalil-taelim.com/api/centers/\(id)/reviews/submit", method: .post, paameters: ["review":review,"rate":rate], encoding: URLEncoding.default, headers: Headers.getHeader()) { (mode:ModeModel?, err:Error?, code:Int?) in
+        APIs.genericApiWithPagination(pageNo: 0, url: "https://Dalil-taelim.com/api/centers/\(id)/reviews/submit", method: .post, paameters: ["review":review,"rate":rate], encoding: JSONEncoding.default, headers: Headers.getHeader()) { (mode:ModeModel?, err:Error?, code:Int?) in
             if [200,201].contains(mode?.code) {
-                HelperK.showSuccess(title: "thanks", subtitle: "")
+                HelperK.showSuccess(title: "thanks".localizede, subtitle: "")
             }
         }
     }

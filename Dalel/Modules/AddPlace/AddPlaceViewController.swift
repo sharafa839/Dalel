@@ -165,7 +165,7 @@ class AddPlaceViewController: UIViewController, GalleryControllerDelegate, CLLoc
         gallary = GalleryController()
         gallary.delegate = self
             Config.tabsToShow = [.cameraTab,.imageTab]
-            Config.Camera.imageLimit = 1
+            Config.Camera.imageLimit = 5
             self.present(self.gallary,animated: true,completion: nil)
     }
     

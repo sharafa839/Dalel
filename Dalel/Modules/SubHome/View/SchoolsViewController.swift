@@ -33,6 +33,11 @@ class SchoolsViewController: UIViewController, UICollectionViewDelegate, UIColle
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    
     func attach(){
         viewModel.getCategory(id: centerId ?? "")
     }

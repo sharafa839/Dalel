@@ -69,7 +69,7 @@ class AddServiceViewController: UIViewController {
 extension AddServiceViewController{
     func addService(id:String,title:String){
         ActivityIndicatorManager.shared.showProgressView()
-        APIs.genericApiWithPagination(pageNo: 0, url: "https://Dalil-taelim.com/api/centers/\(id)/services", method: .post, paameters: ["title":title], encoding: URLEncoding.default, headers: Headers.getHeader()) { (service:ServiceModel?, err:Error?, code:Int?) in
+        APIs.genericApiWithPagination(pageNo: 0, url: "https://Dalil-taelim.com/api/centers/\(id)/services", method: .post, paameters: ["title":title], encoding: JSONEncoding.default, headers: Headers.getHeader()) { (service:ServiceModel?, err:Error?, code:Int?) in
             ActivityIndicatorManager.shared.hideProgressView()
 
             if service?.code == 200 || service?.code == 201

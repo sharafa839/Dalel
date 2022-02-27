@@ -23,9 +23,14 @@ class ProfileViewController: UIViewController, UITextFieldDelegate, GalleryContr
             nameTextField.label.text = "FullNAme".localizede
             nameTextField.setUnderlineColor(.gray, for: .normal)
             nameTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .editing)
-            nameTextField.setFilledBackgroundColor(.white, for: .normal)
-            nameTextField.isEnabled = false
+            nameTextField.setFilledBackgroundColor(.clear, for: .normal)
+            nameTextField.setFilledBackgroundColor(.clear, for: .disabled)
+            nameTextField.setFilledBackgroundColor(.clear, for: .editing)
 
+            nameTextField.filledBackgroundColor(for: .normal)
+            nameTextField.isEnabled = false
+            nameTextField.setFloatingLabelColor(.orange, for: .disabled)
+            nameTextField.setFloatingLabelColor(.orange, for: .normal)
         }
     }
     @IBOutlet weak var emailTextField: MDCFilledTextField!{
@@ -33,9 +38,12 @@ class ProfileViewController: UIViewController, UITextFieldDelegate, GalleryContr
             emailTextField.label.text = "email".localizede
             emailTextField.setUnderlineColor(.gray, for: .normal)
             emailTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .editing)
-            emailTextField.setFilledBackgroundColor(.white, for: .normal)
             emailTextField.isEnabled = false
-
+            emailTextField.setFilledBackgroundColor(.clear, for: .normal)
+            emailTextField.setFilledBackgroundColor(.clear, for: .disabled)
+            emailTextField.setFilledBackgroundColor(.clear, for: .editing)
+            emailTextField.setFloatingLabelColor(.orange, for: .disabled)
+            emailTextField.setFloatingLabelColor(.orange, for: .normal)
         }
     }
     @IBOutlet weak var genderTextField: DropDown!{
@@ -51,6 +59,11 @@ class ProfileViewController: UIViewController, UITextFieldDelegate, GalleryContr
             passwordTextField.setUnderlineColor(UIColor(named: "MainColor") ?? UIColor.blue, for: .editing)
             passwordTextField.setFilledBackgroundColor(.white, for: .normal)
             passwordTextField.isEnabled = false
+            passwordTextField.setFilledBackgroundColor(.clear, for: .normal)
+            passwordTextField.setFilledBackgroundColor(.clear, for: .disabled)
+            passwordTextField.setFilledBackgroundColor(.clear, for: .editing)
+            passwordTextField.setFloatingLabelColor(.orange, for: .disabled)
+            passwordTextField.setFloatingLabelColor(.orange, for: .normal)
         }
     }
     @IBOutlet weak var containerView: UIView!{didSet{
